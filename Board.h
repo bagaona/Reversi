@@ -1,5 +1,3 @@
-// 204313100
-// Amir Bagaon
 
 #ifndef REVERSI_BOARD_H
 #define REVERSI_BOARD_H

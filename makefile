@@ -1,5 +1,4 @@
-# 204313100
-# Amir Bagaon
+
 
 a.out: Board.o main.o GameManager.o Logic.o Player.o HumanPlayer.o NormalLogic.o ConsolePrinter.o Printer.o
 	g++ GameManager.o Board.o main.o Logic.o Player.o HumanPlayer.o NormalLogic.o ConsolePrinter.o Printer.o

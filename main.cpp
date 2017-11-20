@@ -1,5 +1,4 @@
-// 204313100
-// Amir Bagaon
+
 #include <iostream>
 #include "GameManager.h"
 

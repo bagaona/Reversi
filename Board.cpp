@@ -1,5 +1,3 @@
-// 204313100
-// Amir Bagaon
 
 //A Class that represents the game's Board
 #include "Board.h"
