@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Player::Player(const char t, Logic* l, Board* b) : token(t) {
+Player::Player(const char t) : token(t) {
 }
 Player::~Player() {
 }

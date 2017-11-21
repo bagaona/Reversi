@@ -9,17 +9,17 @@
  * @param x1 - x value
  * @param y1 - y value
  */
-Coordinate::Coordinate(int x1, int y1) : x(x1), y(y1) {
+Coordinate::Coordinate(int x1, int y1) : row(x1), col(y1) {
 }
 /**
  * @return the x value of Coordinate.
  */
-int Coordinate::getX() const{
-    return x;
+int Coordinate::getRow() const{
+    return row;
 }
 /**
  * @return the y value of Coordinate.
  */
-int Coordinate::getY() const{
-    return y;
+int Coordinate::getCol() const{
+    return col;
 }

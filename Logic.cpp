@@ -10,7 +10,7 @@ Logic::Logic(Board*& b, Printer*& p) {
     printer = p;
     board = b;
     size = b->getSize();
-    temp_board = new Board(size, p);
+  //  temp_board = new Board(size, p);
     std::set<int>::iterator it;
     /*canMove.insert(2);
     canMove.insert(3);
@@ -23,7 +23,7 @@ Logic::Logic(Board*& b, Printer*& p) {
 }
 
 Logic::~Logic() {
-    delete (temp_board);
+  //  delete (temp_board);
 }
 
 void Logic::calculateAll(const char &player) {
@@ -37,6 +37,6 @@ void Logic::calculateAll(const char &player) {
 }
 
 void Logic::endTurn() {
-    temp_board->clear();
+  //  temp_board->clear();
     canMove.clear();
 }

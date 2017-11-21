@@ -13,8 +13,6 @@ iostream
 -
 
 /home/amir/CLionProjects/Reversi/Board.h
-ConsolePrinter.h
-/home/amir/CLionProjects/Reversi/ConsolePrinter.h
 
 /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp
 ComputerPlayer.h
@@ -51,6 +49,8 @@ HumanPlayer.h
 /home/amir/CLionProjects/Reversi/HumanPlayer.h
 ComputerPlayer.h
 /home/amir/CLionProjects/Reversi/ComputerPlayer.h
+ConsolePrinter.h
+/home/amir/CLionProjects/Reversi/ConsolePrinter.h
 
 /home/amir/CLionProjects/Reversi/GameManager.h
 Board.h
@@ -81,6 +81,8 @@ Board.h
 /home/amir/CLionProjects/Reversi/Board.h
 Coordinate.h
 /home/amir/CLionProjects/Reversi/Coordinate.h
+Printer.h
+/home/amir/CLionProjects/Reversi/Printer.h
 set
 -
 
@@ -88,6 +90,8 @@ set
 NormalLogic.h
 /home/amir/CLionProjects/Reversi/NormalLogic.h
 iostream
+-
+stdio.h
 -
 
 /home/amir/CLionProjects/Reversi/NormalLogic.h
@@ -115,6 +119,12 @@ Printer.h
 /home/amir/CLionProjects/Reversi/Printer.h
 iostream
 -
+set
+-
+Coordinate.h
+/home/amir/CLionProjects/Reversi/Coordinate.h
+Board.h
+/home/amir/CLionProjects/Reversi/Board.h
 
 /home/amir/CLionProjects/Reversi/main.cpp
 iostream

@@ -11,8 +11,8 @@
 
 class GameManager {
 private:
-    Board* b;
-    Logic * moves;
+    Board* board;
+    Logic * logic;
     Player** players;
     Printer* printer;
     int tie;
@@ -56,7 +56,7 @@ public:
 	* Output: -
 	* Operation: Plays a single turn. Checks possible moves and makes a move
 	*************************************************************************/
-    void playTurn(Player *&player, Logic *&moves);
+    void playTurn(Player *&player);
 
     /*************************************************************************
 	* Name: PutNext
@@ -66,7 +66,7 @@ public:
 	* Operation: Puts the token where the player chose,
     * and flips all the appropriate tokens between them.
 	*************************************************************************/
-    void putNext(Logic *&m, Player *&player) const;
+    void putNext(Player *&player, set<Coordinate> &availableMoves) const;
 
     /*************************************************************************
 	* Name: Initialize

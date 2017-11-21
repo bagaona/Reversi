@@ -4,6 +4,7 @@
 
 #include "NormalLogic.h"
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 NormalLogic::NormalLogic(Board*& b, Printer*& p): Logic(b, p) {
@@ -45,7 +46,6 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(i, col, player);
         canMove.insert(Coordinate(i, col));
     }
 
@@ -60,8 +60,7 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(row, i));
     }
 
     //Left
@@ -74,8 +73,7 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(row, i));
     }
 
     //Up
@@ -86,9 +84,8 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         if (helper(current, player, other, sawOther, need_update)) {
             break;
         }
-    }d
+    }
     if (need_update) {
-        temp_board->update(i, col, player);
         canMove.insert(Coordinate(i, col));
     }
 
@@ -103,8 +100,7 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(temp_row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(temp_row, i));
     }
 
     //Up-right
@@ -118,8 +114,7 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(temp_row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(temp_row, i));
     }
     //Up-left
     temp_row = row - 1;
@@ -132,8 +127,7 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(temp_row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(temp_row, i));
     }
 
     //Down-left
@@ -147,40 +141,24 @@ void NormalLogic::calculate(const int &row, const int &col, const char &player) 
         }
     }
     if (need_update) {
-        temp_board->update(temp_row, i, player);
-        canMove.insert(Coordinate(i, col));
+        canMove.insert(Coordinate(temp_row, i));
     }
 }
 
-bool NormalLogic::legalMoves() const{
-    bool first = true;
-
-    for (int row = 0; row < temp_board->getSize(); row++) {
-        for (int col = 0; col < temp_board->getSize(); col++) {
-            if (temp_board->getValue(row, col) != ' ') {
-                if (first) {
-                  printer->startTurn(row, col);
-                    first = false;
-                } else {
-                    printer->anotherPlace(row, col);
-                }
-            }
-        }
-    }
-    printer->massage("\n");
-    if (first) { //if no tokens were seen
-       printer->cantMove();
-        char temp;
-        cin >> temp;
-        return false;
-    }
-    return true;
+set<Coordinate> NormalLogic::legalMoves(const char token){
+    calculateAll(token);
+    return canMove;
 }
 bool NormalLogic::isLegal(const int &row, const int &col) const{
     if ((row >= size) || (row < 0) || (col >= size) || (col < 0)) {
         return false;
     }
-    if (temp_board->getValue(row, col) == ' ') {
+
+    Coordinate coordinate(row, col);
+
+    //Check if it is not a move from the avaliable moves
+    const bool is_in = canMove.find(coordinate) != canMove.end();
+    if (!is_in) {
         return false;
     }
     return true;

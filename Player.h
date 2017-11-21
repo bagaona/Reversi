@@ -15,8 +15,6 @@ class Player {
 
 protected:
     const char token;
-    Logic* logic = NULL;
-    Board* temp = NULL;
 
 public:
     /************************************************************************
@@ -25,7 +23,7 @@ public:
 	* Output: -
 	* Operation: Matches a player with a token
 	*************************************************************************/
-    Player(const char t, Logic* l, Board* b);
+    Player(const char t);
 
     /************************************************************************
 	* Name: ~Player (Destructor)
@@ -49,7 +47,7 @@ public:
     * Output: -
     * Operation: Make the turn after the player chooses row and col
     *************************************************************************/
-    virtual void makeTurn(int (&position)[2], Printer* printer) const = 0;
+    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const = 0;
 };
 
 

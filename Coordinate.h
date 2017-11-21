@@ -8,14 +8,17 @@
 
 class Coordinate {
 private:
-    const int x;
-    const int y;
+    const int row;
+    const int col;
 public:
     Coordinate(int x1,int y1);
-    int getX() const ;
-    int getY() const;
-    bool operator ==(const Coordinate &other) const { return x == other.getX() && y == other.getY() ;}
-    bool operator <(const Coordinate &other) const { return x < other.getX();}
+    int getRow() const ;
+    int getCol() const;
+    bool operator ==(const Coordinate &other) const {
+        return row == other.getRow() && col == other.getCol(); }
+    bool operator <(const Coordinate &other) const {
+        return ((row < other.getRow())
+                || ((row == other.getRow()) && (col < other.getCol())));  }
 };
 
 

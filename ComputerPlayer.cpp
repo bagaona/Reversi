@@ -6,31 +6,21 @@
 #include <iostream>
 
 using namespace std;
-ComputerPlayer::ComputerPlayer(const char t, Logic* l, Board* b): Player(t, l, b) {
-    temp = b;
-    logic = l;
+ComputerPlayer::ComputerPlayer(const char t): Player(t) {
 }
 ComputerPlayer::~ComputerPlayer() {
 }
-void ComputerPlayer::makeTurn(int (&position)[2], Printer* printer) const{
-    int row, col;
-    printer->massage("\nEnter Row: ");
-    cin >> row;
-    while ((!cin)) {
-        printer->massage("Endter a number!\nEnter Row: ");
-        cin.clear(); // clears error flags
-        cin.ignore(9999, '\n');
-        cin >> row;
+Coordinate ComputerPlayer::makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const{
+
+    Board* tempBoard = new Board(b);
+    std::set<Coordinate>::iterator it;
+    for (it=availableMoves.begin(); it!=availableMoves.end();) { //Run over each move the computer can do
+
     }
-    printer->massage("Enter Col: ");
-    cin >> col;
-    while ((!cin)) {
-        printer->massage("Enter a number!\nEnter Col: ");
-        cin.clear(); // clears error flags
-        cin.ignore(9999, '\n');
-        cin >> col;
-    }
-    printer->massage("\n");
-    position[0] = --row;
-    position[1] = --col;
+
+
+
+//    printer->availableMoves(availableMoves);
+  //  return Coordinate(2,4);
+
 }

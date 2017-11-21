@@ -6,11 +6,11 @@
 #include <iostream>
 
 using namespace std;
-    HumanPlayer::HumanPlayer(const char t, Logic* l, Board* b): Player(t, l, b) {
+    HumanPlayer::HumanPlayer(const char t): Player(t) {
 }
 HumanPlayer::~HumanPlayer() {
 }
-void HumanPlayer::makeTurn(int (&position)[2], Printer* printer) const{
+Coordinate HumanPlayer::makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const{
     int row, col;
     printer->massage("\nEnter Row: ");
     cin >> row;
@@ -29,6 +29,5 @@ void HumanPlayer::makeTurn(int (&position)[2], Printer* printer) const{
         cin >> col;
     }
     printer->massage("\n");
-    position[0] = --row;
-    position[1] = --col;
+    return Coordinate(--row, --col); //the -- because the input is higher
 }

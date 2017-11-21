@@ -6,6 +6,7 @@
 #define REVERSI_LOGIC_H
 #include "Board.h"
 #include "Coordinate.h"
+#include "Printer.h"
 #include <set>
 using namespace std;
 
@@ -16,7 +17,7 @@ class Logic {
 protected:
     Board* board; // The Board
     int size; // The size of the board
-    Board* temp_board; // Board that helps calculating moves
+  //  Board* temp_board; // Board that helps calculating moves
     Printer* printer;
     set<Coordinate> canMove;
 public:
@@ -58,7 +59,7 @@ public:
 	* Output: -
 	* Operation: Calculate and print the legal moves for a player, if any.
 	*************************************************************************/
-    virtual bool legalMoves() const = 0;
+    virtual set<Coordinate> legalMoves(const char token) = 0;
 
     /************************************************************************
 	* Name: IsLegal

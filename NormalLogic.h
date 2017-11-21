@@ -54,7 +54,7 @@ public:
 
     //All of the other funcs were described in Logic class
     virtual void calculate(const int &row, const int &col, const char &player);
-    virtual bool legalMoves() const;
+    virtual set<Coordinate> legalMoves(const char token);
     virtual bool isLegal(const int &row, const int &col) const;
     virtual void flip(const int &row, const int &col, const char &player);
 };

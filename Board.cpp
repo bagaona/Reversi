@@ -6,8 +6,17 @@
 using namespace std;
 
 //Constructor
-Board::Board(const int &s, Printer*& p): size(s), printer(p){
+Board::Board(const int &s): size(s){
     initialize();
+}
+Board::Board(Board* b1): size(b1->getSize()){
+    board = new char*[size];
+    //Allocates a 2d matrix
+    for (int i = 0; i < size; i++) {
+        board[i] = new char[size];
+    }
+
+    copyFromBoard(b1);
 }
 
 //Initializes the board
@@ -46,11 +55,6 @@ void Board::update(const int &row, const int &col, const char &player) const{
     board[row][col] = player;
 }
 
-//Prints the board
-void Board::printBoard() {
-    printer->printBoard(board, size);
-}
-
 //Frees the board's allocation
     Board::~Board() {
     for (int i = 0; i < size; i++) {
@@ -73,5 +77,12 @@ bool Board::isFull() const{
         }
     }
     return true;
+}
+void Board::copyFromBoard(Board *b1) {
+    for (int x = 0;x < size;x++) {
+        for(int y = 0;y < size;y++) {
+            board[x][y] = b1->getCopy()[x][y];
+        }
+    }
 }
 

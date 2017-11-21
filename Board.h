@@ -2,14 +2,10 @@
 #ifndef REVERSI_BOARD_H
 #define REVERSI_BOARD_H
 
-
-#include "ConsolePrinter.h"
-
 class Board {
 private:
     char** board; // The board
     const int size; //The board's size
-    Printer* printer; //The board's printer
 
 public:
     /*************************************************************************
@@ -18,7 +14,10 @@ public:
     * Output: -
     * Operation: The function build a board with the size from input
     *************************************************************************/
-    Board(const int &size, Printer*& p);
+    Board(const int &size);
+
+    //Copy constructor
+    Board(Board* b);
 
     /*************************************************************************
     * Name: ~Board (Destructor)
@@ -91,6 +90,11 @@ public:
     * Operation: Returns if the board is full
     *************************************************************************/
     bool isFull() const;
+
+    char** getCopy() const{
+        return board;
+    }
+    void copyFromBoard(Board* b);
 };
 
 

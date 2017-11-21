@@ -16,7 +16,7 @@ public:
    * Output: -
    * Operation: Matches a player with a token
    *************************************************************************/
-    HumanPlayer(const char t, Logic* l, Board* b);
+    HumanPlayer(const char t);
     /************************************************************************
     * Name: ~HumanPlayer (Destructor)
     * Input: -
@@ -30,7 +30,7 @@ public:
     * Output: -
     * Operation: Gets a row and a col from the human player and makes a move
     *************************************************************************/
-    virtual void makeTurn(int (&position)[2], Printer* printer) const;
+    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const;
 };
 
 

@@ -6,7 +6,8 @@
 #include "ConsolePrinter.h"
 using namespace std;
 
-void ConsolePrinter::printBoard(char** &board, const int &size) const{
+void ConsolePrinter::printBoard(Board *& board) const{
+    const int size = board->getSize();
     cout << "  ";
     for(int i = 1;i <= size;i++) {
         cout << "| " << i << " ";
@@ -19,20 +20,14 @@ void ConsolePrinter::printBoard(char** &board, const int &size) const{
         int row = x + 1;
         cout << row;
         for(int y = 0;y < size;y++) {
-            cout << " | " << board[x][y];
+            cout << " | " << board->getCopy()[x][y];
         }
         cout << " |" << endl;
         //Prints the line below
         cout << string(size*4 + 3, '-') << endl;
     }
 }
-void ConsolePrinter::startTurn(const int &row, const int &col) const {
-    cout << "Your possible moves:" << endl;
-    cout << "(" << row + 1 << "," << col + 1 << ")";
-}
-void ConsolePrinter::anotherPlace(const int &row, const int &col) const {
-    cout << ",(" << row + 1 << "," << col + 1 << ")";
-}
+
 void ConsolePrinter::cantMove() const {
     cout << "No possible moves. Play passes back to the other player. "
             "Press any key and enter to continue" << endl;
@@ -47,6 +42,22 @@ void ConsolePrinter::yourTurn(const char &token) const {
     cout << endl;
     cout << token << ": It's your move" << endl;
 }
+void ConsolePrinter::availableMoves(set<Coordinate> legalMoves) const {
+    cout << "Your possible moves:" << endl;
+
+    std::set<Coordinate>::iterator it;
+    for (it=legalMoves.begin(); it!=legalMoves.end();) {
+        cout << "(" << (*it).getRow() + 1 << "," << (*it).getCol() + 1 << ")";
+        // put ','
+        if ((++it) != legalMoves.end()) {
+            cout << ",";
+        }
+    }
+      //  std::cout << ' ' << *it;
+    std::cout << '\n';
+
+}
+
 void ConsolePrinter::winner(const char &p1, const char &p2, const int &score1,
                             const int &score2) const{
     cout << "Score: " << endl;
