@@ -58,7 +58,7 @@ public:
     virtual void calculate(Coordinate &c, const char &player, Board*& curBoard);
     virtual set<Coordinate> availableMoves(const char token, Board *&board1);
     virtual bool isLegal(Coordinate &c) const;
-    virtual void flip(Coordinate &c, const char &player, Board* board1);
+    virtual void flip(Coordinate c, const char &player, Board* board1);
 };
 
 

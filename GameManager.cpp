@@ -81,10 +81,10 @@ void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
         Coordinate position(p->makeTurn(logic, board, printer, availableMoves)); //Get coordinate by player's choose
         row = position.getRow();
         col = position.getCol();
-        if (logic->isLegal(row, col)) { //Check if the move is legal
+        if (logic->isLegal(position)) { //Check if the move is legal
             flag = false;
             board->update(position, p->getToken()); //update this one token
-            logic->flip(row, col, p->getToken(), board); // flip other tokens
+            logic->flip(position, p->getToken(), board); // flip other tokens
         } else {
             printer->massage("Illegal move\n");
         }

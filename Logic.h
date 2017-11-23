@@ -76,7 +76,7 @@ public:
 	* Operation: Flips all the appropriate tokens after the player putted
     * a token.
 	*************************************************************************/
-    virtual void flip(Coordinate &c, const char &player, Board* board1) = 0;
+    virtual void flip(Coordinate c, const char &player, Board* board1) = 0;
 
     /************************************************************************
     * Name: EndTurn

@@ -180,7 +180,7 @@ bool NormalLogic::flipHelper(const char &current, const char &player, bool &hasS
     return true;
 }
 
-void NormalLogic::flip(Coordinate &c, const char &player, Board* b) {
+void NormalLogic::flip(Coordinate c, const char &player, Board* b) {
 
     int row = c.getRow();
     int col = c.getCol();

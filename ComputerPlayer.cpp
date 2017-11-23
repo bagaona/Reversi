@@ -29,7 +29,7 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* b, Printer* printer, se
     for (computerIT=availableMoves.begin(); computerIT!=availableMoves.end(); ++computerIT) { //Run over each move the computer can do
 //        cout << endl << "(" << (*computerIT).getRow() + 1 << "," << (*computerIT).getCol() + 1 << "): " << endl;
         tempBoard->update((*computerIT), sign); //update this one token
-        logic->flip((*computerIT).getRow(), (*computerIT).getCol(), sign, tempBoard); // flip other tokens
+        logic->flip((*computerIT), sign, tempBoard); // flip other tokens
 //        printer->printBoard(tempBoard);
         logic->endTurn(); // erase set
 
@@ -46,13 +46,13 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* b, Printer* printer, se
         for (humanIT=humanMoves.begin(); humanIT!=humanMoves.end(); ++humanIT) { //Run over each move the human can do
             //
             tempBoard->update((*computerIT).getRow(), (*computerIT).getCol(), sign); //update this one token
-            logic->flip((*computerIT).getRow(), (*computerIT).getCol(), sign, tempBoard); // flip other tokens
+            logic->flip((*computerIT), sign, tempBoard); // flip other tokens
             logic->endTurn();
             //
 
 
             tempBoard->update((*humanIT), opponent); //update this one token
-            logic->flip((*humanIT).getRow(), (*humanIT).getCol(), opponent, tempBoard); // flip other tokens
+            logic->flip((*humanIT), opponent, tempBoard); // flip other tokens
 //            printer->printBoard(tempBoard);
             int score = tempBoard->score(opponent);
 //            cout << "(" << (*humanIT).getRow() + 1 << "," << (*humanIT).getCol() + 1 << "): ";

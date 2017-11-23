@@ -2,11 +2,14 @@
 // Created by amir on 25/10/17.
 //
 
-#ifndef UNTITLED_GAMEMANAGER_H
-#define UNTITLED_GAMEMANAGER_H
+#ifndef REVERSI_GAMEMANAGER_H
+#define REVERSI_GAMEMANAGER_H
 #include "Board.h"
 #include "NormalLogic.h"
 #include "Player.h"
+#include "Cell.h"
+#include "Coordinate.h"
+#include "Printer.h"
 
 
 class GameManager {
@@ -94,4 +97,4 @@ public:
 };
 
 
-#endif //UNTITLED_GAMEMANAGER_H
+#endif //REVERSI_GAMEMANAGER_H
