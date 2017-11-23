@@ -25,16 +25,18 @@ GameManager::~GameManager() {
 }
 void GameManager::initialize(const int &size) {
 
+    const char p1Token = 'X';
+    const char p2Token = 'O';
+
     printer = new ConsolePrinter();
 
-    board = new Board(size);
-    board->startMode();
+    board = new Board(size, p1Token, p2Token);
 
     logic = new NormalLogic(board, printer);
 
     players = new Player*[2];
-    players[0] = new HumanPlayer('X');
-    players[1] = new ComputerPlayer('O');
+    players[0] = new HumanPlayer(p1Token);
+    players[1] = new ComputerPlayer(p2Token);
 
 }
 void GameManager::run() {
@@ -42,6 +44,7 @@ void GameManager::run() {
     int turn = 0;
     while(!board->isFull()) {
         playTurn(players[turn]); // play current turn
+
         if (tie == 2) { // if both players cant move
            printer->noMoreMoves();
             break;
@@ -56,7 +59,7 @@ void GameManager::playTurn(Player *&player) {
     const char token = player->getToken();
     printer->yourTurn(token);
 
-    set<Coordinate> availableMoves = logic->legalMoves(token); // Get available moves
+    set<Coordinate> availableMoves = logic->availableMoves(token, board); // Get available moves
 
     if (!availableMoves.empty()) { //Check if there are avaliable moves for the player
         printer->availableMoves(availableMoves); // Print available moves
@@ -68,12 +71,11 @@ void GameManager::playTurn(Player *&player) {
         char pressAnyKey;
         cin >> pressAnyKey; //wait for user to press any key
     }
-
 }
 
 void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
     bool flag = true;
-    int row, col;
+    int row = 0, col = 0;
 
     while (flag) {
         Coordinate position(p->makeTurn(logic, board, printer, availableMoves)); //Get coordinate by player's choose
@@ -81,8 +83,8 @@ void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
         col = position.getCol();
         if (logic->isLegal(row, col)) { //Check if the move is legal
             flag = false;
-            board->update(row, col, p->getToken()); //update this one token
-            logic->flip(row, col, p->getToken()); // flip other tokens
+            board->update(position, p->getToken()); //update this one token
+            logic->flip(row, col, p->getToken(), board); // flip other tokens
         } else {
             printer->massage("Illegal move\n");
         }

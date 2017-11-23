@@ -13,6 +13,16 @@ iostream
 -
 
 /home/amir/CLionProjects/Reversi/Board.h
+Cell.h
+/home/amir/CLionProjects/Reversi/Cell.h
+
+/home/amir/CLionProjects/Reversi/Cell.cpp
+Cell.h
+/home/amir/CLionProjects/Reversi/Cell.h
+
+/home/amir/CLionProjects/Reversi/Cell.h
+Coordinate.h
+/home/amir/CLionProjects/Reversi/Coordinate.h
 
 /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp
 ComputerPlayer.h

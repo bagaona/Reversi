@@ -14,7 +14,7 @@ using namespace std;
 class Player {
 
 protected:
-    const char token;
+    const char sign;
 
 public:
     /************************************************************************
@@ -47,7 +47,7 @@ public:
     * Output: -
     * Operation: Make the turn after the player chooses row and col
     *************************************************************************/
-    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const = 0;
+    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> availableMoves) const = 0;
 };
 
 

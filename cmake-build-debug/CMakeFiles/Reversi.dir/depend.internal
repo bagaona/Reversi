@@ -4,8 +4,15 @@
 CMakeFiles/Reversi.dir/Board.cpp.o
  /home/amir/CLionProjects/Reversi/Board.cpp
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
+ /home/amir/CLionProjects/Reversi/Coordinate.h
+CMakeFiles/Reversi.dir/Cell.cpp.o
+ /home/amir/CLionProjects/Reversi/Cell.cpp
+ /home/amir/CLionProjects/Reversi/Cell.h
+ /home/amir/CLionProjects/Reversi/Coordinate.h
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp
  /home/amir/CLionProjects/Reversi/ComputerPlayer.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
@@ -14,6 +21,7 @@ CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/ConsolePrinter.cpp
  /home/amir/CLionProjects/Reversi/ConsolePrinter.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
@@ -23,6 +31,7 @@ CMakeFiles/Reversi.dir/Coordinate.cpp.o
  /home/amir/CLionProjects/Reversi/Coordinate.h
 CMakeFiles/Reversi.dir/GameManager.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/ComputerPlayer.h
  /home/amir/CLionProjects/Reversi/ConsolePrinter.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
@@ -35,6 +44,7 @@ CMakeFiles/Reversi.dir/GameManager.cpp.o
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/HumanPlayer.cpp
  /home/amir/CLionProjects/Reversi/HumanPlayer.h
@@ -43,12 +53,14 @@ CMakeFiles/Reversi.dir/HumanPlayer.cpp.o
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/Logic.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/Logic.cpp
  /home/amir/CLionProjects/Reversi/Logic.h
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/Logic.h
  /home/amir/CLionProjects/Reversi/NormalLogic.cpp
@@ -56,6 +68,7 @@ CMakeFiles/Reversi.dir/NormalLogic.cpp.o
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/Player.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/Logic.h
  /home/amir/CLionProjects/Reversi/Player.cpp
@@ -63,11 +76,13 @@ CMakeFiles/Reversi.dir/Player.cpp.o
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/Printer.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/Printer.cpp
  /home/amir/CLionProjects/Reversi/Printer.h
 CMakeFiles/Reversi.dir/main.cpp.o
  /home/amir/CLionProjects/Reversi/Board.h
+ /home/amir/CLionProjects/Reversi/Cell.h
  /home/amir/CLionProjects/Reversi/Coordinate.h
  /home/amir/CLionProjects/Reversi/GameManager.h
  /home/amir/CLionProjects/Reversi/Logic.h

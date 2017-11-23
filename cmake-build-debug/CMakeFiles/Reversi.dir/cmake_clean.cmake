@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Reversi.dir/main.cpp.o"
   "CMakeFiles/Reversi.dir/Board.cpp.o"
+  "CMakeFiles/Reversi.dir/Cell.cpp.o"
   "CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o"
   "CMakeFiles/Reversi.dir/GameManager.cpp.o"
   "CMakeFiles/Reversi.dir/HumanPlayer.cpp.o"

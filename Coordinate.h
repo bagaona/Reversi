@@ -2,8 +2,8 @@
 // Created by or on 02/11/17.
 //
 
-#ifndef EX2_COORDINATE_H
-#define EX2_COORDINATE_H
+#ifndef REVERSI_COORDINATE_H
+#define REVERSI_COORDINATE_H
 
 
 class Coordinate {

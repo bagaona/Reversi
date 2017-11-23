@@ -38,8 +38,8 @@ public:
      * &sawOther and &need_update when other player's char appear and when
      * ' ' appears.
      *************************************************************************/
-    bool helper(const char &current, const char &player,
-                const char &other, bool &sawOther, bool &need_update) const;
+    bool shouldStop(const char &current, const char &player,
+                    const char &other, bool &sawOther, bool &need_update) const;
 
     /************************************************************************
       * Name: flipHelper
@@ -52,11 +52,13 @@ public:
       *************************************************************************/
     bool flipHelper(const char &current, const char &player, bool &hasSame) const;
 
+    void setAvailableMoves(set<Coordinate> &availableMoves);
+
     //All of the other funcs were described in Logic class
-    virtual void calculate(const int &row, const int &col, const char &player);
-    virtual set<Coordinate> legalMoves(const char token);
-    virtual bool isLegal(const int &row, const int &col) const;
-    virtual void flip(const int &row, const int &col, const char &player);
+    virtual void calculate(Coordinate &c, const char &player, Board*& curBoard);
+    virtual set<Coordinate> availableMoves(const char token, Board *&board1);
+    virtual bool isLegal(Coordinate &c) const;
+    virtual void flip(Coordinate &c, const char &player, Board* board1);
 };
 
 

@@ -43,7 +43,7 @@ public:
 	* Output: -
 	* Operation: Calculates the possible moves for spesific cell
 	*************************************************************************/
-    virtual void calculate(const int &row, const int &col, const char &player) = 0;
+    virtual void calculate(Coordinate &c, const char &player, Board*& board1) = 0;
 
     /************************************************************************
 	* Name: CalculateAll
@@ -51,23 +51,23 @@ public:
 	* Output: -
 	* Operation: Calculates the whole possible moves for a player
 	*************************************************************************/
-    virtual void calculateAll(const char &player);
+    virtual void calculateAll(const char &player, Board*& board1);
 
     /************************************************************************
-	* Name: LegalMoves
+	* Name: availableMoves
 	* Input: -
 	* Output: -
 	* Operation: Calculate and print the legal moves for a player, if any.
 	*************************************************************************/
-    virtual set<Coordinate> legalMoves(const char token) = 0;
+    virtual set<Coordinate> availableMoves(const char token, Board *&board1) = 0;
 
     /************************************************************************
 	* Name: IsLegal
-	* Input: row and col - input from the player for a move
+	* Input: Coordinate &c - input from the player for a move
 	* Output: -
 	* Operation: Returns if the input for the move is legal
 	*************************************************************************/
-    virtual bool isLegal(const int &row, const int &col) const = 0;
+    virtual bool isLegal(Coordinate &c) const = 0;
 
     /************************************************************************
 	* Name: Flip
@@ -76,7 +76,7 @@ public:
 	* Operation: Flips all the appropriate tokens after the player putted
     * a token.
 	*************************************************************************/
-    virtual void flip(const int &row, const int &col, const char &player) = 0;
+    virtual void flip(Coordinate &c, const char &player, Board* board1) = 0;
 
     /************************************************************************
     * Name: EndTurn
@@ -85,6 +85,7 @@ public:
     * Operation: Clears the temp board for a new use
     *************************************************************************/
     virtual void endTurn();
+    virtual void setAvailableMoves(set<Coordinate> &availableMoves) = 0;
 };
 
 

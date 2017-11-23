@@ -16,7 +16,7 @@ Logic::Logic(Board*& b, Printer*& p) {
     canMove.insert(3);
     canMove.insert(3);
     canMove.insert(4);
-    for (it=canMove.begin(); it!=canMove.end(); ++it)
+    fdor (it=canMove.begin(); it!=canMove.end(); ++it)
         std::cout << ' ' << *it;
     std::cout << '\n';
      */
@@ -26,11 +26,13 @@ Logic::~Logic() {
   //  delete (temp_board);
 }
 
-void Logic::calculateAll(const char &player) {
-    for (int row = 0; row < board->getSize(); row++) {
-        for (int col = 0; col < board->getSize(); col++) {
-            if (board->getValue(row, col) == player) {
-                calculate(row, col, player);
+void Logic::calculateAll(const char &player, Board*& board1) {
+    for (int row = 0; row < board1->getSize(); row++) {
+        for (int col = 0; col < board1->getSize(); col++) {
+            if (board1->getValue(row, col) == player) {
+                Coordinate coordinate(row,col);
+           //     cout << endl << "Found!!!! ROW: " << row +1 << "COL: " << col +1 << endl;
+                calculate(coordinate, player, board1);
             }
         }
     }

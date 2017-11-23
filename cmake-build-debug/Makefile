@@ -150,6 +150,33 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Cell.o: Cell.cpp.o
+
+.PHONY : Cell.o
+
+# target to build an object file
+Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.o
+.PHONY : Cell.cpp.o
+
+Cell.i: Cell.cpp.i
+
+.PHONY : Cell.i
+
+# target to preprocess a source file
+Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.i
+.PHONY : Cell.cpp.i
+
+Cell.s: Cell.cpp.s
+
+.PHONY : Cell.s
+
+# target to generate assembly for a file
+Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.s
+.PHONY : Cell.cpp.s
+
 ComputerPlayer.o: ComputerPlayer.cpp.o
 
 .PHONY : ComputerPlayer.o
@@ -432,6 +459,9 @@ help:
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
+	@echo "... Cell.o"
+	@echo "... Cell.i"
+	@echo "... Cell.s"
 	@echo "... ComputerPlayer.o"
 	@echo "... ComputerPlayer.i"
 	@echo "... ComputerPlayer.s"

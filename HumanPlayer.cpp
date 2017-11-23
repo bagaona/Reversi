@@ -10,7 +10,7 @@ using namespace std;
 }
 HumanPlayer::~HumanPlayer() {
 }
-Coordinate HumanPlayer::makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const{
+Coordinate HumanPlayer::makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> availableMoves) const{
     int row, col;
     printer->massage("\nEnter Row: ");
     cin >> row;

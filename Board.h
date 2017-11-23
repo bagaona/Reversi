@@ -2,11 +2,14 @@
 #ifndef REVERSI_BOARD_H
 #define REVERSI_BOARD_H
 
+#include "Cell.h"
+
 class Board {
 private:
-    char** board; // The board
+    Cell*** board; // The board
     const int size; //The board's size
-
+    const char p1Token;
+    const char p2Token;
 public:
     /*************************************************************************
     * Name: Board (Constructor)
@@ -14,10 +17,10 @@ public:
     * Output: -
     * Operation: The function build a board with the size from input
     *************************************************************************/
-    Board(const int &size);
+    Board(const int &size, const char &p1Token, const char &p2Token);
 
     //Copy constructor
-    Board(Board* b);
+    Board(Board*& b);
 
     /*************************************************************************
     * Name: ~Board (Destructor)
@@ -52,6 +55,8 @@ public:
     *************************************************************************/
     void update(const int &row, const int &col, const char &player) const;
 
+    void update(Coordinate c, const char &player) const;
+
     /*************************************************************************
     * Name: GetSize
     * Input: -
@@ -69,11 +74,11 @@ public:
 
     /*************************************************************************
     * Name: StartMode
-    * Input: -
+    * Input: players tokens
     * Output: -
     * Operation: Set the board as the start of the game (4 tokens on middle)
     *************************************************************************/
-    void startMode() const;
+    void startMode(const char &p1Token,const char &p2Token) const;
 
     /*************************************************************************
     * Name: Clear
@@ -91,10 +96,15 @@ public:
     *************************************************************************/
     bool isFull() const;
 
-    char** getCopy() const{
+    Cell*** getBoard() const{
         return board;
     }
-    void copyFromBoard(Board* b);
+    void copyBoard(Board *& b1);
+    int score(char player);
+    const char getp1();
+    const char getp2();
+    const char getOpponent(const char x);
+
 };
 
 

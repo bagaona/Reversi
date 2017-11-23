@@ -3,8 +3,15 @@
 
 CMakeFiles/Reversi.dir/Board.cpp.o: ../Board.cpp
 CMakeFiles/Reversi.dir/Board.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/Board.cpp.o: ../Cell.h
+CMakeFiles/Reversi.dir/Board.cpp.o: ../Coordinate.h
+
+CMakeFiles/Reversi.dir/Cell.cpp.o: ../Cell.cpp
+CMakeFiles/Reversi.dir/Cell.cpp.o: ../Cell.h
+CMakeFiles/Reversi.dir/Cell.cpp.o: ../Coordinate.h
 
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../ComputerPlayer.cpp
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../ComputerPlayer.h
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../Coordinate.h
@@ -13,6 +20,7 @@ CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../Player.h
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../ConsolePrinter.cpp
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../ConsolePrinter.h
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../Coordinate.h
@@ -22,6 +30,7 @@ CMakeFiles/Reversi.dir/Coordinate.cpp.o: ../Coordinate.cpp
 CMakeFiles/Reversi.dir/Coordinate.cpp.o: ../Coordinate.h
 
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/GameManager.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../ComputerPlayer.h
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../ConsolePrinter.h
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../Coordinate.h
@@ -34,6 +43,7 @@ CMakeFiles/Reversi.dir/GameManager.cpp.o: ../Player.h
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../HumanPlayer.cpp
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../HumanPlayer.h
@@ -42,12 +52,14 @@ CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../Player.h
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/Logic.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Logic.cpp
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Logic.h
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../Logic.h
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../NormalLogic.cpp
@@ -55,6 +67,7 @@ CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../NormalLogic.h
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/Player.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Logic.h
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Player.cpp
@@ -62,11 +75,13 @@ CMakeFiles/Reversi.dir/Player.cpp.o: ../Player.h
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/Printer.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/Printer.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/Printer.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/Printer.cpp.o: ../Printer.cpp
 CMakeFiles/Reversi.dir/Printer.cpp.o: ../Printer.h
 
 CMakeFiles/Reversi.dir/main.cpp.o: ../Board.h
+CMakeFiles/Reversi.dir/main.cpp.o: ../Cell.h
 CMakeFiles/Reversi.dir/main.cpp.o: ../Coordinate.h
 CMakeFiles/Reversi.dir/main.cpp.o: ../GameManager.h
 CMakeFiles/Reversi.dir/main.cpp.o: ../Logic.h

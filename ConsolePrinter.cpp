@@ -20,7 +20,7 @@ void ConsolePrinter::printBoard(Board *& board) const{
         int row = x + 1;
         cout << row;
         for(int y = 0;y < size;y++) {
-            cout << " | " << board->getCopy()[x][y];
+            cout << " | " << board->getBoard()[x][y]->getSign();
         }
         cout << " |" << endl;
         //Prints the line below

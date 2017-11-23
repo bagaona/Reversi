@@ -90,6 +90,12 @@
 		<Unit filename="/home/amir/CLionProjects/Reversi/Board.h">
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/Cell.cpp">
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/Cell.h">
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/ComputerPlayer.cpp">
 			<Option target="Reversi"/>
 		</Unit>

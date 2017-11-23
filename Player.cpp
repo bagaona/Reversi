@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Player::Player(const char t) : token(t) {
+Player::Player(const char t) : sign(t) {
 }
 Player::~Player() {
 }
 char Player::getToken() {
-    return token;
+    return sign;
 }

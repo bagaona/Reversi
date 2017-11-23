@@ -30,7 +30,7 @@ public:
     * Output: -
     * Operation: Gets a row and a col from the human player and makes a move
     *************************************************************************/
-    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> &availableMoves) const;
+    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> availableMoves) const;
 };
 
 
