@@ -56,16 +56,51 @@ CMAKE_BINARY_DIR = /home/amir/CLionProjects/Reversi/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +112,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TestGame
+
+# Build rule for target.
+TestGame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestGame
+.PHONY : TestGame
+
+# fast build rule for target.
+TestGame/fast:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/build
+.PHONY : TestGame/fast
+
+#=============================================================================
 # Target rules for targets named Reversi
 
 # Build rule for target.
@@ -123,12 +182,65 @@ Reversi/fast:
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/build
 .PHONY : Reversi/fast
 
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
 Board.o: Board.cpp.o
 
 .PHONY : Board.o
 
 # target to build an object file
 Board.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.o
 .PHONY : Board.cpp.o
 
@@ -138,6 +250,7 @@ Board.i: Board.cpp.i
 
 # target to preprocess a source file
 Board.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.i
 .PHONY : Board.cpp.i
 
@@ -147,6 +260,7 @@ Board.s: Board.cpp.s
 
 # target to generate assembly for a file
 Board.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
@@ -156,6 +270,7 @@ Cell.o: Cell.cpp.o
 
 # target to build an object file
 Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.o
 .PHONY : Cell.cpp.o
 
@@ -165,6 +280,7 @@ Cell.i: Cell.cpp.i
 
 # target to preprocess a source file
 Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.i
 .PHONY : Cell.cpp.i
 
@@ -174,6 +290,7 @@ Cell.s: Cell.cpp.s
 
 # target to generate assembly for a file
 Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.s
 .PHONY : Cell.cpp.s
 
@@ -183,6 +300,7 @@ ComputerPlayer.o: ComputerPlayer.cpp.o
 
 # target to build an object file
 ComputerPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o
 .PHONY : ComputerPlayer.cpp.o
 
@@ -192,6 +310,7 @@ ComputerPlayer.i: ComputerPlayer.cpp.i
 
 # target to preprocess a source file
 ComputerPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i
 .PHONY : ComputerPlayer.cpp.i
 
@@ -201,6 +320,7 @@ ComputerPlayer.s: ComputerPlayer.cpp.s
 
 # target to generate assembly for a file
 ComputerPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s
 .PHONY : ComputerPlayer.cpp.s
 
@@ -210,6 +330,7 @@ ConsolePrinter.o: ConsolePrinter.cpp.o
 
 # target to build an object file
 ConsolePrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o
 .PHONY : ConsolePrinter.cpp.o
 
@@ -219,6 +340,7 @@ ConsolePrinter.i: ConsolePrinter.cpp.i
 
 # target to preprocess a source file
 ConsolePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i
 .PHONY : ConsolePrinter.cpp.i
 
@@ -228,6 +350,7 @@ ConsolePrinter.s: ConsolePrinter.cpp.s
 
 # target to generate assembly for a file
 ConsolePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s
 .PHONY : ConsolePrinter.cpp.s
 
@@ -237,6 +360,7 @@ Coordinate.o: Coordinate.cpp.o
 
 # target to build an object file
 Coordinate.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.o
 .PHONY : Coordinate.cpp.o
 
@@ -246,6 +370,7 @@ Coordinate.i: Coordinate.cpp.i
 
 # target to preprocess a source file
 Coordinate.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.i
 .PHONY : Coordinate.cpp.i
 
@@ -255,6 +380,7 @@ Coordinate.s: Coordinate.cpp.s
 
 # target to generate assembly for a file
 Coordinate.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.s
 .PHONY : Coordinate.cpp.s
 
@@ -264,6 +390,7 @@ GameManager.o: GameManager.cpp.o
 
 # target to build an object file
 GameManager.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.o
 .PHONY : GameManager.cpp.o
 
@@ -273,6 +400,7 @@ GameManager.i: GameManager.cpp.i
 
 # target to preprocess a source file
 GameManager.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.i
 .PHONY : GameManager.cpp.i
 
@@ -282,6 +410,7 @@ GameManager.s: GameManager.cpp.s
 
 # target to generate assembly for a file
 GameManager.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.s
 .PHONY : GameManager.cpp.s
 
@@ -291,6 +420,7 @@ HumanPlayer.o: HumanPlayer.cpp.o
 
 # target to build an object file
 HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.o
 .PHONY : HumanPlayer.cpp.o
 
@@ -300,6 +430,7 @@ HumanPlayer.i: HumanPlayer.cpp.i
 
 # target to preprocess a source file
 HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.i
 .PHONY : HumanPlayer.cpp.i
 
@@ -309,6 +440,7 @@ HumanPlayer.s: HumanPlayer.cpp.s
 
 # target to generate assembly for a file
 HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.s
 .PHONY : HumanPlayer.cpp.s
 
@@ -318,6 +450,7 @@ Logic.o: Logic.cpp.o
 
 # target to build an object file
 Logic.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.o
 .PHONY : Logic.cpp.o
 
@@ -327,6 +460,7 @@ Logic.i: Logic.cpp.i
 
 # target to preprocess a source file
 Logic.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.i
 .PHONY : Logic.cpp.i
 
@@ -336,6 +470,7 @@ Logic.s: Logic.cpp.s
 
 # target to generate assembly for a file
 Logic.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.s
 .PHONY : Logic.cpp.s
 
@@ -345,6 +480,7 @@ NormalLogic.o: NormalLogic.cpp.o
 
 # target to build an object file
 NormalLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.o
 .PHONY : NormalLogic.cpp.o
 
@@ -354,6 +490,7 @@ NormalLogic.i: NormalLogic.cpp.i
 
 # target to preprocess a source file
 NormalLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.i
 .PHONY : NormalLogic.cpp.i
 
@@ -363,6 +500,7 @@ NormalLogic.s: NormalLogic.cpp.s
 
 # target to generate assembly for a file
 NormalLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.s
 .PHONY : NormalLogic.cpp.s
 
@@ -372,6 +510,7 @@ Player.o: Player.cpp.o
 
 # target to build an object file
 Player.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.o
 .PHONY : Player.cpp.o
 
@@ -381,6 +520,7 @@ Player.i: Player.cpp.i
 
 # target to preprocess a source file
 Player.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.i
 .PHONY : Player.cpp.i
 
@@ -390,6 +530,7 @@ Player.s: Player.cpp.s
 
 # target to generate assembly for a file
 Player.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
@@ -399,6 +540,7 @@ Printer.o: Printer.cpp.o
 
 # target to build an object file
 Printer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.o
 .PHONY : Printer.cpp.o
 
@@ -408,6 +550,7 @@ Printer.i: Printer.cpp.i
 
 # target to preprocess a source file
 Printer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.i
 .PHONY : Printer.cpp.i
 
@@ -417,6 +560,7 @@ Printer.s: Printer.cpp.s
 
 # target to generate assembly for a file
 Printer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.s
 .PHONY : Printer.cpp.s
 
@@ -426,6 +570,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -435,6 +580,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -444,8 +590,144 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+tests/main_test.o: tests/main_test.cpp.o
+
+.PHONY : tests/main_test.o
+
+# target to build an object file
+tests/main_test.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/main_test.cpp.o
+.PHONY : tests/main_test.cpp.o
+
+tests/main_test.i: tests/main_test.cpp.i
+
+.PHONY : tests/main_test.i
+
+# target to preprocess a source file
+tests/main_test.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/main_test.cpp.i
+.PHONY : tests/main_test.cpp.i
+
+tests/main_test.s: tests/main_test.cpp.s
+
+.PHONY : tests/main_test.s
+
+# target to generate assembly for a file
+tests/main_test.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/main_test.cpp.s
+.PHONY : tests/main_test.cpp.s
+
+tests/test_Board.o: tests/test_Board.cpp.o
+
+.PHONY : tests/test_Board.o
+
+# target to build an object file
+tests/test_Board.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Board.cpp.o
+.PHONY : tests/test_Board.cpp.o
+
+tests/test_Board.i: tests/test_Board.cpp.i
+
+.PHONY : tests/test_Board.i
+
+# target to preprocess a source file
+tests/test_Board.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Board.cpp.i
+.PHONY : tests/test_Board.cpp.i
+
+tests/test_Board.s: tests/test_Board.cpp.s
+
+.PHONY : tests/test_Board.s
+
+# target to generate assembly for a file
+tests/test_Board.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Board.cpp.s
+.PHONY : tests/test_Board.cpp.s
+
+tests/test_ComputerPlayer.o: tests/test_ComputerPlayer.cpp.o
+
+.PHONY : tests/test_ComputerPlayer.o
+
+# target to build an object file
+tests/test_ComputerPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o
+.PHONY : tests/test_ComputerPlayer.cpp.o
+
+tests/test_ComputerPlayer.i: tests/test_ComputerPlayer.cpp.i
+
+.PHONY : tests/test_ComputerPlayer.i
+
+# target to preprocess a source file
+tests/test_ComputerPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.i
+.PHONY : tests/test_ComputerPlayer.cpp.i
+
+tests/test_ComputerPlayer.s: tests/test_ComputerPlayer.cpp.s
+
+.PHONY : tests/test_ComputerPlayer.s
+
+# target to generate assembly for a file
+tests/test_ComputerPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.s
+.PHONY : tests/test_ComputerPlayer.cpp.s
+
+tests/test_Coordinate.o: tests/test_Coordinate.cpp.o
+
+.PHONY : tests/test_Coordinate.o
+
+# target to build an object file
+tests/test_Coordinate.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o
+.PHONY : tests/test_Coordinate.cpp.o
+
+tests/test_Coordinate.i: tests/test_Coordinate.cpp.i
+
+.PHONY : tests/test_Coordinate.i
+
+# target to preprocess a source file
+tests/test_Coordinate.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.i
+.PHONY : tests/test_Coordinate.cpp.i
+
+tests/test_Coordinate.s: tests/test_Coordinate.cpp.s
+
+.PHONY : tests/test_Coordinate.s
+
+# target to generate assembly for a file
+tests/test_Coordinate.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.s
+.PHONY : tests/test_Coordinate.cpp.s
+
+tests/test_NormalLogic.o: tests/test_NormalLogic.cpp.o
+
+.PHONY : tests/test_NormalLogic.o
+
+# target to build an object file
+tests/test_NormalLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o
+.PHONY : tests/test_NormalLogic.cpp.o
+
+tests/test_NormalLogic.i: tests/test_NormalLogic.cpp.i
+
+.PHONY : tests/test_NormalLogic.i
+
+# target to preprocess a source file
+tests/test_NormalLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.i
+.PHONY : tests/test_NormalLogic.cpp.i
+
+tests/test_NormalLogic.s: tests/test_NormalLogic.cpp.s
+
+.PHONY : tests/test_NormalLogic.s
+
+# target to generate assembly for a file
+tests/test_NormalLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.s
+.PHONY : tests/test_NormalLogic.cpp.s
 
 # Help Target
 help:
@@ -453,9 +735,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... TestGame"
 	@echo "... Reversi"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
@@ -492,6 +783,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/main_test.o"
+	@echo "... tests/main_test.i"
+	@echo "... tests/main_test.s"
+	@echo "... tests/test_Board.o"
+	@echo "... tests/test_Board.i"
+	@echo "... tests/test_Board.s"
+	@echo "... tests/test_ComputerPlayer.o"
+	@echo "... tests/test_ComputerPlayer.i"
+	@echo "... tests/test_ComputerPlayer.s"
+	@echo "... tests/test_Coordinate.o"
+	@echo "... tests/test_Coordinate.i"
+	@echo "... tests/test_Coordinate.s"
+	@echo "... tests/test_NormalLogic.o"
+	@echo "... tests/test_NormalLogic.i"
+	@echo "... tests/test_NormalLogic.s"
 .PHONY : help
 
 

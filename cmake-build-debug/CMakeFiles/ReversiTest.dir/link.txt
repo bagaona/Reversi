@@ -1,0 +1,1 @@
+/usr/bin/c++  -g     -o ReversiTest lib/google_tests/googlemock/gtest/libgtestd.a lib/google_tests/googlemock/gtest/libgtest_maind.a lib/google_tests/googlemock/gtest/libgtestd.a -pthread 
