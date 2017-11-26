@@ -10,75 +10,62 @@ ComputerPlayer::ComputerPlayer(const char t): Player(t) {
 }
 ComputerPlayer::~ComputerPlayer() {
 }
-Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* b, Printer* printer, set<Coordinate> availableMoves) const{
+Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer* printer,
+                                    set<Coordinate> availableMoves) const{
 
-    //ברגע שמוחקים את קן-מוב, אז הוא נחשב כמהלך לא חוקי. הפתרון יהיה לשלוח לאיז-ליגל סט מסוים ולהעביר אותו הלאה, עד שנחזירו בקליולייט
-
-    Board* tempBoard = new Board(b);
+    printer->massage("\nComputer thinking...\n");
+    Board* tempBoard = new Board(originalBoard);
     set<Coordinate> backUp = availableMoves;
-    char opponent = b->getOpponent(sign);
+    char opponent = originalBoard->getOpponent(sign);
+    logic->setCurrentBoard(tempBoard);
 
-
-    int maxScore = b->getSize() * b->getSize() * (-1);
-    int row, col, minRow, minCol;
-    col = minRow = minCol = row = -1;
-    int minMaxScore = b->getSize() * b->getSize();
+    int minRow, minCol;
+    minRow = minCol-1;
+    int minMaxScore = originalBoard->getSize() * originalBoard->getSize() + 1;
 
 
     std::set<Coordinate>::iterator computerIT;
-    for (computerIT=availableMoves.begin(); computerIT!=availableMoves.end(); ++computerIT) { //Run over each move the computer can do
-//        cout << endl << "(" << (*computerIT).getRow() + 1 << "," << (*computerIT).getCol() + 1 << "): " << endl;
+    //Run over each move the computer can do
+    for (computerIT=availableMoves.begin(); computerIT!=availableMoves.end(); ++computerIT) {
+        int maxScore = originalBoard->getSize() * originalBoard->getSize() * (-1) - 1;
+      //  cout << "\n ComputerMove: (" << (*computerIT).getRow() + 1 << "," << (*computerIT).getCol() + 1<< "): \n";
         tempBoard->update((*computerIT), sign); //update this one token
-        logic->flip((*computerIT), sign, tempBoard); // flip other tokens
-//        printer->printBoard(tempBoard);
+        logic->flip((*computerIT), sign); // flip other tokens
         logic->endTurn(); // erase set
 
-        set<Coordinate> humanMoves = logic->availableMoves(opponent, tempBoard);
+        set<Coordinate> humanMoves = logic->availableMoves(opponent);
         if (humanMoves.empty()) {
-            printer->cantMove();
-            logic->setAvailableMoves(backUp);
-            delete(tempBoard);
-            return (*computerIT);
+            printer->printBoard(tempBoard);
+            maxScore = tempBoard->score(opponent);
         }
-//        printer->availableMoves(humanMoves);
-//
+
         std::set<Coordinate>::iterator humanIT;
         for (humanIT=humanMoves.begin(); humanIT!=humanMoves.end(); ++humanIT) { //Run over each move the human can do
-            //
-            tempBoard->update((*computerIT).getRow(), (*computerIT).getCol(), sign); //update this one token
-            logic->flip((*computerIT), sign, tempBoard); // flip other tokens
+            tempBoard->update((*computerIT), sign); //update this one token
+            logic->flip((*computerIT), sign); // flip other tokens
             logic->endTurn();
-            //
-
-
             tempBoard->update((*humanIT), opponent); //update this one token
-            logic->flip((*humanIT), opponent, tempBoard); // flip other tokens
-//            printer->printBoard(tempBoard);
+            logic->flip((*humanIT), opponent); // flip other tokens
             int score = tempBoard->score(opponent);
-//            cout << "(" << (*humanIT).getRow() + 1 << "," << (*humanIT).getCol() + 1 << "): ";
-//            cout << "Score: " << score << endl;
             if (score > maxScore) {
                 maxScore = score;
-
-                //take the coordianate of the computer player
-                row = (*computerIT).getRow();
-                col = (*computerIT).getCol();
-                //cout << endl << "ROW: " << row << "COL: " << col << endl;
             }
-            tempBoard->copyBoard(b);
+        //    cout << " (" << (*humanIT).getRow() + 1 << "," << (*humanIT).getCol() + 1 << ") - " << score << "\n";
+            //printer->printBoard(tempBoard);
         }
-        cout << "MaxScore: " << maxScore << endl;
+
         if (maxScore < minMaxScore) {
             minMaxScore = maxScore;
-            minRow = row;
-            minCol = col;
+            //take the coordianate of the computer player
+            minRow = (*computerIT).getRow();
+            minCol = (*computerIT).getCol();
         }
+       // cout << "Max Score: " << maxScore << endl;
+        tempBoard->copyBoard(originalBoard);
     }
-
+//cout << "\nminMax: " << minMaxScore << endl;
     logic->setAvailableMoves(backUp);
+    logic->setCurrentBoard(originalBoard);
     delete(tempBoard);
-    cout << endl << endl;
-    printer->printBoard(b);
-    cout << endl << "ROW: " << minRow << "COL: " << minCol<< endl;
 return Coordinate(minRow ,minCol);
 }

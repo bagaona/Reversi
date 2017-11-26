@@ -18,6 +18,7 @@ public:
     virtual void yourTurn(const char &player) const;
     virtual void winner(const char &p1, const char &p2, const int &score1,
                         const int &score2) const;
+    virtual void playingMove(Coordinate &c);
 };
 
 

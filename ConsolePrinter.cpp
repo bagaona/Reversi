@@ -72,3 +72,6 @@ void ConsolePrinter::winner(const char &p1, const char &p2, const int &score1,
         }
     }
 }
+void ConsolePrinter::playingMove(Coordinate &c) {
+    cout << "Playing: (" << c.getRow() + 1<< "," << c.getCol() + 1 << ")\n" << endl;
+}

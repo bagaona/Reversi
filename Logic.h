@@ -17,8 +17,6 @@ class Logic {
 protected:
     Board* board; // The Board
     int size; // The size of the board
-  //  Board* temp_board; // Board that helps calculating moves
-    Printer* printer;
     set<Coordinate> canMove;
 public:
     /************************************************************************
@@ -27,7 +25,7 @@ public:
 	* Output: -
 	* Operation: Initialize the logic (rules) calculation of the game
 	*************************************************************************/
-    Logic(Board*& b, Printer*&);
+    Logic(Board*& b);
 
     /************************************************************************
     * Name: ~Logic (Destructor)
@@ -43,7 +41,7 @@ public:
 	* Output: -
 	* Operation: Calculates the possible moves for spesific cell
 	*************************************************************************/
-    virtual void calculate(Coordinate &c, const char &player, Board*& board1) = 0;
+    virtual void calculate(Coordinate &c, const char &player) = 0;
 
     /************************************************************************
 	* Name: CalculateAll
@@ -51,7 +49,7 @@ public:
 	* Output: -
 	* Operation: Calculates the whole possible moves for a player
 	*************************************************************************/
-    virtual void calculateAll(const char &player, Board*& board1);
+    virtual void calculateAll(const char &player1);
 
     /************************************************************************
 	* Name: availableMoves
@@ -59,7 +57,7 @@ public:
 	* Output: -
 	* Operation: Calculate and print the legal moves for a player, if any.
 	*************************************************************************/
-    virtual set<Coordinate> availableMoves(const char token, Board *&board1) = 0;
+    virtual set<Coordinate> availableMoves(const char token) = 0;
 
     /************************************************************************
 	* Name: IsLegal
@@ -76,7 +74,7 @@ public:
 	* Operation: Flips all the appropriate tokens after the player putted
     * a token.
 	*************************************************************************/
-    virtual void flip(Coordinate c, const char &player, Board* board1) = 0;
+    virtual void flip(Coordinate c, const char &player) = 0;
 
     /************************************************************************
     * Name: EndTurn
@@ -86,6 +84,7 @@ public:
     *************************************************************************/
     virtual void endTurn();
     virtual void setAvailableMoves(set<Coordinate> &availableMoves) = 0;
+    virtual void setCurrentBoard(Board *& b) = 0;
 };
 
 

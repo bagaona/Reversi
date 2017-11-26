@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 using namespace std;
-NormalLogic::NormalLogic(Board*& b, Printer*& p): Logic(b, p) {
+NormalLogic::NormalLogic(Board*& b): Logic(b) {
 
 }
 NormalLogic::~NormalLogic() {
@@ -27,24 +27,18 @@ bool NormalLogic::shouldStop(const char &current, const char &player,
     //In case of ' ' or player's char
     return true;
 }
-void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard) {
+void NormalLogic::calculate(Coordinate &c, const char &player) {
     int row = c.getRow();
     int col = c.getCol();
-
-
     char current;
-    char other = curBoard->getOpponent(player);
-    //cout << other;
-   // cout << endl << endl<< endl<< endl;
-   // printer->printBoard(curBoard);
-   // cout << endl << endl<< endl<< endl;
-
+    char other = board->getOpponent(player);
     bool sawOther = false;
     bool need_update = false;
+
     //Down
     int i;
     for (i = row + 1; i < size; i ++) {
-        current = curBoard->getValue(i, col);
+        current = board->getValue(i, col);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -53,12 +47,11 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
         canMove.insert(Coordinate(i, col));
     }
 
-
     //Right
     sawOther = need_update = false;
 
     for (i = col + 1; i < size; i ++) {
-        current = curBoard->getValue(row, i);
+        current = board->getValue(row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -71,7 +64,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = col - 1; i >= 0; i--) {
-        current = curBoard->getValue(row, i);
+        current = board->getValue(row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -84,7 +77,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = row - 1; i  >= 0; i --) {
-        current = curBoard->getValue(i, col);
+        current = board->getValue(i, col);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -98,7 +91,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = col + 1; i < size && temp_row < size; i++, temp_row++) {
-        current = curBoard->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -112,7 +105,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = col + 1; i < size && temp_row >= 0; i++, temp_row--) {
-        current = curBoard->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -125,7 +118,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = col - 1; i >= 0 && temp_row >= 0; i--, temp_row--) {
-        current = curBoard->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -139,7 +132,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     sawOther = need_update = false;
 
     for (i = col - 1; i >= 0 && temp_row < size; i--, temp_row++) {
-        current = curBoard->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (shouldStop(current, player, other, sawOther, need_update)) {
             break;
         }
@@ -149,8 +142,8 @@ void NormalLogic::calculate(Coordinate &c, const char &player, Board*& curBoard)
     }
 }
 
-set<Coordinate> NormalLogic::availableMoves(const char token, Board *&board1){
-    calculateAll(token, board1);
+set<Coordinate> NormalLogic::availableMoves(const char token){
+    calculateAll(token);
     return canMove;
 }
 bool NormalLogic::isLegal(Coordinate &c) const{
@@ -180,7 +173,7 @@ bool NormalLogic::flipHelper(const char &current, const char &player, bool &hasS
     return true;
 }
 
-void NormalLogic::flip(Coordinate c, const char &player, Board* b) {
+void NormalLogic::flip(Coordinate c, const char &player) {
 
     int row = c.getRow();
     int col = c.getCol();
@@ -191,55 +184,55 @@ void NormalLogic::flip(Coordinate c, const char &player, Board* b) {
 
     //Right
     for (i = col + 1; i < size; i++) {
-        current = b->getValue(row, i);
+        current = board->getValue(row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (int j = col + 1; j <= i; j++) {
-            b->update(row, j, player);
+            board->update(row, j, player);
         }
     }
 
     //Left
     hasSame = false;
     for (i = col - 1; i >= 0; i--) {
-        current = b->getValue(row, i);
+        current = board->getValue(row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (int j = col - 1; j >= i; j--) {
-            b->update(row, j, player);
+            board->update(row, j, player);
         }
     }
     //Down
     hasSame = false;
     for (i = row + 1; i < size; i++) {
-        current = b->getValue(i, col);
+        current = board->getValue(i, col);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (int j = row + 1; j <= i; j++) {
-            b->update(j, col, player);
+            board->update(j, col, player);
         }
     }
 
     //Up
     hasSame = false;
     for (i = row - 1; i >= 0; i--) {
-        current = b->getValue(i, col);
+        current = board->getValue(i, col);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (int j = row - 1; j >= i; j--) {
-            b->update(j, col, player);
+            board->update(j, col, player);
         }
     }
 
@@ -247,56 +240,56 @@ void NormalLogic::flip(Coordinate c, const char &player, Board* b) {
     int temp_row;
     hasSame = false;
     for (i = col + 1, temp_row = row + 1; i < size && temp_row < size; i++, temp_row++) {
-        current = b->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (j = col + 1, k = row + 1; j <= i, k <= temp_row; j++, k++) {
-            b->update(k, j, player);
+            board->update(k, j, player);
         }
     }
 
     //Up-Right
     hasSame = false;
     for (i = col + 1, temp_row = row - 1; i < size && temp_row >= 0; i++, temp_row--) {
-        current = b->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (j = col + 1, k = row - 1; j <= i, k >= temp_row; j++, k--) {
-            b->update(k, j, player);
+            board->update(k, j, player);
         }
     }
 
     //Up-Left
     hasSame = false;
     for (i = col - 1, temp_row = row - 1; i >= 0 && temp_row >= 0; i--, temp_row--) {
-        current = b->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (j = col - 1, k = row - 1; j >= i, k >= temp_row; j--, k--) {
-            b->update(k, j, player);
+            board->update(k, j, player);
         }
     }
 
     //Down-Left
     hasSame = false;
     for (i = col - 1, temp_row = row + 1; i >= 0 && temp_row < size; i--, temp_row++) {
-        current = b->getValue(temp_row, i);
+        current = board->getValue(temp_row, i);
         if (flipHelper(current, player, hasSame)) {
             break;
         }
     }
     if (hasSame) {
         for (j = col - 1, k = row + 1; j >= i, k <= temp_row; j--, k++) {
-            b->update(k, j, player);
+            board->update(k, j, player);
         }
     }
 }
@@ -305,19 +298,7 @@ void NormalLogic::setAvailableMoves(set<Coordinate> &availableMoves) {
     canMove = availableMoves;
 }
 
-/*
-int NormalLogic::getScore(Board*& board) {
-    int score1 = 0;
-    int score2 = 0;
-
-    for (int x = 0;x < board->getSize();x++) {
-        for(int y = 0;y < board->getSize();y++) {
-            if (board->getValue(x, y) == p1) {
-                score1++;
-            } else if (board->getValue(x, y) == p2) {
-                score2++;
-            }
-        }
-    }
+void NormalLogic::setCurrentBoard(Board *&b) {
+    board = b;
+    size = b->getSize();
 }
-*/

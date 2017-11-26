@@ -17,7 +17,7 @@ public:
 	* Output: -
 	* Operation: Initialize Normal-Logic calculation for the game
 	*************************************************************************/
-    NormalLogic(Board*& b, Printer*&);
+    NormalLogic(Board*& b);
     /************************************************************************
       * Name: Logic (Destructor)
       * Input: -
@@ -55,10 +55,11 @@ public:
     void setAvailableMoves(set<Coordinate> &availableMoves);
 
     //All of the other funcs were described in Logic class
-    virtual void calculate(Coordinate &c, const char &player, Board*& curBoard);
-    virtual set<Coordinate> availableMoves(const char token, Board *&board1);
+    virtual void calculate(Coordinate &c, const char &player);
+    virtual set<Coordinate> availableMoves(const char token);
     virtual bool isLegal(Coordinate &c) const;
-    virtual void flip(Coordinate c, const char &player, Board* board1);
+    virtual void flip(Coordinate c, const char &player);
+    virtual void setCurrentBoard(Board *& b);
 };
 
 

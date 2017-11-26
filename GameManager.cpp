@@ -32,7 +32,7 @@ void GameManager::initialize(const int &size) {
 
     board = new Board(size, p1Token, p2Token);
 
-    logic = new NormalLogic(board, printer);
+    logic = new NormalLogic(board);
 
     players = new Player*[2];
     players[0] = new HumanPlayer(p1Token);
@@ -59,7 +59,7 @@ void GameManager::playTurn(Player *&player) {
     const char token = player->getToken();
     printer->yourTurn(token);
 
-    set<Coordinate> availableMoves = logic->availableMoves(token, board); // Get available moves
+    set<Coordinate> availableMoves = logic->availableMoves(token); // Get available moves
 
     if (!availableMoves.empty()) { //Check if there are avaliable moves for the player
         printer->availableMoves(availableMoves); // Print available moves
@@ -83,8 +83,9 @@ void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
         col = position.getCol();
         if (logic->isLegal(position)) { //Check if the move is legal
             flag = false;
+            printer->playingMove(position);
             board->update(position, p->getToken()); //update this one token
-            logic->flip(position, p->getToken(), board); // flip other tokens
+            logic->flip(position, p->getToken()); // flip other tokens
         } else {
             printer->massage("Illegal move\n");
         }

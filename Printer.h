@@ -20,6 +20,7 @@ public:
     virtual void noMoreMoves() const = 0;
     virtual void availableMoves(set<Coordinate> legalMoves) const = 0;
     virtual void yourTurn(const char &player) const = 0;
+    virtual void playingMove(Coordinate &c) = 0;
     virtual void winner(const char &p1, const char &p2, const int &score1,
                         const int &score2) const = 0;
 };
