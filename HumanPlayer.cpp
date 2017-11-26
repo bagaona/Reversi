@@ -29,5 +29,5 @@ Coordinate HumanPlayer::makeTurn(Logic* l, Board* b, Printer* printer, set<Coord
         cin >> col;
     }
     printer->massage("\n");
-    return Coordinate(--row, --col); //the -- because the input is higher
+    return Coordinate(row - 1, col - 1); //the -- because the input is higher
 }

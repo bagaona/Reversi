@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amir/CLionProjects/Reversi
+CMAKE_SOURCE_DIR = /home/or/Reversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amir/CLionProjects/Reversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/or/Reversi/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Reversi.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Reversi.dir/flags.make
 
 CMakeFiles/Reversi.dir/main.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Reversi.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/main.cpp.o -c /home/amir/CLionProjects/Reversi/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Reversi.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/main.cpp.o -c /home/or/Reversi/main.cpp
 
 CMakeFiles/Reversi.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/main.cpp > CMakeFiles/Reversi.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/main.cpp > CMakeFiles/Reversi.dir/main.cpp.i
 
 CMakeFiles/Reversi.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/main.cpp -o CMakeFiles/Reversi.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/main.cpp -o CMakeFiles/Reversi.dir/main.cpp.s
 
 CMakeFiles/Reversi.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Reversi.dir/main.cpp.o.provides.build: CMakeFiles/Reversi.dir/main.cp
 
 CMakeFiles/Reversi.dir/Board.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Reversi.dir/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Board.cpp.o -c /home/amir/CLionProjects/Reversi/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Reversi.dir/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Board.cpp.o -c /home/or/Reversi/Board.cpp
 
 CMakeFiles/Reversi.dir/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Board.cpp > CMakeFiles/Reversi.dir/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Board.cpp > CMakeFiles/Reversi.dir/Board.cpp.i
 
 CMakeFiles/Reversi.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Board.cpp -o CMakeFiles/Reversi.dir/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Board.cpp -o CMakeFiles/Reversi.dir/Board.cpp.s
 
 CMakeFiles/Reversi.dir/Board.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Reversi.dir/Board.cpp.o.provides.build: CMakeFiles/Reversi.dir/Board.
 
 CMakeFiles/Reversi.dir/Cell.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Cell.cpp.o: ../Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Reversi.dir/Cell.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Cell.cpp.o -c /home/amir/CLionProjects/Reversi/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Reversi.dir/Cell.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Cell.cpp.o -c /home/or/Reversi/Cell.cpp
 
 CMakeFiles/Reversi.dir/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Cell.cpp > CMakeFiles/Reversi.dir/Cell.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Cell.cpp > CMakeFiles/Reversi.dir/Cell.cpp.i
 
 CMakeFiles/Reversi.dir/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Cell.cpp -o CMakeFiles/Reversi.dir/Cell.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Cell.cpp -o CMakeFiles/Reversi.dir/Cell.cpp.s
 
 CMakeFiles/Reversi.dir/Cell.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Reversi.dir/Cell.cpp.o.provides.build: CMakeFiles/Reversi.dir/Cell.cp
 
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o: ../ConsolePrinter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o -c /home/amir/CLionProjects/Reversi/ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o -c /home/or/Reversi/ConsolePrinter.cpp
 
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/ConsolePrinter.cpp > CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/ConsolePrinter.cpp > CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i
 
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/ConsolePrinter.cpp -o CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/ConsolePrinter.cpp -o CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s
 
 CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o.provides.build: CMakeFiles/Reversi.d
 
 CMakeFiles/Reversi.dir/GameManager.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/GameManager.cpp.o: ../GameManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Reversi.dir/GameManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/GameManager.cpp.o -c /home/amir/CLionProjects/Reversi/GameManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Reversi.dir/GameManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/GameManager.cpp.o -c /home/or/Reversi/GameManager.cpp
 
 CMakeFiles/Reversi.dir/GameManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/GameManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/GameManager.cpp > CMakeFiles/Reversi.dir/GameManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/GameManager.cpp > CMakeFiles/Reversi.dir/GameManager.cpp.i
 
 CMakeFiles/Reversi.dir/GameManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/GameManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/GameManager.cpp -o CMakeFiles/Reversi.dir/GameManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/GameManager.cpp -o CMakeFiles/Reversi.dir/GameManager.cpp.s
 
 CMakeFiles/Reversi.dir/GameManager.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Reversi.dir/GameManager.cpp.o.provides.build: CMakeFiles/Reversi.dir/
 
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o: ../HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Reversi.dir/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/HumanPlayer.cpp.o -c /home/amir/CLionProjects/Reversi/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Reversi.dir/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/HumanPlayer.cpp.o -c /home/or/Reversi/HumanPlayer.cpp
 
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/HumanPlayer.cpp > CMakeFiles/Reversi.dir/HumanPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/HumanPlayer.cpp > CMakeFiles/Reversi.dir/HumanPlayer.cpp.i
 
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/HumanPlayer.cpp -o CMakeFiles/Reversi.dir/HumanPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/HumanPlayer.cpp -o CMakeFiles/Reversi.dir/HumanPlayer.cpp.s
 
 CMakeFiles/Reversi.dir/HumanPlayer.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Reversi.dir/HumanPlayer.cpp.o.provides.build: CMakeFiles/Reversi.dir/
 
 CMakeFiles/Reversi.dir/Logic.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Logic.cpp.o: ../Logic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Reversi.dir/Logic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Logic.cpp.o -c /home/amir/CLionProjects/Reversi/Logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Reversi.dir/Logic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Logic.cpp.o -c /home/or/Reversi/Logic.cpp
 
 CMakeFiles/Reversi.dir/Logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Logic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Logic.cpp > CMakeFiles/Reversi.dir/Logic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Logic.cpp > CMakeFiles/Reversi.dir/Logic.cpp.i
 
 CMakeFiles/Reversi.dir/Logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Logic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Logic.cpp -o CMakeFiles/Reversi.dir/Logic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Logic.cpp -o CMakeFiles/Reversi.dir/Logic.cpp.s
 
 CMakeFiles/Reversi.dir/Logic.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Reversi.dir/Logic.cpp.o.provides.build: CMakeFiles/Reversi.dir/Logic.
 
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o: ../NormalLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Reversi.dir/NormalLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/NormalLogic.cpp.o -c /home/amir/CLionProjects/Reversi/NormalLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Reversi.dir/NormalLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/NormalLogic.cpp.o -c /home/or/Reversi/NormalLogic.cpp
 
 CMakeFiles/Reversi.dir/NormalLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/NormalLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/NormalLogic.cpp > CMakeFiles/Reversi.dir/NormalLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/NormalLogic.cpp > CMakeFiles/Reversi.dir/NormalLogic.cpp.i
 
 CMakeFiles/Reversi.dir/NormalLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/NormalLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/NormalLogic.cpp -o CMakeFiles/Reversi.dir/NormalLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/NormalLogic.cpp -o CMakeFiles/Reversi.dir/NormalLogic.cpp.s
 
 CMakeFiles/Reversi.dir/NormalLogic.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Reversi.dir/NormalLogic.cpp.o.provides.build: CMakeFiles/Reversi.dir/
 
 CMakeFiles/Reversi.dir/Coordinate.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Coordinate.cpp.o: ../Coordinate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Reversi.dir/Coordinate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Coordinate.cpp.o -c /home/amir/CLionProjects/Reversi/Coordinate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Reversi.dir/Coordinate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Coordinate.cpp.o -c /home/or/Reversi/Coordinate.cpp
 
 CMakeFiles/Reversi.dir/Coordinate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Coordinate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Coordinate.cpp > CMakeFiles/Reversi.dir/Coordinate.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Coordinate.cpp > CMakeFiles/Reversi.dir/Coordinate.cpp.i
 
 CMakeFiles/Reversi.dir/Coordinate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Coordinate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Coordinate.cpp -o CMakeFiles/Reversi.dir/Coordinate.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Coordinate.cpp -o CMakeFiles/Reversi.dir/Coordinate.cpp.s
 
 CMakeFiles/Reversi.dir/Coordinate.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Reversi.dir/Coordinate.cpp.o.provides.build: CMakeFiles/Reversi.dir/C
 
 CMakeFiles/Reversi.dir/Player.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Reversi.dir/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Player.cpp.o -c /home/amir/CLionProjects/Reversi/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Reversi.dir/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Player.cpp.o -c /home/or/Reversi/Player.cpp
 
 CMakeFiles/Reversi.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Player.cpp > CMakeFiles/Reversi.dir/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Player.cpp > CMakeFiles/Reversi.dir/Player.cpp.i
 
 CMakeFiles/Reversi.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Player.cpp -o CMakeFiles/Reversi.dir/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Player.cpp -o CMakeFiles/Reversi.dir/Player.cpp.s
 
 CMakeFiles/Reversi.dir/Player.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Reversi.dir/Player.cpp.o.provides.build: CMakeFiles/Reversi.dir/Playe
 
 CMakeFiles/Reversi.dir/Printer.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/Printer.cpp.o: ../Printer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Reversi.dir/Printer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Printer.cpp.o -c /home/amir/CLionProjects/Reversi/Printer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Reversi.dir/Printer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/Printer.cpp.o -c /home/or/Reversi/Printer.cpp
 
 CMakeFiles/Reversi.dir/Printer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/Printer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/Printer.cpp > CMakeFiles/Reversi.dir/Printer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/Printer.cpp > CMakeFiles/Reversi.dir/Printer.cpp.i
 
 CMakeFiles/Reversi.dir/Printer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/Printer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/Printer.cpp -o CMakeFiles/Reversi.dir/Printer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/Printer.cpp -o CMakeFiles/Reversi.dir/Printer.cpp.s
 
 CMakeFiles/Reversi.dir/Printer.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/Reversi.dir/Printer.cpp.o.provides.build: CMakeFiles/Reversi.dir/Prin
 
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: CMakeFiles/Reversi.dir/flags.make
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o: ../ComputerPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o -c /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o -c /home/or/Reversi/ComputerPlayer.cpp
 
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp > CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/ComputerPlayer.cpp > CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i
 
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/ComputerPlayer.cpp -o CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/ComputerPlayer.cpp -o CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s
 
 CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o.requires:
 
@@ -377,7 +377,7 @@ Reversi: CMakeFiles/Reversi.dir/Printer.cpp.o
 Reversi: CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o
 Reversi: CMakeFiles/Reversi.dir/build.make
 Reversi: CMakeFiles/Reversi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Reversi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Reversi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Reversi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -405,6 +405,6 @@ CMakeFiles/Reversi.dir/clean:
 .PHONY : CMakeFiles/Reversi.dir/clean
 
 CMakeFiles/Reversi.dir/depend:
-	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amir/CLionProjects/Reversi /home/amir/CLionProjects/Reversi /home/amir/CLionProjects/Reversi/cmake-build-debug /home/amir/CLionProjects/Reversi/cmake-build-debug /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/or/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/or/Reversi /home/or/Reversi /home/or/Reversi/cmake-build-debug /home/or/Reversi/cmake-build-debug /home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Reversi.dir/depend
 

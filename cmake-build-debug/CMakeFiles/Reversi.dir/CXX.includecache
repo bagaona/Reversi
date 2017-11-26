@@ -6,139 +6,145 @@
 
 #IncludeRegexTransform: 
 
-/home/amir/CLionProjects/Reversi/Board.cpp
+/home/or/Reversi/Board.cpp
 Board.h
-/home/amir/CLionProjects/Reversi/Board.h
+/home/or/Reversi/Board.h
 iostream
 -
 
-/home/amir/CLionProjects/Reversi/Board.h
+/home/or/Reversi/Board.h
 Cell.h
-/home/amir/CLionProjects/Reversi/Cell.h
+/home/or/Reversi/Cell.h
 
-/home/amir/CLionProjects/Reversi/Cell.cpp
+/home/or/Reversi/Cell.cpp
 Cell.h
-/home/amir/CLionProjects/Reversi/Cell.h
+/home/or/Reversi/Cell.h
 
-/home/amir/CLionProjects/Reversi/Cell.h
+/home/or/Reversi/Cell.h
 Coordinate.h
-/home/amir/CLionProjects/Reversi/Coordinate.h
+/home/or/Reversi/Coordinate.h
 
-/home/amir/CLionProjects/Reversi/ComputerPlayer.cpp
+/home/or/Reversi/ComputerPlayer.cpp
 ComputerPlayer.h
-/home/amir/CLionProjects/Reversi/ComputerPlayer.h
+/home/or/Reversi/ComputerPlayer.h
 iostream
 -
 
-/home/amir/CLionProjects/Reversi/ComputerPlayer.h
+/home/or/Reversi/ComputerPlayer.h
 Player.h
-/home/amir/CLionProjects/Reversi/Player.h
+/home/or/Reversi/Player.h
 
-/home/amir/CLionProjects/Reversi/ConsolePrinter.cpp
+/home/or/Reversi/ConsolePrinter.cpp
 iostream
 -
 ConsolePrinter.h
-/home/amir/CLionProjects/Reversi/ConsolePrinter.h
+/home/or/Reversi/ConsolePrinter.h
 
-/home/amir/CLionProjects/Reversi/ConsolePrinter.h
+/home/or/Reversi/ConsolePrinter.h
 Printer.h
-/home/amir/CLionProjects/Reversi/Printer.h
+/home/or/Reversi/Printer.h
 
-/home/amir/CLionProjects/Reversi/Coordinate.cpp
+/home/or/Reversi/Coordinate.cpp
 Coordinate.h
-/home/amir/CLionProjects/Reversi/Coordinate.h
+/home/or/Reversi/Coordinate.h
 iostream
 -
 
-/home/amir/CLionProjects/Reversi/Coordinate.h
+/home/or/Reversi/Coordinate.h
 
-/home/amir/CLionProjects/Reversi/GameManager.cpp
+/home/or/Reversi/GameManager.cpp
 GameManager.h
-/home/amir/CLionProjects/Reversi/GameManager.h
+/home/or/Reversi/GameManager.h
 HumanPlayer.h
-/home/amir/CLionProjects/Reversi/HumanPlayer.h
+/home/or/Reversi/HumanPlayer.h
 ComputerPlayer.h
-/home/amir/CLionProjects/Reversi/ComputerPlayer.h
+/home/or/Reversi/ComputerPlayer.h
 ConsolePrinter.h
-/home/amir/CLionProjects/Reversi/ConsolePrinter.h
+/home/or/Reversi/ConsolePrinter.h
 
-/home/amir/CLionProjects/Reversi/GameManager.h
+/home/or/Reversi/GameManager.h
 Board.h
-/home/amir/CLionProjects/Reversi/Board.h
+/home/or/Reversi/Board.h
 NormalLogic.h
-/home/amir/CLionProjects/Reversi/NormalLogic.h
+/home/or/Reversi/NormalLogic.h
 Player.h
-/home/amir/CLionProjects/Reversi/Player.h
-
-/home/amir/CLionProjects/Reversi/HumanPlayer.cpp
-HumanPlayer.h
-/home/amir/CLionProjects/Reversi/HumanPlayer.h
-iostream
--
-
-/home/amir/CLionProjects/Reversi/HumanPlayer.h
-Player.h
-/home/amir/CLionProjects/Reversi/Player.h
-
-/home/amir/CLionProjects/Reversi/Logic.cpp
-Logic.h
-/home/amir/CLionProjects/Reversi/Logic.h
-iostream
--
-
-/home/amir/CLionProjects/Reversi/Logic.h
-Board.h
-/home/amir/CLionProjects/Reversi/Board.h
+/home/or/Reversi/Player.h
+Cell.h
+/home/or/Reversi/Cell.h
 Coordinate.h
-/home/amir/CLionProjects/Reversi/Coordinate.h
+/home/or/Reversi/Coordinate.h
 Printer.h
-/home/amir/CLionProjects/Reversi/Printer.h
+/home/or/Reversi/Printer.h
+
+/home/or/Reversi/HumanPlayer.cpp
+HumanPlayer.h
+/home/or/Reversi/HumanPlayer.h
+iostream
+-
+
+/home/or/Reversi/HumanPlayer.h
+Player.h
+/home/or/Reversi/Player.h
+
+/home/or/Reversi/Logic.cpp
+Logic.h
+/home/or/Reversi/Logic.h
+iostream
+-
+
+/home/or/Reversi/Logic.h
+Board.h
+/home/or/Reversi/Board.h
+Coordinate.h
+/home/or/Reversi/Coordinate.h
+Printer.h
+/home/or/Reversi/Printer.h
 set
 -
 
-/home/amir/CLionProjects/Reversi/NormalLogic.cpp
+/home/or/Reversi/NormalLogic.cpp
 NormalLogic.h
-/home/amir/CLionProjects/Reversi/NormalLogic.h
+/home/or/Reversi/NormalLogic.h
 iostream
 -
 stdio.h
 -
 
-/home/amir/CLionProjects/Reversi/NormalLogic.h
+/home/or/Reversi/NormalLogic.h
 Logic.h
-/home/amir/CLionProjects/Reversi/Logic.h
+/home/or/Reversi/Logic.h
 
-/home/amir/CLionProjects/Reversi/Player.cpp
+/home/or/Reversi/Player.cpp
 Player.h
-/home/amir/CLionProjects/Reversi/Player.h
+/home/or/Reversi/Player.h
 iostream
 -
 
-/home/amir/CLionProjects/Reversi/Player.h
+/home/or/Reversi/Player.h
 iostream
 -
 Printer.h
-/home/amir/CLionProjects/Reversi/Printer.h
+/home/or/Reversi/Printer.h
 Logic.h
-/home/amir/CLionProjects/Reversi/Logic.h
+/home/or/Reversi/Logic.h
 
-/home/amir/CLionProjects/Reversi/Printer.cpp
+/home/or/Reversi/Printer.cpp
 Printer.h
-/home/amir/CLionProjects/Reversi/Printer.h
+/home/or/Reversi/Printer.h
 
-/home/amir/CLionProjects/Reversi/Printer.h
+/home/or/Reversi/Printer.h
 iostream
 -
 set
 -
 Coordinate.h
-/home/amir/CLionProjects/Reversi/Coordinate.h
+/home/or/Reversi/Coordinate.h
 Board.h
-/home/amir/CLionProjects/Reversi/Board.h
+/home/or/Reversi/Board.h
 
-/home/amir/CLionProjects/Reversi/main.cpp
+/home/or/Reversi/main.cpp
 iostream
 -
 GameManager.h
-/home/amir/CLionProjects/Reversi/GameManager.h
+/home/or/Reversi/GameManager.h
 
