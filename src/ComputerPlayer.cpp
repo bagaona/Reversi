@@ -14,10 +14,12 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
                                     set<Coordinate> availableMoves) const{
 
     printer->massage("\nComputer thinking...\n");
-    Board* tempBoard = new Board(originalBoard);
+    Board tempBoard(originalBoard);
+
+//    Board* tempBoard = new Board(originalBoard);
     set<Coordinate> backUp = availableMoves;
     char opponent = originalBoard->getOpponent(sign);
-    logic->setCurrentBoard(tempBoard);
+    logic->setCurrentBoard(&tempBoard);
 
     int minRow, minCol;
     minRow = minCol-1;
@@ -28,30 +30,28 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
     //Run over each move the computer can do
     for (computerIT=availableMoves.begin(); computerIT!=availableMoves.end(); ++computerIT) {
         int maxScore = originalBoard->getSize() * originalBoard->getSize() * (-1) - 1;
-      //  cout << "\n ComputerMove: (" << (*computerIT).getRow() + 1 << "," << (*computerIT).getCol() + 1<< "): \n";
-        tempBoard->update((*computerIT), sign); //update this one token
+        tempBoard.update((*computerIT), sign); //update this one token
         logic->flip((*computerIT), sign); // flip other tokens
         logic->endTurn(); // erase set
 
         set<Coordinate> humanMoves = logic->availableMoves(opponent);
         if (humanMoves.empty()) {
-            printer->printBoard(tempBoard);
-            maxScore = tempBoard->score(opponent);
+            printer->printBoard(&tempBoard);
+            maxScore = tempBoard.score(opponent);
         }
 
         std::set<Coordinate>::iterator humanIT;
         for (humanIT=humanMoves.begin(); humanIT!=humanMoves.end(); ++humanIT) { //Run over each move the human can do
-            tempBoard->update((*computerIT), sign); //update this one token
+            tempBoard.update((*computerIT), sign); //update this one token
             logic->flip((*computerIT), sign); // flip other tokens
             logic->endTurn();
-            tempBoard->update((*humanIT), opponent); //update this one token
+            tempBoard.update((*humanIT), opponent); //update this one token
             logic->flip((*humanIT), opponent); // flip other tokens
-            int score = tempBoard->score(opponent);
+            int score = tempBoard.score(opponent);
             if (score > maxScore) {
                 maxScore = score;
             }
-        //    cout << " (" << (*humanIT).getRow() + 1 << "," << (*humanIT).getCol() + 1 << ") - " << score << "\n";
-            //printer->printBoard(tempBoard);
+
         }
 
         if (maxScore < minMaxScore) {
@@ -60,13 +60,13 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
             minRow = (*computerIT).getRow();
             minCol = (*computerIT).getCol();
         }
-       // cout << "Max Score: " << maxScore << endl;
+
 //        tempBoard = originalBoard;
-        tempBoard->copyBoard(originalBoard);
+        tempBoard = Board(originalBoard);
+//        tempBoard.copyBoard(originalBoard);
     }
-//cout << "\nminMax: " << minMaxScore << endl;
     logic->setAvailableMoves(backUp);
     logic->setCurrentBoard(originalBoard);
-    delete(tempBoard);
+//    delete(tempBoard);
 return Coordinate(minRow ,minCol);
 }

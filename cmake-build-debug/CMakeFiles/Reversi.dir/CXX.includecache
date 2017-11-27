@@ -121,16 +121,10 @@ iostream
 /home/or/Reversi/src/Logic.cpp
 ../include/Logic.h
 /home/or/Reversi/include/Logic.h
-iostream
--
 
 /home/or/Reversi/src/NormalLogic.cpp
 ../include/NormalLogic.h
 /home/or/Reversi/include/NormalLogic.h
-iostream
--
-stdio.h
--
 
 /home/or/Reversi/src/Player.cpp
 ../include/Player.h
@@ -139,8 +133,6 @@ iostream
 -
 
 /home/or/Reversi/src/Printer.cpp
-../include/Printer.h
-/home/or/Reversi/include/Printer.h
 
 /home/or/Reversi/src/main.cpp
 iostream

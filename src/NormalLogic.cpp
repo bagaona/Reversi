@@ -3,8 +3,7 @@
 //
 
 #include "../include/NormalLogic.h"
-#include <iostream>
-#include <stdio.h>
+
 
 using namespace std;
 NormalLogic::NormalLogic(Board*& b): Logic(b) {
@@ -190,7 +189,7 @@ void NormalLogic::flip(Coordinate c, const char &player) {
         }
     }
     if (hasSame) {
-        for (int j = col + 1; j <= i; j++) {
+        for (j = col + 1; j <= i; j++) {
             board->update(row, j, player);
         }
     }
@@ -204,7 +203,7 @@ void NormalLogic::flip(Coordinate c, const char &player) {
         }
     }
     if (hasSame) {
-        for (int j = col - 1; j >= i; j--) {
+        for (j = col - 1; j >= i; j--) {
             board->update(row, j, player);
         }
     }
@@ -217,7 +216,7 @@ void NormalLogic::flip(Coordinate c, const char &player) {
         }
     }
     if (hasSame) {
-        for (int j = row + 1; j <= i; j++) {
+        for (j = row + 1; j <= i; j++) {
             board->update(j, col, player);
         }
     }
@@ -231,7 +230,7 @@ void NormalLogic::flip(Coordinate c, const char &player) {
         }
     }
     if (hasSame) {
-        for (int j = row - 1; j >= i; j--) {
+        for (j = row - 1; j >= i; j--) {
             board->update(j, col, player);
         }
     }
@@ -298,7 +297,7 @@ void NormalLogic::setAvailableMoves(set<Coordinate> &availableMoves) {
     canMove = availableMoves;
 }
 
-void NormalLogic::setCurrentBoard(Board *&b) {
+void NormalLogic::setCurrentBoard(Board *b) {
     board = b;
     size = b->getSize();
 }

@@ -59,7 +59,7 @@ public:
     virtual set<Coordinate> availableMoves(const char token);
     virtual bool isLegal(Coordinate &c) const;
     virtual void flip(Coordinate c, const char &player);
-    virtual void setCurrentBoard(Board *& b);
+    virtual void setCurrentBoard(Board * b);
 };
 
 

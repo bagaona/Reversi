@@ -6,7 +6,7 @@
 #include "../include/ConsolePrinter.h"
 using namespace std;
 
-void ConsolePrinter::printBoard(Board *& board) const{
+void ConsolePrinter::printBoard(Board * board) const{
     const int size = board->getSize();
     cout << "  ";
     for(int i = 1;i <= size;i++) {

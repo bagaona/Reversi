@@ -74,10 +74,6 @@ CMakeFiles/Reversi.dir/src/Player.cpp.o: ../include/Player.h
 CMakeFiles/Reversi.dir/src/Player.cpp.o: ../include/Printer.h
 CMakeFiles/Reversi.dir/src/Player.cpp.o: ../src/Player.cpp
 
-CMakeFiles/Reversi.dir/src/Printer.cpp.o: ../include/Board.h
-CMakeFiles/Reversi.dir/src/Printer.cpp.o: ../include/Cell.h
-CMakeFiles/Reversi.dir/src/Printer.cpp.o: ../include/Coordinate.h
-CMakeFiles/Reversi.dir/src/Printer.cpp.o: ../include/Printer.h
 CMakeFiles/Reversi.dir/src/Printer.cpp.o: ../src/Printer.cpp
 
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../include/Board.h

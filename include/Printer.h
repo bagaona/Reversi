@@ -14,7 +14,7 @@ using namespace std;
 
 class Printer {
 public:
-    virtual void printBoard(Board *& board) const = 0;
+    virtual void printBoard(Board * board) const = 0;
     virtual void massage(const string &s) const = 0;
     virtual void cantMove() const = 0;
     virtual void noMoreMoves() const = 0;

@@ -84,7 +84,7 @@ public:
     *************************************************************************/
     virtual void endTurn();
     virtual void setAvailableMoves(set<Coordinate> &availableMoves) = 0;
-    virtual void setCurrentBoard(Board *& b) = 0;
+    virtual void setCurrentBoard(Board * b) = 0;
 };
 
 

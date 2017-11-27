@@ -10,7 +10,7 @@
 
 class ConsolePrinter : public Printer {
 public:
-    virtual void printBoard(Board *& board) const;
+    virtual void printBoard(Board * board) const;
     virtual void cantMove() const;
     virtual void massage(const string &s) const;
     virtual void noMoreMoves() const;
