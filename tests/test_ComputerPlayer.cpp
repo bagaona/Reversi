@@ -5,26 +5,59 @@
 #include "ComputerTest.h"
 #include "../include/ConsolePrinter.h"
 
-//LogicTest ::LogicTest() {}
-//void LogicTest  ::SetUp() {}
-//void LogicTest ::TearDown() {}
-
 TEST_F(ComputerTest, DoMove) {
+    Printer *printer = new ConsolePrinter();
+
     board->update(Coordinate(2,3), 'X');
     logic->flip(Coordinate(2,3), 'X');
     set<Coordinate> availableMoves = logic->availableMoves('O');
-    Printer *printer = new ConsolePrinter();
-    printer->printBoard(board);
     Coordinate makedMove(player.makeTurn(logic,board, printer , availableMoves));
+/* The Current Board will be like this
+    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+    -----------------------------------
+  1 |   |   |   |   |   |   |   |   |
+    -----------------------------------
+  2 |   |   |   |   |   |   |   |   |
+    -----------------------------------
+  3 |   |   |   | X |   |   |   |   |
+    -----------------------------------
+  4 |   |   |   | X | X |   |   |   |
+    -----------------------------------
+  5 |   |   |   | X | O |   |   |   |
+    -----------------------------------
+  6 |   |   |   |   |   |   |   |   |
+    -----------------------------------
+  7 |   |   |   |   |   |   |   |   |
+    -----------------------------------
+  8 |   |   |   |   |   |   |   |   |
+   -----------------------------------
+  The expected move is (3,3) [which is (2,2)], because it will be the first choose to give
+  the most potential-score.
+  */
     EXPECT_EQ(Coordinate(2,2), makedMove);
+
     board->update(makedMove, 'O');
     logic->flip(makedMove, 'O');
     logic-> endTurn();
 
     board->update(Coordinate(2,1), 'X');
     logic->flip(Coordinate(2,1), 'X');
-    printer->printBoard(board);
     availableMoves = logic->availableMoves('O');
-    Coordinate anotherMove(player.makeTurn(logic,board, printer , availableMoves));
+    Coordinate anotherMove = player.makeTurn(logic,board, printer , availableMoves);
     EXPECT_EQ(Coordinate(2,4), anotherMove);
+}
+TEST_F(ComputerTest, OnePlaceOnly) {
+    Printer *printer = new ConsolePrinter();
+    //Clear the board
+    board->update(Coordinate(2, 3), ' ');
+    board->update(Coordinate(3, 2), ' ');
+    board->update(Coordinate(4, 5), ' ');
+    board->update(Coordinate(5, 4), ' ');
+
+    //Make the computer have only one option to move
+    board->update(Coordinate(2, 3), 'X');
+    board->update(Coordinate(2, 2), 'O');
+    set<Coordinate> availableMoves = logic->availableMoves('O');
+    Coordinate makedMove(player.makeTurn(logic, board, printer, availableMoves));
+    EXPECT_EQ(Coordinate(2,4), makedMove);
 }

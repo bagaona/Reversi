@@ -2,23 +2,21 @@
 #include <gmock/gmock.h>
 #include "../include/Board.h"
 #include "../include/Logic.h"
-#include "../include/NormalLogic.h"
 #include "LogicTest.h"
 
-//LogicTest ::LogicTest() {}
-//void LogicTest  ::SetUp() {}
-//void LogicTest ::TearDown() {}
-
+//Test That the available moves get values and not staying empty
 TEST_F(LogicTest, HasMoves) {
     set<Coordinate> availableMoves = logic->availableMoves('X');
     EXPECT_EQ(availableMoves.empty(), false);
 }
+//Test that illegal move will be handle
 TEST_F(LogicTest, IsLegalMove) {
     set<Coordinate> availableMoves = logic->availableMoves('X');
     Coordinate c(1,1);
     EXPECT_EQ(logic->isLegal(c), false);
 }
 
+//Test that the availableMoves-set contains the real available moves
 TEST_F(LogicTest, AvailableMoves) {
     Coordinate c(2,3);
     Coordinate c2(3,2);
@@ -35,15 +33,14 @@ TEST_F(LogicTest, AvailableMoves) {
     it++;
     EXPECT_EQ((*it), c4);
 }
+
+//Another test of legal moves, this time contains 1 legal and 1 not
 TEST_F(LogicTest, IsLegal) {
     set<Coordinate> availableMoves = logic->availableMoves('X');
     Coordinate c(1,1);
     EXPECT_EQ(logic->isLegal(c), false);
     Coordinate c2(2,3);
     EXPECT_EQ(logic->isLegal(c2), true);
-}
-TEST_F(LogicTest, wow) {
-
 }
 
 
