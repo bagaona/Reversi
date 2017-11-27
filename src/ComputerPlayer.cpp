@@ -8,7 +8,7 @@
 using namespace std;
 ComputerPlayer::ComputerPlayer(const char t): Player(t) {
 }
-ComputerPlayer::~ComputerPlayer() = default;
+ComputerPlayer::~ComputerPlayer() {}
 
 Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer* printer,
                                     set<Coordinate> availableMoves) const{
