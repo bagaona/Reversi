@@ -10,7 +10,7 @@ include_directories(lib/google_tests/googlemock/include)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 set(TEST_FILES tests/main_test.cpp tests/test_Board.cpp tests/test_NormalLogic.cpp
-        tests/test_ComputerPlayer.cpp tests/test_Coordinate.cpp)
+        tests/test_ComputerPlayer.cpp tests/test_Coordinate.cpp tests/LogicTest.h tests/BoardTest.h tests/ComputerTest.h)
 
 set(SOURCE_FILES src/Board.cpp include/Board.h src/Cell.cpp include/Cell.h
         src/ConsolePrinter.cpp include/ConsolePrinter.h src/GameManager.cpp

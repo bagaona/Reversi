@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/or/Reversi
+CMAKE_SOURCE_DIR = /home/amir/CLionProjects/Reversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/or/Reversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/amir/CLionProjects/Reversi/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TestGame.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/TestGame.dir/flags.make
 
 CMakeFiles/TestGame.dir/tests/main_test.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/tests/main_test.cpp.o: ../tests/main_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TestGame.dir/tests/main_test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/main_test.cpp.o -c /home/or/Reversi/tests/main_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TestGame.dir/tests/main_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/main_test.cpp.o -c /home/amir/CLionProjects/Reversi/tests/main_test.cpp
 
 CMakeFiles/TestGame.dir/tests/main_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/tests/main_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/tests/main_test.cpp > CMakeFiles/TestGame.dir/tests/main_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/tests/main_test.cpp > CMakeFiles/TestGame.dir/tests/main_test.cpp.i
 
 CMakeFiles/TestGame.dir/tests/main_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/tests/main_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/tests/main_test.cpp -o CMakeFiles/TestGame.dir/tests/main_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/tests/main_test.cpp -o CMakeFiles/TestGame.dir/tests/main_test.cpp.s
 
 CMakeFiles/TestGame.dir/tests/main_test.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/TestGame.dir/tests/main_test.cpp.o.provides.build: CMakeFiles/TestGam
 
 CMakeFiles/TestGame.dir/tests/test_Board.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/tests/test_Board.cpp.o: ../tests/test_Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TestGame.dir/tests/test_Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_Board.cpp.o -c /home/or/Reversi/tests/test_Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TestGame.dir/tests/test_Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_Board.cpp.o -c /home/amir/CLionProjects/Reversi/tests/test_Board.cpp
 
 CMakeFiles/TestGame.dir/tests/test_Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/tests/test_Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/tests/test_Board.cpp > CMakeFiles/TestGame.dir/tests/test_Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/tests/test_Board.cpp > CMakeFiles/TestGame.dir/tests/test_Board.cpp.i
 
 CMakeFiles/TestGame.dir/tests/test_Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/tests/test_Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/tests/test_Board.cpp -o CMakeFiles/TestGame.dir/tests/test_Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/tests/test_Board.cpp -o CMakeFiles/TestGame.dir/tests/test_Board.cpp.s
 
 CMakeFiles/TestGame.dir/tests/test_Board.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/TestGame.dir/tests/test_Board.cpp.o.provides.build: CMakeFiles/TestGa
 
 CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o: ../tests/test_NormalLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o -c /home/or/Reversi/tests/test_NormalLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o -c /home/amir/CLionProjects/Reversi/tests/test_NormalLogic.cpp
 
 CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/tests/test_NormalLogic.cpp > CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/tests/test_NormalLogic.cpp > CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.i
 
 CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/tests/test_NormalLogic.cpp -o CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/tests/test_NormalLogic.cpp -o CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.s
 
 CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/TestGame.dir/tests/test_NormalLogic.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o: ../tests/test_ComputerPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o -c /home/or/Reversi/tests/test_ComputerPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o -c /home/amir/CLionProjects/Reversi/tests/test_ComputerPlayer.cpp
 
 CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/tests/test_ComputerPlayer.cpp > CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/tests/test_ComputerPlayer.cpp > CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.i
 
 CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/tests/test_ComputerPlayer.cpp -o CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/tests/test_ComputerPlayer.cpp -o CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.s
 
 CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/TestGame.dir/tests/test_ComputerPlayer.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o: ../tests/test_Coordinate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o -c /home/or/Reversi/tests/test_Coordinate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o -c /home/amir/CLionProjects/Reversi/tests/test_Coordinate.cpp
 
 CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/tests/test_Coordinate.cpp > CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/tests/test_Coordinate.cpp > CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.i
 
 CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/tests/test_Coordinate.cpp -o CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/tests/test_Coordinate.cpp -o CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.s
 
 CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/TestGame.dir/tests/test_Coordinate.cpp.o.provides.build: CMakeFiles/T
 
 CMakeFiles/TestGame.dir/src/Board.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TestGame.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Board.cpp.o -c /home/or/Reversi/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TestGame.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Board.cpp.o -c /home/amir/CLionProjects/Reversi/src/Board.cpp
 
 CMakeFiles/TestGame.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Board.cpp > CMakeFiles/TestGame.dir/src/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Board.cpp > CMakeFiles/TestGame.dir/src/Board.cpp.i
 
 CMakeFiles/TestGame.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Board.cpp -o CMakeFiles/TestGame.dir/src/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Board.cpp -o CMakeFiles/TestGame.dir/src/Board.cpp.s
 
 CMakeFiles/TestGame.dir/src/Board.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/TestGame.dir/src/Board.cpp.o.provides.build: CMakeFiles/TestGame.dir/
 
 CMakeFiles/TestGame.dir/src/Cell.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Cell.cpp.o: ../src/Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TestGame.dir/src/Cell.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Cell.cpp.o -c /home/or/Reversi/src/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TestGame.dir/src/Cell.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Cell.cpp.o -c /home/amir/CLionProjects/Reversi/src/Cell.cpp
 
 CMakeFiles/TestGame.dir/src/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Cell.cpp > CMakeFiles/TestGame.dir/src/Cell.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Cell.cpp > CMakeFiles/TestGame.dir/src/Cell.cpp.i
 
 CMakeFiles/TestGame.dir/src/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Cell.cpp -o CMakeFiles/TestGame.dir/src/Cell.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Cell.cpp -o CMakeFiles/TestGame.dir/src/Cell.cpp.s
 
 CMakeFiles/TestGame.dir/src/Cell.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/TestGame.dir/src/Cell.cpp.o.provides.build: CMakeFiles/TestGame.dir/s
 
 CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o: ../src/ConsolePrinter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o -c /home/or/Reversi/src/ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o -c /home/amir/CLionProjects/Reversi/src/ConsolePrinter.cpp
 
 CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/ConsolePrinter.cpp > CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/ConsolePrinter.cpp > CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.i
 
 CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/ConsolePrinter.cpp -o CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/ConsolePrinter.cpp -o CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.s
 
 CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o.provides.build: CMakeFiles/Test
 
 CMakeFiles/TestGame.dir/src/GameManager.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/GameManager.cpp.o: ../src/GameManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TestGame.dir/src/GameManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/GameManager.cpp.o -c /home/or/Reversi/src/GameManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TestGame.dir/src/GameManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/GameManager.cpp.o -c /home/amir/CLionProjects/Reversi/src/GameManager.cpp
 
 CMakeFiles/TestGame.dir/src/GameManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/GameManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/GameManager.cpp > CMakeFiles/TestGame.dir/src/GameManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/GameManager.cpp > CMakeFiles/TestGame.dir/src/GameManager.cpp.i
 
 CMakeFiles/TestGame.dir/src/GameManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/GameManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/GameManager.cpp -o CMakeFiles/TestGame.dir/src/GameManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/GameManager.cpp -o CMakeFiles/TestGame.dir/src/GameManager.cpp.s
 
 CMakeFiles/TestGame.dir/src/GameManager.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/TestGame.dir/src/GameManager.cpp.o.provides.build: CMakeFiles/TestGam
 
 CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o -c /home/or/Reversi/src/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o -c /home/amir/CLionProjects/Reversi/src/HumanPlayer.cpp
 
 CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/HumanPlayer.cpp > CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/HumanPlayer.cpp > CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.i
 
 CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/HumanPlayer.cpp -o CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/HumanPlayer.cpp -o CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.s
 
 CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/TestGam
 
 CMakeFiles/TestGame.dir/src/Logic.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Logic.cpp.o: ../src/Logic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TestGame.dir/src/Logic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Logic.cpp.o -c /home/or/Reversi/src/Logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TestGame.dir/src/Logic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Logic.cpp.o -c /home/amir/CLionProjects/Reversi/src/Logic.cpp
 
 CMakeFiles/TestGame.dir/src/Logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Logic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Logic.cpp > CMakeFiles/TestGame.dir/src/Logic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Logic.cpp > CMakeFiles/TestGame.dir/src/Logic.cpp.i
 
 CMakeFiles/TestGame.dir/src/Logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Logic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Logic.cpp -o CMakeFiles/TestGame.dir/src/Logic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Logic.cpp -o CMakeFiles/TestGame.dir/src/Logic.cpp.s
 
 CMakeFiles/TestGame.dir/src/Logic.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/TestGame.dir/src/Logic.cpp.o.provides.build: CMakeFiles/TestGame.dir/
 
 CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o: ../src/NormalLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o -c /home/or/Reversi/src/NormalLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o -c /home/amir/CLionProjects/Reversi/src/NormalLogic.cpp
 
 CMakeFiles/TestGame.dir/src/NormalLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/NormalLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/NormalLogic.cpp > CMakeFiles/TestGame.dir/src/NormalLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/NormalLogic.cpp > CMakeFiles/TestGame.dir/src/NormalLogic.cpp.i
 
 CMakeFiles/TestGame.dir/src/NormalLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/NormalLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/NormalLogic.cpp -o CMakeFiles/TestGame.dir/src/NormalLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/NormalLogic.cpp -o CMakeFiles/TestGame.dir/src/NormalLogic.cpp.s
 
 CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o.provides.build: CMakeFiles/TestGam
 
 CMakeFiles/TestGame.dir/src/Coordinate.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Coordinate.cpp.o: ../src/Coordinate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TestGame.dir/src/Coordinate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Coordinate.cpp.o -c /home/or/Reversi/src/Coordinate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TestGame.dir/src/Coordinate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Coordinate.cpp.o -c /home/amir/CLionProjects/Reversi/src/Coordinate.cpp
 
 CMakeFiles/TestGame.dir/src/Coordinate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Coordinate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Coordinate.cpp > CMakeFiles/TestGame.dir/src/Coordinate.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Coordinate.cpp > CMakeFiles/TestGame.dir/src/Coordinate.cpp.i
 
 CMakeFiles/TestGame.dir/src/Coordinate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Coordinate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Coordinate.cpp -o CMakeFiles/TestGame.dir/src/Coordinate.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Coordinate.cpp -o CMakeFiles/TestGame.dir/src/Coordinate.cpp.s
 
 CMakeFiles/TestGame.dir/src/Coordinate.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/TestGame.dir/src/Coordinate.cpp.o.provides.build: CMakeFiles/TestGame
 
 CMakeFiles/TestGame.dir/src/Player.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TestGame.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Player.cpp.o -c /home/or/Reversi/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TestGame.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Player.cpp.o -c /home/amir/CLionProjects/Reversi/src/Player.cpp
 
 CMakeFiles/TestGame.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Player.cpp > CMakeFiles/TestGame.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Player.cpp > CMakeFiles/TestGame.dir/src/Player.cpp.i
 
 CMakeFiles/TestGame.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Player.cpp -o CMakeFiles/TestGame.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Player.cpp -o CMakeFiles/TestGame.dir/src/Player.cpp.s
 
 CMakeFiles/TestGame.dir/src/Player.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/TestGame.dir/src/Player.cpp.o.provides.build: CMakeFiles/TestGame.dir
 
 CMakeFiles/TestGame.dir/src/Printer.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/Printer.cpp.o: ../src/Printer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TestGame.dir/src/Printer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Printer.cpp.o -c /home/or/Reversi/src/Printer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TestGame.dir/src/Printer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/Printer.cpp.o -c /home/amir/CLionProjects/Reversi/src/Printer.cpp
 
 CMakeFiles/TestGame.dir/src/Printer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/Printer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/Printer.cpp > CMakeFiles/TestGame.dir/src/Printer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/Printer.cpp > CMakeFiles/TestGame.dir/src/Printer.cpp.i
 
 CMakeFiles/TestGame.dir/src/Printer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/Printer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/Printer.cpp -o CMakeFiles/TestGame.dir/src/Printer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/Printer.cpp -o CMakeFiles/TestGame.dir/src/Printer.cpp.s
 
 CMakeFiles/TestGame.dir/src/Printer.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/TestGame.dir/src/Printer.cpp.o.provides.build: CMakeFiles/TestGame.di
 
 CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o: CMakeFiles/TestGame.dir/flags.make
 CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o: ../src/ComputerPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o -c /home/or/Reversi/src/ComputerPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o -c /home/amir/CLionProjects/Reversi/src/ComputerPlayer.cpp
 
 CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/or/Reversi/src/ComputerPlayer.cpp > CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/CLionProjects/Reversi/src/ComputerPlayer.cpp > CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.i
 
 CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/or/Reversi/src/ComputerPlayer.cpp -o CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/CLionProjects/Reversi/src/ComputerPlayer.cpp -o CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.s
 
 CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o.requires:
 
@@ -484,7 +484,7 @@ TestGame: lib/google_tests/googlemock/gtest/libgtestd.a
 TestGame: lib/google_tests/googlemock/gtest/libgtest_maind.a
 TestGame: lib/google_tests/googlemock/gtest/libgtestd.a
 TestGame: CMakeFiles/TestGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/or/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable TestGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable TestGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -516,6 +516,6 @@ CMakeFiles/TestGame.dir/clean:
 .PHONY : CMakeFiles/TestGame.dir/clean
 
 CMakeFiles/TestGame.dir/depend:
-	cd /home/or/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/or/Reversi /home/or/Reversi /home/or/Reversi/cmake-build-debug /home/or/Reversi/cmake-build-debug /home/or/Reversi/cmake-build-debug/CMakeFiles/TestGame.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amir/CLionProjects/Reversi /home/amir/CLionProjects/Reversi /home/amir/CLionProjects/Reversi/cmake-build-debug /home/amir/CLionProjects/Reversi/cmake-build-debug /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/TestGame.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TestGame.dir/depend
 

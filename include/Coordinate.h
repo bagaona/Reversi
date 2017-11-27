@@ -14,11 +14,8 @@ public:
     Coordinate(int x1,int y1);
     int getRow() const ;
     int getCol() const;
-    bool operator ==(const Coordinate &other) const {
-        return row == other.getRow() && col == other.getCol(); }
-    bool operator <(const Coordinate &other) const {
-        return ((row < other.getRow())
-                || ((row == other.getRow()) && (col < other.getCol())));  }
+    bool operator ==(const Coordinate &other) const;
+    bool operator <(const Coordinate &other) const;
 };
 
 

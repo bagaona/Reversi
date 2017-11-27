@@ -31,9 +31,6 @@ public:
     * Operation: Gets a row and a col from the Computer player and makes a move
     *************************************************************************/
     virtual Coordinate makeTurn(Logic* l, Board* originalBoard, Printer* printer, set<Coordinate> availableMoves) const;
-
-private:
-    Board* tempBoard;
 };
 
 

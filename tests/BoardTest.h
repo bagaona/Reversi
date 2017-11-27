@@ -1,0 +1,32 @@
+//
+// Created by amir on 27/11/17.
+//
+
+#ifndef REVERSI_BOARDTEST_H
+#define REVERSI_BOARDTEST_H
+
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
+#include "../include/Board.h"
+
+using namespace std;
+
+class BoardTest: public testing::Test {
+public:
+
+    BoardTest(): board(Board(8, 'X', 'O')){
+    }
+
+    virtual void SetUp() {
+        cout << "Setting up" << endl;
+    }
+    virtual void TearDown() {
+        cout << "Tearing down" << endl;
+    }
+
+protected:
+    Board board;
+};
+
+
+#endif //REVERSI_BOARDTEST_H

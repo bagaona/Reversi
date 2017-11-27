@@ -23,3 +23,8 @@ int Coordinate::getRow() const{
 int Coordinate::getCol() const{
     return col;
 }
+bool Coordinate::operator ==(const Coordinate &other) const {
+    return row == other.getRow() && col == other.getCol(); }
+bool Coordinate::operator <(const Coordinate &other) const {
+    return ((row < other.getRow())
+            || ((row == other.getRow()) && (col < other.getCol())));  }

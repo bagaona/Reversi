@@ -40,14 +40,6 @@ public:
     void initialize();
 
     /*************************************************************************
-    * Name: PrintBoard
-    * Input: -
-    * Output: -
-    * Operation: The function prints the board.
-    *************************************************************************/
-    void printBoard();
-
-    /*************************************************************************
     * Name: Update
     * Input: row, col, and the token of the player
     * Output: -

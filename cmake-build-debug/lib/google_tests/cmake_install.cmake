@@ -1,4 +1,4 @@
-# Install script for directory: /home/or/Reversi/lib/google_tests
+# Install script for directory: /home/amir/CLionProjects/Reversi/lib/google_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/or/Reversi/cmake-build-debug/lib/google_tests/googlemock/cmake_install.cmake")
+  include("/home/amir/CLionProjects/Reversi/cmake-build-debug/lib/google_tests/googlemock/cmake_install.cmake")
 
 endif()
 

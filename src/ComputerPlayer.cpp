@@ -8,8 +8,8 @@
 using namespace std;
 ComputerPlayer::ComputerPlayer(const char t): Player(t) {
 }
-ComputerPlayer::~ComputerPlayer() {
-}
+ComputerPlayer::~ComputerPlayer() = default;
+
 Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer* printer,
                                     set<Coordinate> availableMoves) const{
 
@@ -22,7 +22,7 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
     logic->setCurrentBoard(&tempBoard);
 
     int minRow, minCol;
-    minRow = minCol-1;
+    minRow = minCol = -1;
     int minMaxScore = originalBoard->getSize() * originalBoard->getSize() + 1;
 
 
