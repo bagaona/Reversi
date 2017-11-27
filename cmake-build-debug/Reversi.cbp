@@ -390,91 +390,47 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/or/Reversi/Board.cpp">
+		<Unit filename="/home/or/Reversi/include/Board.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/Board.h">
+		<Unit filename="/home/or/Reversi/include/Cell.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/Cell.cpp">
+		<Unit filename="/home/or/Reversi/include/ComputerPlayer.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/Cell.h">
+		<Unit filename="/home/or/Reversi/include/ConsolePrinter.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/ComputerPlayer.cpp">
+		<Unit filename="/home/or/Reversi/include/Coordinate.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/ComputerPlayer.h">
+		<Unit filename="/home/or/Reversi/include/GameManager.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/ConsolePrinter.cpp">
+		<Unit filename="/home/or/Reversi/include/HumanPlayer.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/ConsolePrinter.h">
+		<Unit filename="/home/or/Reversi/include/Logic.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/Coordinate.cpp">
+		<Unit filename="/home/or/Reversi/include/NormalLogic.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/Coordinate.h">
+		<Unit filename="/home/or/Reversi/include/Player.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/GameManager.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/GameManager.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/HumanPlayer.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/HumanPlayer.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Logic.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Logic.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/NormalLogic.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/NormalLogic.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Player.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Player.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Printer.cpp">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/or/Reversi/Printer.h">
+		<Unit filename="/home/or/Reversi/include/Printer.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
@@ -493,8 +449,51 @@
 		<Unit filename="/home/or/Reversi/lib/google_tests/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/or/Reversi/main.cpp">
+		<Unit filename="/home/or/Reversi/src/Board.cpp">
 			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/Cell.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/ComputerPlayer.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/ConsolePrinter.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/Coordinate.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/GameManager.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/HumanPlayer.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/Logic.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/NormalLogic.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/Player.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/Printer.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/main.cpp">
 			<Option target="Reversi"/>
 		</Unit>
 		<Unit filename="/home/or/Reversi/tests/main_test.cpp">

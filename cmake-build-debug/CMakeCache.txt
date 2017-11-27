@@ -247,10 +247,22 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //Value Computed by CMake
+ReversiTests_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug
+
+//Value Computed by CMake
+ReversiTests_SOURCE_DIR:STATIC=/home/or/Reversi
+
+//Value Computed by CMake
 Reversi_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug
 
 //Value Computed by CMake
 Reversi_SOURCE_DIR:STATIC=/home/or/Reversi
+
+//Value Computed by CMake
+Reversi__Test_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug
+
+//Value Computed by CMake
+Reversi__Test_SOURCE_DIR:STATIC=/home/or/Reversi
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/lib/google_tests/googlemock

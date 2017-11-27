@@ -2,7 +2,7 @@
 // Created by amir on 02/11/17.
 //
 
-#include "ComputerPlayer.h"
+#include "../include/ComputerPlayer.h"
 #include <iostream>
 
 using namespace std;
@@ -61,6 +61,7 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
             minCol = (*computerIT).getCol();
         }
        // cout << "Max Score: " << maxScore << endl;
+//        tempBoard = originalBoard;
         tempBoard->copyBoard(originalBoard);
     }
 //cout << "\nminMax: " << minMaxScore << endl;

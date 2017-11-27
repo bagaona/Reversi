@@ -2,8 +2,7 @@
 // Created by amir on 02/11/17.
 //
 
-#include "Logic.h"
-#include <iostream>
+#include "../include/Logic.h"
 
 using namespace std;
 Logic::Logic(Board*& b) {

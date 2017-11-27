@@ -234,365 +234,362 @@ gtest/fast:
 	$(MAKE) -f lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-Board.o: Board.cpp.o
+src/Board.o: src/Board.cpp.o
 
-.PHONY : Board.o
-
-# target to build an object file
-Board.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.o
-.PHONY : Board.cpp.o
-
-Board.i: Board.cpp.i
-
-.PHONY : Board.i
-
-# target to preprocess a source file
-Board.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.i
-.PHONY : Board.cpp.i
-
-Board.s: Board.cpp.s
-
-.PHONY : Board.s
-
-# target to generate assembly for a file
-Board.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Board.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Board.cpp.s
-.PHONY : Board.cpp.s
-
-Cell.o: Cell.cpp.o
-
-.PHONY : Cell.o
+.PHONY : src/Board.o
 
 # target to build an object file
-Cell.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.o
-.PHONY : Cell.cpp.o
+src/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Board.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Board.cpp.o
+.PHONY : src/Board.cpp.o
 
-Cell.i: Cell.cpp.i
+src/Board.i: src/Board.cpp.i
 
-.PHONY : Cell.i
+.PHONY : src/Board.i
 
 # target to preprocess a source file
-Cell.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.i
-.PHONY : Cell.cpp.i
+src/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Board.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
 
-Cell.s: Cell.cpp.s
+src/Board.s: src/Board.cpp.s
 
-.PHONY : Cell.s
+.PHONY : src/Board.s
 
 # target to generate assembly for a file
-Cell.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Cell.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Cell.cpp.s
-.PHONY : Cell.cpp.s
+src/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Board.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
 
-ComputerPlayer.o: ComputerPlayer.cpp.o
+src/Cell.o: src/Cell.cpp.o
 
-.PHONY : ComputerPlayer.o
+.PHONY : src/Cell.o
 
 # target to build an object file
-ComputerPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.o
-.PHONY : ComputerPlayer.cpp.o
+src/Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Cell.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Cell.cpp.o
+.PHONY : src/Cell.cpp.o
 
-ComputerPlayer.i: ComputerPlayer.cpp.i
+src/Cell.i: src/Cell.cpp.i
 
-.PHONY : ComputerPlayer.i
+.PHONY : src/Cell.i
 
 # target to preprocess a source file
-ComputerPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.i
-.PHONY : ComputerPlayer.cpp.i
+src/Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Cell.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Cell.cpp.i
+.PHONY : src/Cell.cpp.i
 
-ComputerPlayer.s: ComputerPlayer.cpp.s
+src/Cell.s: src/Cell.cpp.s
 
-.PHONY : ComputerPlayer.s
+.PHONY : src/Cell.s
 
 # target to generate assembly for a file
-ComputerPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ComputerPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ComputerPlayer.cpp.s
-.PHONY : ComputerPlayer.cpp.s
+src/Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Cell.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Cell.cpp.s
+.PHONY : src/Cell.cpp.s
 
-ConsolePrinter.o: ConsolePrinter.cpp.o
+src/ComputerPlayer.o: src/ComputerPlayer.cpp.o
 
-.PHONY : ConsolePrinter.o
+.PHONY : src/ComputerPlayer.o
 
 # target to build an object file
-ConsolePrinter.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.o
-.PHONY : ConsolePrinter.cpp.o
+src/ComputerPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ComputerPlayer.cpp.o
+.PHONY : src/ComputerPlayer.cpp.o
 
-ConsolePrinter.i: ConsolePrinter.cpp.i
+src/ComputerPlayer.i: src/ComputerPlayer.cpp.i
 
-.PHONY : ConsolePrinter.i
+.PHONY : src/ComputerPlayer.i
 
 # target to preprocess a source file
-ConsolePrinter.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.i
-.PHONY : ConsolePrinter.cpp.i
+src/ComputerPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ComputerPlayer.cpp.i
+.PHONY : src/ComputerPlayer.cpp.i
 
-ConsolePrinter.s: ConsolePrinter.cpp.s
+src/ComputerPlayer.s: src/ComputerPlayer.cpp.s
 
-.PHONY : ConsolePrinter.s
+.PHONY : src/ComputerPlayer.s
 
 # target to generate assembly for a file
-ConsolePrinter.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/ConsolePrinter.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/ConsolePrinter.cpp.s
-.PHONY : ConsolePrinter.cpp.s
+src/ComputerPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ComputerPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ComputerPlayer.cpp.s
+.PHONY : src/ComputerPlayer.cpp.s
 
-Coordinate.o: Coordinate.cpp.o
+src/ConsolePrinter.o: src/ConsolePrinter.cpp.o
 
-.PHONY : Coordinate.o
+.PHONY : src/ConsolePrinter.o
 
 # target to build an object file
-Coordinate.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.o
-.PHONY : Coordinate.cpp.o
+src/ConsolePrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ConsolePrinter.cpp.o
+.PHONY : src/ConsolePrinter.cpp.o
 
-Coordinate.i: Coordinate.cpp.i
+src/ConsolePrinter.i: src/ConsolePrinter.cpp.i
 
-.PHONY : Coordinate.i
+.PHONY : src/ConsolePrinter.i
 
 # target to preprocess a source file
-Coordinate.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.i
-.PHONY : Coordinate.cpp.i
+src/ConsolePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ConsolePrinter.cpp.i
+.PHONY : src/ConsolePrinter.cpp.i
 
-Coordinate.s: Coordinate.cpp.s
+src/ConsolePrinter.s: src/ConsolePrinter.cpp.s
 
-.PHONY : Coordinate.s
+.PHONY : src/ConsolePrinter.s
 
 # target to generate assembly for a file
-Coordinate.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Coordinate.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Coordinate.cpp.s
-.PHONY : Coordinate.cpp.s
+src/ConsolePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/ConsolePrinter.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/ConsolePrinter.cpp.s
+.PHONY : src/ConsolePrinter.cpp.s
 
-GameManager.o: GameManager.cpp.o
+src/Coordinate.o: src/Coordinate.cpp.o
 
-.PHONY : GameManager.o
+.PHONY : src/Coordinate.o
 
 # target to build an object file
-GameManager.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.o
-.PHONY : GameManager.cpp.o
+src/Coordinate.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Coordinate.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Coordinate.cpp.o
+.PHONY : src/Coordinate.cpp.o
 
-GameManager.i: GameManager.cpp.i
+src/Coordinate.i: src/Coordinate.cpp.i
 
-.PHONY : GameManager.i
+.PHONY : src/Coordinate.i
 
 # target to preprocess a source file
-GameManager.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.i
-.PHONY : GameManager.cpp.i
+src/Coordinate.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Coordinate.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Coordinate.cpp.i
+.PHONY : src/Coordinate.cpp.i
 
-GameManager.s: GameManager.cpp.s
+src/Coordinate.s: src/Coordinate.cpp.s
 
-.PHONY : GameManager.s
+.PHONY : src/Coordinate.s
 
 # target to generate assembly for a file
-GameManager.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/GameManager.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/GameManager.cpp.s
-.PHONY : GameManager.cpp.s
+src/Coordinate.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Coordinate.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Coordinate.cpp.s
+.PHONY : src/Coordinate.cpp.s
 
-HumanPlayer.o: HumanPlayer.cpp.o
+src/GameManager.o: src/GameManager.cpp.o
 
-.PHONY : HumanPlayer.o
+.PHONY : src/GameManager.o
 
 # target to build an object file
-HumanPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.o
-.PHONY : HumanPlayer.cpp.o
+src/GameManager.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/GameManager.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/GameManager.cpp.o
+.PHONY : src/GameManager.cpp.o
 
-HumanPlayer.i: HumanPlayer.cpp.i
+src/GameManager.i: src/GameManager.cpp.i
 
-.PHONY : HumanPlayer.i
+.PHONY : src/GameManager.i
 
 # target to preprocess a source file
-HumanPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.i
-.PHONY : HumanPlayer.cpp.i
+src/GameManager.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/GameManager.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/GameManager.cpp.i
+.PHONY : src/GameManager.cpp.i
 
-HumanPlayer.s: HumanPlayer.cpp.s
+src/GameManager.s: src/GameManager.cpp.s
 
-.PHONY : HumanPlayer.s
+.PHONY : src/GameManager.s
 
 # target to generate assembly for a file
-HumanPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/HumanPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/HumanPlayer.cpp.s
-.PHONY : HumanPlayer.cpp.s
+src/GameManager.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/GameManager.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/GameManager.cpp.s
+.PHONY : src/GameManager.cpp.s
 
-Logic.o: Logic.cpp.o
+src/HumanPlayer.o: src/HumanPlayer.cpp.o
 
-.PHONY : Logic.o
+.PHONY : src/HumanPlayer.o
 
 # target to build an object file
-Logic.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.o
-.PHONY : Logic.cpp.o
+src/HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.o
+.PHONY : src/HumanPlayer.cpp.o
 
-Logic.i: Logic.cpp.i
+src/HumanPlayer.i: src/HumanPlayer.cpp.i
 
-.PHONY : Logic.i
+.PHONY : src/HumanPlayer.i
 
 # target to preprocess a source file
-Logic.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.i
-.PHONY : Logic.cpp.i
+src/HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.i
+.PHONY : src/HumanPlayer.cpp.i
 
-Logic.s: Logic.cpp.s
+src/HumanPlayer.s: src/HumanPlayer.cpp.s
 
-.PHONY : Logic.s
+.PHONY : src/HumanPlayer.s
 
 # target to generate assembly for a file
-Logic.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Logic.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Logic.cpp.s
-.PHONY : Logic.cpp.s
+src/HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/HumanPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.s
+.PHONY : src/HumanPlayer.cpp.s
 
-NormalLogic.o: NormalLogic.cpp.o
+src/Logic.o: src/Logic.cpp.o
 
-.PHONY : NormalLogic.o
+.PHONY : src/Logic.o
 
 # target to build an object file
-NormalLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.o
-.PHONY : NormalLogic.cpp.o
+src/Logic.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Logic.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Logic.cpp.o
+.PHONY : src/Logic.cpp.o
 
-NormalLogic.i: NormalLogic.cpp.i
+src/Logic.i: src/Logic.cpp.i
 
-.PHONY : NormalLogic.i
+.PHONY : src/Logic.i
 
 # target to preprocess a source file
-NormalLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.i
-.PHONY : NormalLogic.cpp.i
+src/Logic.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Logic.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Logic.cpp.i
+.PHONY : src/Logic.cpp.i
 
-NormalLogic.s: NormalLogic.cpp.s
+src/Logic.s: src/Logic.cpp.s
 
-.PHONY : NormalLogic.s
+.PHONY : src/Logic.s
 
 # target to generate assembly for a file
-NormalLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/NormalLogic.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/NormalLogic.cpp.s
-.PHONY : NormalLogic.cpp.s
+src/Logic.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Logic.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Logic.cpp.s
+.PHONY : src/Logic.cpp.s
 
-Player.o: Player.cpp.o
+src/NormalLogic.o: src/NormalLogic.cpp.o
 
-.PHONY : Player.o
+.PHONY : src/NormalLogic.o
 
 # target to build an object file
-Player.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+src/NormalLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/NormalLogic.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/NormalLogic.cpp.o
+.PHONY : src/NormalLogic.cpp.o
 
-Player.i: Player.cpp.i
+src/NormalLogic.i: src/NormalLogic.cpp.i
 
-.PHONY : Player.i
+.PHONY : src/NormalLogic.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+src/NormalLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/NormalLogic.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/NormalLogic.cpp.i
+.PHONY : src/NormalLogic.cpp.i
 
-Player.s: Player.cpp.s
+src/NormalLogic.s: src/NormalLogic.cpp.s
 
-.PHONY : Player.s
+.PHONY : src/NormalLogic.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Player.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+src/NormalLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/NormalLogic.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/NormalLogic.cpp.s
+.PHONY : src/NormalLogic.cpp.s
 
-Printer.o: Printer.cpp.o
+src/Player.o: src/Player.cpp.o
 
-.PHONY : Printer.o
+.PHONY : src/Player.o
 
 # target to build an object file
-Printer.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.o
-.PHONY : Printer.cpp.o
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Player.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
 
-Printer.i: Printer.cpp.i
+src/Player.i: src/Player.cpp.i
 
-.PHONY : Printer.i
+.PHONY : src/Player.i
 
 # target to preprocess a source file
-Printer.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.i
-.PHONY : Printer.cpp.i
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Player.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
 
-Printer.s: Printer.cpp.s
+src/Player.s: src/Player.cpp.s
 
-.PHONY : Printer.s
+.PHONY : src/Player.s
 
 # target to generate assembly for a file
-Printer.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/Printer.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/Printer.cpp.s
-.PHONY : Printer.cpp.s
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Player.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
 
-main.o: main.cpp.o
+src/Printer.o: src/Printer.cpp.o
 
-.PHONY : main.o
+.PHONY : src/Printer.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Printer.cpp.o:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Printer.cpp.o
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Printer.cpp.o
+.PHONY : src/Printer.cpp.o
 
-main.i: main.cpp.i
+src/Printer.i: src/Printer.cpp.i
 
-.PHONY : main.i
+.PHONY : src/Printer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Printer.cpp.i:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Printer.cpp.i
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Printer.cpp.i
+.PHONY : src/Printer.cpp.i
 
-main.s: main.cpp.s
+src/Printer.s: src/Printer.cpp.s
 
-.PHONY : main.s
+.PHONY : src/Printer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Printer.cpp.s:
+	$(MAKE) -f CMakeFiles/TestGame.dir/build.make CMakeFiles/TestGame.dir/src/Printer.cpp.s
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/Printer.cpp.s
+.PHONY : src/Printer.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Reversi.dir/build.make CMakeFiles/Reversi.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 tests/main_test.o: tests/main_test.cpp.o
 
@@ -747,42 +744,42 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... Board.o"
-	@echo "... Board.i"
-	@echo "... Board.s"
-	@echo "... Cell.o"
-	@echo "... Cell.i"
-	@echo "... Cell.s"
-	@echo "... ComputerPlayer.o"
-	@echo "... ComputerPlayer.i"
-	@echo "... ComputerPlayer.s"
-	@echo "... ConsolePrinter.o"
-	@echo "... ConsolePrinter.i"
-	@echo "... ConsolePrinter.s"
-	@echo "... Coordinate.o"
-	@echo "... Coordinate.i"
-	@echo "... Coordinate.s"
-	@echo "... GameManager.o"
-	@echo "... GameManager.i"
-	@echo "... GameManager.s"
-	@echo "... HumanPlayer.o"
-	@echo "... HumanPlayer.i"
-	@echo "... HumanPlayer.s"
-	@echo "... Logic.o"
-	@echo "... Logic.i"
-	@echo "... Logic.s"
-	@echo "... NormalLogic.o"
-	@echo "... NormalLogic.i"
-	@echo "... NormalLogic.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... Printer.o"
-	@echo "... Printer.i"
-	@echo "... Printer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
+	@echo "... src/Cell.o"
+	@echo "... src/Cell.i"
+	@echo "... src/Cell.s"
+	@echo "... src/ComputerPlayer.o"
+	@echo "... src/ComputerPlayer.i"
+	@echo "... src/ComputerPlayer.s"
+	@echo "... src/ConsolePrinter.o"
+	@echo "... src/ConsolePrinter.i"
+	@echo "... src/ConsolePrinter.s"
+	@echo "... src/Coordinate.o"
+	@echo "... src/Coordinate.i"
+	@echo "... src/Coordinate.s"
+	@echo "... src/GameManager.o"
+	@echo "... src/GameManager.i"
+	@echo "... src/GameManager.s"
+	@echo "... src/HumanPlayer.o"
+	@echo "... src/HumanPlayer.i"
+	@echo "... src/HumanPlayer.s"
+	@echo "... src/Logic.o"
+	@echo "... src/Logic.i"
+	@echo "... src/Logic.s"
+	@echo "... src/NormalLogic.o"
+	@echo "... src/NormalLogic.i"
+	@echo "... src/NormalLogic.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/Printer.o"
+	@echo "... src/Printer.i"
+	@echo "... src/Printer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... tests/main_test.o"
 	@echo "... tests/main_test.i"
 	@echo "... tests/main_test.s"

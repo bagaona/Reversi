@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "ConsolePrinter.h"
+#include "../include/ConsolePrinter.h"
 using namespace std;
 
 void ConsolePrinter::printBoard(Board *& board) const{

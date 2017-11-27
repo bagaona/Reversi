@@ -2,7 +2,7 @@
 // Created by amir on 02/11/17.
 //
 
-#include "Player.h"
+#include "../include/Player.h"
 #include <iostream>
 
 using namespace std;

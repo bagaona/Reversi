@@ -2,7 +2,7 @@
 // Created by or on 01/11/17.
 //
 
-#include "Cell.h"
+#include "../include/Cell.h"
 
 /**
  * constructor.

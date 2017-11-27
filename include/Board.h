@@ -99,6 +99,10 @@ public:
     Cell*** getBoard() const{
         return board;
     }
+
+    Board &operator =(const Board &board);
+
+
     void copyBoard(Board *& b1);
     int score(char player);
     const char getp1();

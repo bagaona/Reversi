@@ -2,7 +2,7 @@
 // Created by amir on 02/11/17.
 //
 
-#include "HumanPlayer.h"
+#include "../include/HumanPlayer.h"
 #include <iostream>
 
 using namespace std;

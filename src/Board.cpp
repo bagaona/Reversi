@@ -1,6 +1,6 @@
 
 //A Class that represents the game's Board
-#include "Board.h"
+#include "../include/Board.h"
 #include <iostream>
 
 using namespace std;
@@ -25,6 +25,17 @@ Board::Board(Board*& b1): p1Token(b1->getp1()),p2Token(b1->getp2()), size(b1->ge
     }
 
 }
+
+Board &Board::operator=(const Board &other) {
+        if (this != &other) {
+            for (int i = 0; i < other.getSize(); i++) {
+                for (int j = 0; j < other.getSize(); j++) {
+                    board[i][j]->setSign(other.getValue(i, j));
+                }
+            }
+            return *this;
+        }
+    }
 
 const char Board::getp1() {
     return p1Token;

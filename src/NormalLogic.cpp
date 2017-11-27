@@ -2,7 +2,7 @@
 // Created by amir on 25/10/17.
 //
 
-#include "NormalLogic.h"
+#include "../include/NormalLogic.h"
 #include <iostream>
 #include <stdio.h>
 

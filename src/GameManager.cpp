@@ -2,10 +2,10 @@
 // Created by amir on 25/10/17.
 //
 
-#include "GameManager.h"
-#include "HumanPlayer.h"
-#include "ComputerPlayer.h"
-#include "ConsolePrinter.h"
+#include "../include/GameManager.h"
+#include "../include/HumanPlayer.h"
+#include "../include/ComputerPlayer.h"
+#include "../include/ConsolePrinter.h"
 
 using namespace std;
 
@@ -75,12 +75,9 @@ void GameManager::playTurn(Player *&player) {
 
 void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
     bool flag = true;
-    int row = 0, col = 0;
 
     while (flag) {
         Coordinate position(p->makeTurn(logic, board, printer, availableMoves)); //Get coordinate by player's choose
-        row = position.getRow();
-        col = position.getCol();
         if (logic->isLegal(position)) { //Check if the move is legal
             flag = false;
             printer->playingMove(position);

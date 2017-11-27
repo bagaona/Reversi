@@ -2,7 +2,7 @@
 // Created by or on 02/11/17.
 //
 
-#include "Coordinate.h"
+#include "../include/Coordinate.h"
 #include <iostream>
 /**
  * contructor.
