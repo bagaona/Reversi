@@ -3,7 +3,9 @@
 //
 
 #include <iostream>
-#include "../include/ConsolePrinter.h"
+#include "Board.h"
+#include "ConsolePrinter.h"
+
 using namespace std;
 
 void ConsolePrinter::printBoard(Board * board) const{
@@ -20,7 +22,7 @@ void ConsolePrinter::printBoard(Board * board) const{
         int row = x + 1;
         cout << row;
         for(int y = 0;y < size;y++) {
-            cout << " | " << board->getBoard()[x][y]->getSign();
+            cout << " | " << (char)board->getValue(x, y);
         }
         cout << " |" << endl;
         //Prints the line below
@@ -38,9 +40,9 @@ void ConsolePrinter::massage(const string &s) const {
 void ConsolePrinter::noMoreMoves() const {
     cout << "Neither players can move!!!" << endl;
 }
-void ConsolePrinter::yourTurn(const char &token) const {
+void ConsolePrinter::yourTurn(const Value &token) const {
     cout << endl;
-    cout << token << ": It's your move" << endl;
+    cout << (char)token << ": It's your move" << endl;
 }
 void ConsolePrinter::availableMoves(set<Coordinate> legalMoves) const {
     cout << "Your possible moves:" << endl;
@@ -58,17 +60,17 @@ void ConsolePrinter::availableMoves(set<Coordinate> legalMoves) const {
 
 }
 
-void ConsolePrinter::winner(const char &p1, const char &p2, const int &score1,
+void ConsolePrinter::winner(const Value &p1, const Value &p2, const int &score1,
                             const int &score2) const{
     cout << "Score: " << endl;
-    cout << p1 << ": " << score1 << ", " << p2 << ": " << score2 << endl;
+    cout << (char)p1 << ": " << score1 << ", " << (char)p2 << ": " << score2 << endl;
     if (score1 == score2) {
         cout << "Tie!" << endl;
     } else {
         if (score1 > score2) {
-            cout << "The winner is: " << p1 << endl;
+            cout << "The winner is: " << (char)p1 << endl;
         } else {
-            cout << "The winner is: " << p2 << endl;
+            cout << "The winner is: " << (char)p2 << endl;
         }
     }
 }

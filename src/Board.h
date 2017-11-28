@@ -2,14 +2,16 @@
 #ifndef REVERSI_BOARD_H
 #define REVERSI_BOARD_H
 
+
 #include "Cell.h"
+
 
 class Board {
 private:
     Cell*** board; // The board
     const int size; //The board's size
-    const char p1Token;
-    const char p2Token;
+    const Value p1Token;
+    const Value p2Token;
 public:
     /*************************************************************************
     * Name: Board (Constructor)
@@ -17,7 +19,7 @@ public:
     * Output: -
     * Operation: The function build a board with the size from input
     *************************************************************************/
-    Board(const int &size, const char &p1Token, const char &p2Token);
+    Board(const int &size, const Value &p1Token, const Value &p2Token);
 
     //Copy constructor
     Board(Board*& b);
@@ -41,13 +43,12 @@ public:
 
     /*************************************************************************
     * Name: Update
-    * Input: row, col, and the token of the player
+    * Input: (row, col) or Coordinate, and the token of the player
     * Output: -
     * Operation: The function updates a new piece/token on the board
     *************************************************************************/
-    void update(const int &row, const int &col, const char &player) const;
-
-    void update(Coordinate c, const char &player) const;
+    void update(const int &row, const int &col, const Value &player) const;
+    void update(Coordinate c, const Value &player) const;
 
     /*************************************************************************
     * Name: GetSize
@@ -59,10 +60,10 @@ public:
     /*************************************************************************
     * Name: GetValue
     * Input: row and col of spesific cell
-    * Output: Returns the value of the char in the cell
+    * Output: Returns the value of the Value in the cell
     * Operation: "      "   "
     *************************************************************************/
-    char getValue(const int &row, const int &col) const;
+    Value getValue(const int &row, const int &col) const;
 
     /*************************************************************************
     * Name: StartMode
@@ -70,7 +71,7 @@ public:
     * Output: -
     * Operation: Set the board as the start of the game (4 tokens on middle)
     *************************************************************************/
-    void startMode(const char &p1Token,const char &p2Token) const;
+    void startMode(const Value &p1Token,const Value &p2Token) const;
 
     /*************************************************************************
     * Name: Clear
@@ -88,18 +89,22 @@ public:
     *************************************************************************/
     bool isFull() const;
 
-    Cell*** getBoard() const{
-        return board;
-    }
-
+    //Operator = for copying board
     Board &operator =(const Board &board);
 
-
-    void copyBoard(Board *& b1);
-    int score(char player);
-    const char getp1();
-    const char getp2();
-    const char getOpponent(const char x);
+    /*************************************************************************
+    * Name: score
+    * Input: value of player
+    * Output: it's score with compare to other player
+    * Operation:
+    *************************************************************************/
+    int score(Value player);
+    //Return p1 Value
+    const Value getp1();
+    //Return p2 Value
+    const Value getp2();
+    //Return the other player Value
+    const Value getOpponent(const Value x);
 
 };
 

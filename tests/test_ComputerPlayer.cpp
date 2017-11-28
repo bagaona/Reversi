@@ -1,16 +1,15 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "../include/Board.h"
-#include "../include/Logic.h"
 #include "ComputerTest.h"
-#include "../include/ConsolePrinter.h"
+#include "../src/Printer.h"
+#include "../src/ConsolePrinter.h"
 
 TEST_F(ComputerTest, DoMove) {
     Printer *printer = new ConsolePrinter();
 
-    board->update(Coordinate(2,3), 'X');
-    logic->flip(Coordinate(2,3), 'X');
-    set<Coordinate> availableMoves = logic->availableMoves('O');
+    board->update(Coordinate(2,3), Black);
+    logic->flip(Coordinate(2,3), Black);
+    set<Coordinate> availableMoves = logic->availableMoves(White);
     Coordinate makedMove(player.makeTurn(logic,board, printer , availableMoves));
 /* The Current Board will be like this
     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
@@ -36,28 +35,28 @@ TEST_F(ComputerTest, DoMove) {
   */
     EXPECT_EQ(Coordinate(2,2), makedMove);
 
-    board->update(makedMove, 'O');
-    logic->flip(makedMove, 'O');
+    board->update(makedMove, White);
+    logic->flip(makedMove, White);
     logic-> endTurn();
 
-    board->update(Coordinate(2,1), 'X');
-    logic->flip(Coordinate(2,1), 'X');
-    availableMoves = logic->availableMoves('O');
+    board->update(Coordinate(2,1), Black);
+    logic->flip(Coordinate(2,1), Black);
+    availableMoves = logic->availableMoves(White);
     Coordinate anotherMove = player.makeTurn(logic,board, printer , availableMoves);
     EXPECT_EQ(Coordinate(2,4), anotherMove);
 }
 TEST_F(ComputerTest, OnePlaceOnly) {
     Printer *printer = new ConsolePrinter();
     //Clear the board
-    board->update(Coordinate(2, 3), ' ');
-    board->update(Coordinate(3, 2), ' ');
-    board->update(Coordinate(4, 5), ' ');
-    board->update(Coordinate(5, 4), ' ');
+    board->update(Coordinate(2, 3), Empty);
+    board->update(Coordinate(3, 2), Empty);
+    board->update(Coordinate(4, 5), Empty);
+    board->update(Coordinate(5, 4), Empty);
 
     //Make the computer have only one option to move
-    board->update(Coordinate(2, 3), 'X');
-    board->update(Coordinate(2, 2), 'O');
-    set<Coordinate> availableMoves = logic->availableMoves('O');
+    board->update(Coordinate(2, 3), Black);
+    board->update(Coordinate(2, 2), White);
+    set<Coordinate> availableMoves = logic->availableMoves(White);
     Coordinate makedMove(player.makeTurn(logic, board, printer, availableMoves));
     EXPECT_EQ(Coordinate(2,4), makedMove);
 }

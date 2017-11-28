@@ -2,11 +2,12 @@
 // Created by amir on 02/11/17.
 //
 
-#include "../include/HumanPlayer.h"
 #include <iostream>
+#include "Player.h"
+#include "HumanPlayer.h"
 
 using namespace std;
-    HumanPlayer::HumanPlayer(const char t): Player(t) {
+    HumanPlayer::HumanPlayer(const Value t): Player(t) {
 }
 HumanPlayer::~HumanPlayer() {
 }

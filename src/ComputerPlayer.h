@@ -16,7 +16,7 @@ public:
    * Output: -
    * Operation: Matches a player with a token
    *************************************************************************/
-    ComputerPlayer(const char t);
+    ComputerPlayer(const Value t);
     /************************************************************************
     * Name: ~ComputerPlayer (Destructor)
     * Input: -
@@ -28,7 +28,8 @@ public:
     * Name: MakeTurn
     * Input: -
     * Output: -
-    * Operation: Gets a row and a col from the Computer player and makes a move
+    * Operation: Gets a row and a col from the Computer player and makes a move.
+     * Calculate the best option for the computer by minMax algorithm.
     *************************************************************************/
     virtual Coordinate makeTurn(Logic* l, Board* originalBoard, Printer* printer, set<Coordinate> availableMoves) const;
 };

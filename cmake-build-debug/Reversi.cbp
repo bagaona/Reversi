@@ -390,50 +390,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Board.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Cell.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/ComputerPlayer.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/ConsolePrinter.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Coordinate.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/GameManager.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/HumanPlayer.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Logic.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/NormalLogic.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Player.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/include/Printer.h">
-			<Option target="TestGame"/>
-			<Option target="Reversi"/>
-		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/lib/google_tests/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -453,7 +409,15 @@
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Board.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/Cell.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Cell.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
@@ -461,7 +425,15 @@
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/ComputerPlayer.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/ConsolePrinter.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/ConsolePrinter.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
@@ -469,7 +441,15 @@
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Coordinate.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/GameManager.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/GameManager.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
@@ -477,7 +457,15 @@
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/HumanPlayer.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/Logic.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Logic.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
@@ -485,11 +473,23 @@
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/NormalLogic.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/Player.cpp">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Player.h">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/Printer.cpp">
+			<Option target="TestGame"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/amir/CLionProjects/Reversi/src/Printer.h">
 			<Option target="TestGame"/>
 			<Option target="Reversi"/>
 		</Unit>

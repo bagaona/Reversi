@@ -16,7 +16,7 @@ public:
    * Output: -
    * Operation: Matches a player with a token
    *************************************************************************/
-    HumanPlayer(const char t);
+    HumanPlayer(const Value t);
     /************************************************************************
     * Name: ~HumanPlayer (Destructor)
     * Input: -

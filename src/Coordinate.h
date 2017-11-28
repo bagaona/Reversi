@@ -11,10 +11,15 @@ private:
     const int row;
     const int col;
 public:
+    //Constructor
     Coordinate(int x1,int y1);
+    //Returns the row of the coordinate
     int getRow() const ;
+    //Returns the col of the coordinate
     int getCol() const;
+    //Operator for ==
     bool operator ==(const Coordinate &other) const;
+    //Operator for <
     bool operator <(const Coordinate &other) const;
 };
 

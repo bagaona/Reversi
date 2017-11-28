@@ -12,12 +12,12 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 set(TEST_FILES tests/main_test.cpp tests/test_Board.cpp tests/test_NormalLogic.cpp
         tests/test_ComputerPlayer.cpp tests/test_Coordinate.cpp tests/LogicTest.h tests/BoardTest.h tests/ComputerTest.h)
 
-set(SOURCE_FILES src/Board.cpp include/Board.h src/Cell.cpp include/Cell.h
-        src/ConsolePrinter.cpp include/ConsolePrinter.h src/GameManager.cpp
-        include/GameManager.h src/HumanPlayer.cpp include/HumanPlayer.h
-        src/Logic.cpp include/Logic.h src/NormalLogic.cpp include/NormalLogic.h
-        src/Coordinate.cpp include/Coordinate.h src/Player.cpp include/Player.h
-        src/Printer.cpp include/Printer.h src/ComputerPlayer.cpp include/ComputerPlayer.h)
+set(SOURCE_FILES src/Board.cpp src/Board.h src/Cell.cpp src/Cell.h
+        src/ConsolePrinter.cpp src/ConsolePrinter.h src/GameManager.cpp
+        src/GameManager.h src/HumanPlayer.cpp src/HumanPlayer.h
+        src/Logic.cpp src/Logic.h src/NormalLogic.cpp src/NormalLogic.h
+        src/Coordinate.cpp src/Coordinate.h src/Player.cpp src/Player.h
+        src/Printer.cpp src/Printer.h src/ComputerPlayer.cpp src/ComputerPlayer.h)
 
 add_executable(Reversi ${SOURCE_FILES} src/main.cpp)
 add_executable(TestGame ${TEST_FILES} ${SOURCE_FILES} ${TEST_FILES} tests/main_test.cpp)

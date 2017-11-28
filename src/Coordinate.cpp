@@ -2,8 +2,9 @@
 // Created by or on 02/11/17.
 //
 
-#include "../include/Coordinate.h"
 #include <iostream>
+#include "Coordinate.h"
+
 /**
  * contructor.
  * @param x1 - x value

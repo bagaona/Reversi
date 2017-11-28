@@ -7,14 +7,14 @@
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "../include/Board.h"
+#include "../src/Board.h"
 
 using namespace std;
 
 class BoardTest: public testing::Test {
 public:
 
-    BoardTest(): board(Board(8, 'X', 'O')){
+    BoardTest(): board(Board(8, Black, White)){
     }
 
     virtual void SetUp() {

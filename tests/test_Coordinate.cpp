@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "../include//Coordinate.h"
+#include "../src/Coordinate.h"
 
 //Check that coordinate constructor works
 TEST(CoordinateTest, RegularTest) {

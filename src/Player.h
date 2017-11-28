@@ -14,7 +14,7 @@ using namespace std;
 class Player {
 
 protected:
-    const char sign;
+    const Value sign;
 
 public:
     /************************************************************************
@@ -23,7 +23,7 @@ public:
 	* Output: -
 	* Operation: Matches a player with a token
 	*************************************************************************/
-    Player(const char t);
+    Player(const Value t);
 
     /************************************************************************
 	* Name: ~Player (Destructor)
@@ -39,7 +39,7 @@ public:
     * Output: Returns the player token
     * Operation: " " "
     *************************************************************************/
-    virtual char getToken();
+    virtual Value getToken();
 
     /************************************************************************
     * Name: MakeTurn

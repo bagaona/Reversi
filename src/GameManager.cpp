@@ -1,11 +1,9 @@
-//
-// Created by amir on 25/10/17.
-//
 
-#include "../include/GameManager.h"
-#include "../include/HumanPlayer.h"
-#include "../include/ComputerPlayer.h"
-#include "../include/ConsolePrinter.h"
+#include <iostream>
+#include "GameManager.h"
+#include "ConsolePrinter.h"
+#include "HumanPlayer.h"
+#include "ComputerPlayer.h"
 
 using namespace std;
 
@@ -25,8 +23,8 @@ GameManager::~GameManager() {
 }
 void GameManager::initialize(const int &size) {
 
-    const char p1Token = 'X';
-    const char p2Token = 'O';
+    const Value p1Token = Black;
+    const Value p2Token = White;
 
     printer = new ConsolePrinter();
 
@@ -56,7 +54,7 @@ void GameManager::run() {
 }
 void GameManager::playTurn(Player *&player) {
     printer->printBoard(board);
-    const char token = player->getToken();
+    const Value token = player->getToken();
     printer->yourTurn(token);
 
     set<Coordinate> availableMoves = logic->availableMoves(token); // Get available moves
@@ -91,8 +89,8 @@ void GameManager::putNext(Player *&p, set<Coordinate> &availableMoves) const{
 
 
 void GameManager::winner() const{
-    char p1 = players[0]->getToken();
-    char p2 = players[1]->getToken();
+    Value p1 = players[0]->getToken();
+    Value p2 = players[1]->getToken();
     int score1 = 0;
     int score2 = 0;
 

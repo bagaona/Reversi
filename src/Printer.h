@@ -14,14 +14,22 @@ using namespace std;
 
 class Printer {
 public:
+    //Print the board
     virtual void printBoard(Board * board) const = 0;
+    //Print the input string
     virtual void massage(const string &s) const = 0;
+    //Print in case player cant move
     virtual void cantMove() const = 0;
+    //Print when both players cant move
     virtual void noMoreMoves() const = 0;
+    //Print the available moves
     virtual void availableMoves(set<Coordinate> legalMoves) const = 0;
-    virtual void yourTurn(const char &player) const = 0;
+    //Print that it's the input players turn
+    virtual void yourTurn(const Value &player) const = 0;
+    //Print the Coordinate of the played move
     virtual void playingMove(Coordinate &c) = 0;
-    virtual void winner(const char &p1, const char &p2, const int &score1,
+    //Prints the winner
+    virtual void winner(const Value &p1, const Value &p2, const int &score1,
                         const int &score2) const = 0;
 };
 

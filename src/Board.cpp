@@ -1,13 +1,12 @@
 
 //A Class that represents the game's Board
-#include "../include/Board.h"
 #include <iostream>
+#include "Board.h"
 
 using namespace std;
 
-const char empty = ' ';
 //Constructor
-Board::Board(const int &s, const char &p1, const char &p2): size(s), p1Token(p1), p2Token(p2){
+Board::Board(const int &s, const Value &p1, const Value &p2): size(s), p1Token(p1), p2Token(p2){
     initialize();
     startMode(p1Token, p2Token);
 
@@ -37,13 +36,13 @@ Board &Board::operator=(const Board &other) {
         }
     }
 
-const char Board::getp1() {
+const Value Board::getp1() {
     return p1Token;
 }
-const char Board::getp2() {
+const Value Board::getp2() {
     return p2Token;
 }
-const char Board::getOpponent(const char x) {
+const Value Board::getOpponent(const Value x) {
     return p1Token == x? p2Token: p1Token;
 }
 
@@ -56,7 +55,7 @@ void Board::initialize() {
     }
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            board[i][j] = new Cell(i, j, ' '); // each
+            board[i][j] = new Cell(i, j, Empty); // each
         }
     }
 }
@@ -68,24 +67,24 @@ void Board::clear() const{
     //Set empty cells
     for (int x = 0;x < size;x++) {
         for(int y = 0;y < size;y++) {
-            board[x][y]->setSign(' ');
+            board[x][y]->setSign(Empty);
         }
     }
 }
 
 //Put tokens at start
-void Board::startMode(const char &p1Token,const char &p2Token) const{
+void Board::startMode(const Value &p1Token,const Value &p2Token) const{
     board[(size / 2) - 1][(size / 2) - 1]->setSign(p2Token);
     board[size / 2][size / 2]->setSign(p2Token);
     board[(size / 2) - 1][size / 2]->setSign(p1Token);
     board[size / 2][(size / 2) - 1]->setSign(p1Token);
 }
 //Updates the board
-void Board::update(const int &row, const int &col, const char &player) const{
+void Board::update(const int &row, const int &col, const Value &player) const{
     board[row][col]->setSign(player);
 }
 //Updates the board by coordinate
-void Board::update(Coordinate c, const char &player) const{
+void Board::update(Coordinate c, const Value &player) const{
     board[c.getRow()][c.getCol()]->setSign(player);
 }
 
@@ -103,7 +102,7 @@ void Board::update(Coordinate c, const char &player) const{
     delete[] board;
 }
 //Returns the board
-char Board::getValue(const int &row, const int &col) const{
+Value Board::getValue(const int &row, const int &col) const{
     return board[row][col]->getSign();
 }
 
@@ -118,19 +117,12 @@ bool Board::isFull() const{
     }
     return true;
 }
-void Board::copyBoard(Board *& b1) {
-    for (int i = 0; i < b1->getSize(); i++) {
-        for (int j = 0; j < b1->getSize(); j++) {
-            board[i][j]->setSign(b1->getValue(i,j));
-        }
-    }
-}
-int Board::score(char player) {
-    char opponent = getOpponent(player);
+int Board::score(Value player) {
+    Value opponent = getOpponent(player);
     int score = 0;
     for (int row = 0; row < size; row++) {
         for (int col = 0; col < size; col++) {
-            char val = board[row][col]->getSign();
+            Value val = board[row][col]->getSign();
             if (val == player) {
                 score++;
             } else if (val == opponent) {

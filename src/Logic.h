@@ -41,7 +41,7 @@ public:
 	* Output: -
 	* Operation: Calculates the possible moves for spesific cell
 	*************************************************************************/
-    virtual void calculate(Coordinate &c, const char &player) = 0;
+    virtual void calculate(Coordinate &c, const Value &player) = 0;
 
     /************************************************************************
 	* Name: CalculateAll
@@ -49,7 +49,7 @@ public:
 	* Output: -
 	* Operation: Calculates the whole possible moves for a player
 	*************************************************************************/
-    virtual void calculateAll(const char &player1);
+    virtual void calculateAll(const Value &player1);
 
     /************************************************************************
 	* Name: availableMoves
@@ -57,7 +57,7 @@ public:
 	* Output: -
 	* Operation: Calculate and print the legal moves for a player, if any.
 	*************************************************************************/
-    virtual set<Coordinate> availableMoves(const char token) = 0;
+    virtual set<Coordinate> availableMoves(const Value token) = 0;
 
     /************************************************************************
 	* Name: IsLegal
@@ -74,7 +74,7 @@ public:
 	* Operation: Flips all the appropriate tokens after the player putted
     * a token.
 	*************************************************************************/
-    virtual void flip(Coordinate c, const char &player) = 0;
+    virtual void flip(Coordinate c, const Value &player) = 0;
 
     /************************************************************************
     * Name: EndTurn
@@ -83,7 +83,21 @@ public:
     * Operation: Clears the temp board for a new use
     *************************************************************************/
     virtual void endTurn();
+
+    /************************************************************************
+    * Name: setAvailableMoves
+    * Input: set of coordinates
+    * Output: -
+    * Operation: Get a set of coordinate and change the current logic's set
+    * to it
+    *************************************************************************/
     virtual void setAvailableMoves(set<Coordinate> &availableMoves) = 0;
+    /************************************************************************
+    * Name: setCurrentBoard
+    * Input: pointer of a board
+    * Output: -
+    * Operation: Make the logic to work on the input board
+    *************************************************************************/
     virtual void setCurrentBoard(Board * b) = 0;
 };
 

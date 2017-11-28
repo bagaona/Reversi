@@ -10,13 +10,14 @@
 
 class ConsolePrinter : public Printer {
 public:
+    //All of them were described at Printer.h
     virtual void printBoard(Board * board) const;
     virtual void cantMove() const;
     virtual void massage(const string &s) const;
     virtual void noMoreMoves() const;
     virtual void availableMoves(set<Coordinate> legalMoves) const;
-    virtual void yourTurn(const char &player) const;
-    virtual void winner(const char &p1, const char &p2, const int &score1,
+    virtual void yourTurn(const Value &player) const;
+    virtual void winner(const Value &p1, const Value &p2, const int &score1,
                         const int &score2) const;
     virtual void playingMove(Coordinate &c);
 };

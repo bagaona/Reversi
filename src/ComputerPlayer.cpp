@@ -2,11 +2,11 @@
 // Created by amir on 02/11/17.
 //
 
-#include "../include/ComputerPlayer.h"
 #include <iostream>
+#include "ComputerPlayer.h"
 
 using namespace std;
-ComputerPlayer::ComputerPlayer(const char t): Player(t) {
+ComputerPlayer::ComputerPlayer(const Value t): Player(t) {
 }
 ComputerPlayer::~ComputerPlayer() {}
 
@@ -18,7 +18,7 @@ Coordinate ComputerPlayer::makeTurn(Logic* logic, Board* originalBoard, Printer*
 
 //    Board* tempBoard = new Board(originalBoard);
     set<Coordinate> backUp = availableMoves;
-    char opponent = originalBoard->getOpponent(sign);
+    Value opponent = originalBoard->getOpponent(sign);
     logic->setCurrentBoard(&tempBoard);
 
     int minRow, minCol;

@@ -2,15 +2,15 @@
 // Created by amir on 02/11/17.
 //
 
-#include "../include/Player.h"
 #include <iostream>
+#include "Player.h"
 
 using namespace std;
 
-Player::Player(const char t) : sign(t) {
+Player::Player(const Value t) : sign(t) {
 }
 Player::~Player() {
 }
-char Player::getToken() {
+Value Player::getToken() {
     return sign;
 }

@@ -2,8 +2,11 @@
 // Created by amir on 25/10/17.
 //
 
-#include "../include/NormalLogic.h"
 
+
+#include <iostream>
+#include "Board.h"
+#include "NormalLogic.h"
 
 using namespace std;
 NormalLogic::NormalLogic(Board*& b): Logic(b) {
@@ -12,8 +15,8 @@ NormalLogic::NormalLogic(Board*& b): Logic(b) {
 NormalLogic::~NormalLogic() {
 }
 
-bool NormalLogic::shouldStop(const char &current, const char &player,
-                             const char &other, bool &sawOther, bool &need_update) const{
+bool NormalLogic::shouldStop(const Value &current, const Value &player,
+                             const Value &other, bool &sawOther, bool &need_update) const{
     if (current == other) {
         sawOther = true;
         return false;
@@ -23,14 +26,14 @@ bool NormalLogic::shouldStop(const char &current, const char &player,
             need_update = true;
         }
     }
-    //In case of ' ' or player's char
+    //In case of ' ' or player's Value
     return true;
 }
-void NormalLogic::calculate(Coordinate &c, const char &player) {
+void NormalLogic::calculate(Coordinate &c, const Value &player) {
     int row = c.getRow();
     int col = c.getCol();
-    char current;
-    char other = board->getOpponent(player);
+    Value current;
+    Value other = board->getOpponent(player);
     bool sawOther = false;
     bool need_update = false;
 
@@ -141,7 +144,7 @@ void NormalLogic::calculate(Coordinate &c, const char &player) {
     }
 }
 
-set<Coordinate> NormalLogic::availableMoves(const char token){
+set<Coordinate> NormalLogic::availableMoves(const Value token){
     calculateAll(token);
     return canMove;
 }
@@ -162,7 +165,7 @@ bool NormalLogic::isLegal(Coordinate &c) const{
     return true;
 }
 
-bool NormalLogic::flipHelper(const char &current, const char &player, bool &hasSame) const{
+bool NormalLogic::flipHelper(const Value &current, const Value &player, bool &hasSame) const{
     if((current != player) && (current != ' ')) {
         return false;
     }
@@ -172,13 +175,13 @@ bool NormalLogic::flipHelper(const char &current, const char &player, bool &hasS
     return true;
 }
 
-void NormalLogic::flip(Coordinate c, const char &player) {
+void NormalLogic::flip(Coordinate c, const Value &player) {
 
     int row = c.getRow();
     int col = c.getCol();
 
     bool hasSame = false;
-    char current;
+    Value current;
     int i, j, k;
 
     //Right

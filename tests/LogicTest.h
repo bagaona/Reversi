@@ -6,9 +6,8 @@
 #define REVERSI_LOGICTEST_H
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "../include/Board.h"
-#include "../include/Logic.h"
-#include "../include/NormalLogic.h"
+#include "../src/Board.h"
+#include "../src/NormalLogic.h"
 
 using namespace std;
 
@@ -21,18 +20,20 @@ public:
 
     virtual void SetUp() {
         cout << "Setting up" << endl;
-        b = new Board(8, 'X', 'O');
-        logic = new NormalLogic(b);
+        board = new Board(8, Black, White);
+        logic = new NormalLogic(board);
+        availableMoves = logic->availableMoves(Black);
     }
     virtual void TearDown() {
         cout << "Tearing down" << endl;
-        delete (b);
+        delete (board);
         delete(logic);
     }
 
 protected:
     Logic* logic;
-    Board* b;
+    Board* board;
+    set<Coordinate> availableMoves;
 };
 
 
