@@ -18,7 +18,7 @@ public:
     Value getSign() const ;
     //Set the sign of the Cell
     void setSign(Value newSign);
-    //Return if the cell is empty
+    //Return if the cell is empty.
     bool isEmpty() const;
 
 private:
