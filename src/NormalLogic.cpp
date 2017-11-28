@@ -5,8 +5,8 @@
 
 
 #include <iostream>
-#include "Board.h"
-#include "NormalLogic.h"
+#include "../include/Board.h"
+#include "../include/NormalLogic.h"
 
 using namespace std;
 NormalLogic::NormalLogic(Board*& b): Logic(b) {

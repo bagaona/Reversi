@@ -3,8 +3,8 @@
 //
 
 #include <iostream>
-#include "Player.h"
-#include "HumanPlayer.h"
+#include "../include/Player.h"
+#include "../include/HumanPlayer.h"
 
 using namespace std;
     HumanPlayer::HumanPlayer(const Value t): Player(t) {

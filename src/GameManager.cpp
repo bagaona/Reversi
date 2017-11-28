@@ -1,16 +1,17 @@
 
 #include <iostream>
-#include "GameManager.h"
-#include "ConsolePrinter.h"
-#include "HumanPlayer.h"
-#include "ComputerPlayer.h"
+#include <cstdlib>
+#include "../include/GameManager.h"
+#include "../include/ConsolePrinter.h"
+#include "../include/HumanPlayer.h"
+#include "../include/ComputerPlayer.h"
 
 using namespace std;
 
-GameManager::GameManager() {
+GameManager::GameManager() : board(), logic(), players(), printer(), tie() {
     initialize(8);
 }
-GameManager::GameManager(const int &size) {
+GameManager::GameManager(const int &size) : board(), logic(), players(), printer(), tie() {
     initialize(size);
 }
 GameManager::~GameManager() {
@@ -25,16 +26,35 @@ void GameManager::initialize(const int &size) {
 
     const Value p1Token = Black;
     const Value p2Token = White;
-
     printer = new ConsolePrinter();
-
     board = new Board(size, p1Token, p2Token);
-
     logic = new NormalLogic(board);
-
     players = new Player*[2];
-    players[0] = new HumanPlayer(p1Token);
-    players[1] = new ComputerPlayer(p2Token);
+    char gameMode ,flag = 1;
+    printer->massage("Choose a game mode:\n\n1) Player vs Player\n\n2)"
+                             " Player vs Computer\n\n3) Exit\n\n");
+
+    while(flag) {
+        cin >> gameMode;
+        switch (gameMode) {
+            case '1':
+                players[0] = new HumanPlayer(p1Token);
+                players[1] = new HumanPlayer(p2Token);
+                flag = 0;
+                break;
+            case '2':
+                players[0] = new HumanPlayer(p1Token);
+                players[1] = new ComputerPlayer(p2Token);
+                flag = 0;
+                break;
+            case '3':
+                exit(1);
+            default:
+                printer->massage("Please press legal number\n");
+                break;
+        }
+    } players[1] = new ComputerPlayer(p2Token);
+
 
 }
 void GameManager::run() {

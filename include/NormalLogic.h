@@ -1,6 +1,4 @@
-//
-// Created by amir on 25/10/17.
-//
+
 
 #ifndef UNTITLED_NEXTMOVE_H
 #define UNTITLED_NEXTMOVE_H

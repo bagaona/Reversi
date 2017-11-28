@@ -2,8 +2,8 @@
 // Created by amir on 02/11/17.
 //
 
-#include "Board.h"
-#include "Logic.h"
+#include "../include/Board.h"
+#include "../include/Logic.h"
 
 using namespace std;
 Logic::Logic(Board*& b) {
@@ -11,9 +11,7 @@ Logic::Logic(Board*& b) {
     size = b->getSize();
 }
 
-Logic::~Logic() {
-  //  delete (temp_board);
-}
+Logic::~Logic() {}
 
 void Logic::calculateAll(const Value &player) {
     for (int row = 0; row < board->getSize(); row++) {

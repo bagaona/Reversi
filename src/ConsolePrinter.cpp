@@ -3,8 +3,8 @@
 //
 
 #include <iostream>
-#include "Board.h"
-#include "ConsolePrinter.h"
+#include "../include/Board.h"
+#include "../include/ConsolePrinter.h"
 
 using namespace std;
 

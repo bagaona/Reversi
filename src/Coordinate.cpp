@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "Coordinate.h"
+#include "../include/Coordinate.h"
 
 /**
  * contructor.

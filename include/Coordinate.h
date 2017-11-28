@@ -1,6 +1,3 @@
-//
-// Created by or on 02/11/17.
-//
 
 #ifndef REVERSI_COORDINATE_H
 #define REVERSI_COORDINATE_H

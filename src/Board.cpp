@@ -1,7 +1,7 @@
 
 //A Class that represents the game's Board
 #include <iostream>
-#include "Board.h"
+#include "../include/Board.h"
 
 using namespace std;
 

@@ -1,38 +1,35 @@
-//
-// Created by amir on 02/11/17.
-//
 
-#ifndef REVERSI_ComputerPLAYER_H
-#define REVERSI_ComputerPLAYER_H
+
+#ifndef REVERSI_HUMANPLAYER_H
+#define REVERSI_HUMANPLAYER_H
 
 
 #include "Player.h"
 
-class ComputerPlayer: public Player {
+class HumanPlayer: public Player {
 public:
     /************************************************************************
-   * Name: ComputerPlayer (Constructor)
+   * Name: HumanPlayer (Constructor)
    * Input: t- The player's token
    * Output: -
    * Operation: Matches a player with a token
    *************************************************************************/
-    ComputerPlayer(const Value t);
+    HumanPlayer(const Value t);
     /************************************************************************
-    * Name: ~ComputerPlayer (Destructor)
+    * Name: ~HumanPlayer (Destructor)
     * Input: -
     * Output: -
     * Operation: Not in use right now
     *************************************************************************/
-    ~ComputerPlayer();
+    ~HumanPlayer();
     /************************************************************************
     * Name: MakeTurn
     * Input: -
     * Output: -
-    * Operation: Gets a row and a col from the Computer player and makes a move.
-     * Calculate the best option for the computer by minMax algorithm.
+    * Operation: Gets a row and a col from the human player and makes a move
     *************************************************************************/
-    virtual Coordinate makeTurn(Logic* l, Board* originalBoard, Printer* printer, set<Coordinate> availableMoves) const;
+    virtual Coordinate makeTurn(Logic* l, Board* b, Printer* printer, set<Coordinate> availableMoves) const;
 };
 
 
-#endif //REVERSI_ComputerPLAYER_H
+#endif //REVERSI_HUMANPLAYER_H

@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "ComputerPlayer.h"
+#include "../include/ComputerPlayer.h"
 
 using namespace std;
 ComputerPlayer::ComputerPlayer(const Value t): Player(t) {

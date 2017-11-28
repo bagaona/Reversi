@@ -1,6 +1,4 @@
-//
-// Created by amir on 02/11/17.
-//
+
 
 #ifndef REVERSI_PLAYER_H
 #define REVERSI_PLAYER_H

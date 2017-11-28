@@ -1,6 +1,4 @@
-//
-// Created by amir on 25/10/17.
-//
+
 
 #ifndef REVERSI_GAMEMANAGER_H
 #define REVERSI_GAMEMANAGER_H
