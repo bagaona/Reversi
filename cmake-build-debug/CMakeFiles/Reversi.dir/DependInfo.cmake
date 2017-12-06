@@ -4,26 +4,27 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/or/Reversi/src/Board.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Board.cpp.o"
-  "/home/or/Reversi/src/Cell.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Cell.cpp.o"
-  "/home/or/Reversi/src/ComputerPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/ComputerPlayer.cpp.o"
-  "/home/or/Reversi/src/ConsolePrinter.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/ConsolePrinter.cpp.o"
-  "/home/or/Reversi/src/Coordinate.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Coordinate.cpp.o"
-  "/home/or/Reversi/src/GameManager.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/GameManager.cpp.o"
-  "/home/or/Reversi/src/HumanPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.o"
-  "/home/or/Reversi/src/Logic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Logic.cpp.o"
-  "/home/or/Reversi/src/NormalLogic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/NormalLogic.cpp.o"
-  "/home/or/Reversi/src/Player.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Player.cpp.o"
-  "/home/or/Reversi/src/Printer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Printer.cpp.o"
-  "/home/or/Reversi/src/main.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/main.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Board.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Board.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Cell.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Cell.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/ComputerPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ComputerPlayer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/ConsolePrinter.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ConsolePrinter.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Coordinate.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Coordinate.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/GameManager.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/GameManager.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/HumanPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/HumanPlayer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Logic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Logic.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/NormalLogic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/NormalLogic.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Player.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Player.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Printer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Printer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/main.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/main.cpp.o"
+  "/home/or/Reversi/src/server/Server.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/server/Server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../lib/google_tests/googletest/include"
-  "../lib/google_tests/googlemock/include"
-  "../lib/google_tests/googletest"
+  "../src/lib/google_tests/googletest/include"
+  "../src/lib/google_tests/googlemock/include"
+  "../src/lib/google_tests/googletest"
   )
 
 # Targets to which this target links.

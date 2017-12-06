@@ -253,13 +253,13 @@ Reversi_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug
 Reversi_SOURCE_DIR:STATIC=/home/or/Reversi
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/lib/google_tests/googlemock
+gmock_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;-pthread;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/home/or/Reversi/lib/google_tests/googlemock
+gmock_SOURCE_DIR:STATIC=/home/or/Reversi/src/lib/google_tests/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -268,19 +268,19 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;-pthread;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/lib/google_tests
+googletest-distribution_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/src/lib/google_tests
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/home/or/Reversi/lib/google_tests
+googletest-distribution_SOURCE_DIR:STATIC=/home/or/Reversi/src/lib/google_tests
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/lib/google_tests/googlemock/gtest
+gtest_BINARY_DIR:STATIC=/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest
 
 //Dependencies for the target
 gtest_LIB_DEPENDS:STATIC=general;-pthread;
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/home/or/Reversi/lib/google_tests/googletest
+gtest_SOURCE_DIR:STATIC=/home/or/Reversi/src/lib/google_tests/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF

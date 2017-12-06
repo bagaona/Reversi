@@ -38,14 +38,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
-  "../lib/google_tests/CMakeLists.txt"
-  "../lib/google_tests/googlemock/CMakeLists.txt"
-  "../lib/google_tests/googlemock/cmake/gmock.pc.in"
-  "../lib/google_tests/googlemock/cmake/gmock_main.pc.in"
-  "../lib/google_tests/googletest/CMakeLists.txt"
-  "../lib/google_tests/googletest/cmake/gtest.pc.in"
-  "../lib/google_tests/googletest/cmake/gtest_main.pc.in"
-  "../lib/google_tests/googletest/cmake/internal_utils.cmake"
+  "../src/lib/google_tests/CMakeLists.txt"
+  "../src/lib/google_tests/googlemock/CMakeLists.txt"
+  "../src/lib/google_tests/googlemock/cmake/gmock.pc.in"
+  "../src/lib/google_tests/googlemock/cmake/gmock_main.pc.in"
+  "../src/lib/google_tests/googletest/CMakeLists.txt"
+  "../src/lib/google_tests/googletest/cmake/gtest.pc.in"
+  "../src/lib/google_tests/googletest/cmake/gtest_main.pc.in"
+  "../src/lib/google_tests/googletest/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -57,17 +57,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/google_tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/google_tests/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/google_tests/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/lib/google_tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/lib/google_tests/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/lib/google_tests/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TestGame.dir/DependInfo.cmake"
+  "CMakeFiles/server.dir/DependInfo.cmake"
   "CMakeFiles/Reversi.dir/DependInfo.cmake"
-  "lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "lib/google_tests/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

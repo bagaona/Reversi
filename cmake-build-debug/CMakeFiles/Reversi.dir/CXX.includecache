@@ -6,149 +6,169 @@
 
 #IncludeRegexTransform: 
 
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 Cell.h
-/home/or/Reversi/include/Cell.h
+/home/or/Reversi/src/client/include/Cell.h
 
-/home/or/Reversi/include/Cell.h
+/home/or/Reversi/src/client/include/Cell.h
 Coordinate.h
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 
-/home/or/Reversi/include/ComputerPlayer.h
+/home/or/Reversi/src/client/include/ComputerPlayer.h
 Player.h
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 
-/home/or/Reversi/include/ConsolePrinter.h
+/home/or/Reversi/src/client/include/ConsolePrinter.h
 Printer.h
-/home/or/Reversi/include/Printer.h
+/home/or/Reversi/src/client/include/Printer.h
 
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 
-/home/or/Reversi/include/GameManager.h
+/home/or/Reversi/src/client/include/GameManager.h
 Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 NormalLogic.h
-/home/or/Reversi/include/NormalLogic.h
+/home/or/Reversi/src/client/include/NormalLogic.h
 Player.h
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 Cell.h
-/home/or/Reversi/include/Cell.h
+/home/or/Reversi/src/client/include/Cell.h
 Coordinate.h
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 Printer.h
-/home/or/Reversi/include/Printer.h
+/home/or/Reversi/src/client/include/Printer.h
 
-/home/or/Reversi/include/HumanPlayer.h
+/home/or/Reversi/src/client/include/HumanPlayer.h
 Player.h
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 
-/home/or/Reversi/include/Logic.h
+/home/or/Reversi/src/client/include/Logic.h
 Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 Coordinate.h
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 Printer.h
-/home/or/Reversi/include/Printer.h
+/home/or/Reversi/src/client/include/Printer.h
 set
 -
 
-/home/or/Reversi/include/NormalLogic.h
+/home/or/Reversi/src/client/include/NormalLogic.h
 Logic.h
-/home/or/Reversi/include/Logic.h
+/home/or/Reversi/src/client/include/Logic.h
 
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 iostream
 -
 Printer.h
-/home/or/Reversi/include/Printer.h
+/home/or/Reversi/src/client/include/Printer.h
 Logic.h
-/home/or/Reversi/include/Logic.h
+/home/or/Reversi/src/client/include/Logic.h
 
-/home/or/Reversi/include/Printer.h
+/home/or/Reversi/src/client/include/Printer.h
 iostream
 -
 set
 -
 Coordinate.h
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 
-/home/or/Reversi/src/Board.cpp
+/home/or/Reversi/src/client/srcReversi/Board.cpp
 iostream
 -
 ../include/Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 
-/home/or/Reversi/src/Cell.cpp
+/home/or/Reversi/src/client/srcReversi/Cell.cpp
 ../include/Cell.h
-/home/or/Reversi/include/Cell.h
+/home/or/Reversi/src/client/include/Cell.h
 
-/home/or/Reversi/src/ComputerPlayer.cpp
+/home/or/Reversi/src/client/srcReversi/ComputerPlayer.cpp
 iostream
 -
 ../include/ComputerPlayer.h
-/home/or/Reversi/include/ComputerPlayer.h
+/home/or/Reversi/src/client/include/ComputerPlayer.h
 
-/home/or/Reversi/src/ConsolePrinter.cpp
+/home/or/Reversi/src/client/srcReversi/ConsolePrinter.cpp
 iostream
 -
 ../include/Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 ../include/ConsolePrinter.h
-/home/or/Reversi/include/ConsolePrinter.h
+/home/or/Reversi/src/client/include/ConsolePrinter.h
 
-/home/or/Reversi/src/Coordinate.cpp
+/home/or/Reversi/src/client/srcReversi/Coordinate.cpp
 iostream
 -
 ../include/Coordinate.h
-/home/or/Reversi/include/Coordinate.h
+/home/or/Reversi/src/client/include/Coordinate.h
 
-/home/or/Reversi/src/GameManager.cpp
+/home/or/Reversi/src/client/srcReversi/GameManager.cpp
 iostream
 -
 cstdlib
 -
 ../include/GameManager.h
-/home/or/Reversi/include/GameManager.h
+/home/or/Reversi/src/client/include/GameManager.h
 ../include/ConsolePrinter.h
-/home/or/Reversi/include/ConsolePrinter.h
+/home/or/Reversi/src/client/include/ConsolePrinter.h
 ../include/HumanPlayer.h
-/home/or/Reversi/include/HumanPlayer.h
+/home/or/Reversi/src/client/include/HumanPlayer.h
 ../include/ComputerPlayer.h
-/home/or/Reversi/include/ComputerPlayer.h
+/home/or/Reversi/src/client/include/ComputerPlayer.h
 
-/home/or/Reversi/src/HumanPlayer.cpp
+/home/or/Reversi/src/client/srcReversi/HumanPlayer.cpp
 iostream
 -
 ../include/Player.h
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 ../include/HumanPlayer.h
-/home/or/Reversi/include/HumanPlayer.h
+/home/or/Reversi/src/client/include/HumanPlayer.h
 
-/home/or/Reversi/src/Logic.cpp
+/home/or/Reversi/src/client/srcReversi/Logic.cpp
 ../include/Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 ../include/Logic.h
-/home/or/Reversi/include/Logic.h
+/home/or/Reversi/src/client/include/Logic.h
 
-/home/or/Reversi/src/NormalLogic.cpp
+/home/or/Reversi/src/client/srcReversi/NormalLogic.cpp
 iostream
 -
 ../include/Board.h
-/home/or/Reversi/include/Board.h
+/home/or/Reversi/src/client/include/Board.h
 ../include/NormalLogic.h
-/home/or/Reversi/include/NormalLogic.h
+/home/or/Reversi/src/client/include/NormalLogic.h
 
-/home/or/Reversi/src/Player.cpp
+/home/or/Reversi/src/client/srcReversi/Player.cpp
 iostream
 -
 ../include/Player.h
-/home/or/Reversi/include/Player.h
+/home/or/Reversi/src/client/include/Player.h
 
-/home/or/Reversi/src/Printer.cpp
+/home/or/Reversi/src/client/srcReversi/Printer.cpp
 
-/home/or/Reversi/src/main.cpp
+/home/or/Reversi/src/client/srcReversi/main.cpp
 ../include/GameManager.h
-/home/or/Reversi/include/GameManager.h
+/home/or/Reversi/src/client/include/GameManager.h
+
+/home/or/Reversi/src/server/Server.cpp
+Server.h
+/home/or/Reversi/src/server/Server.h
+Server.h
+/home/or/Reversi/src/server/Server.h
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+string.h
+-
+iostream
+-
+stdio.h
+-
+
+/home/or/Reversi/src/server/Server.h
 
