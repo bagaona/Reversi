@@ -1,6 +1,7 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/or/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 Run Build Command:"/usr/bin/make" "cmTC_587eb/fast"
 /usr/bin/make -f CMakeFiles/cmTC_587eb.dir/build.make CMakeFiles/cmTC_587eb.dir/build
 make[1]: Entering directory '/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
@@ -17,8 +18,26 @@ make[1]: *** [cmTC_587eb] Error 1
 make[1]: Leaving directory '/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
 Makefile:126: recipe for target 'cmTC_587eb/fast' failed
 make: *** [cmTC_587eb/fast] Error 2
+=======
+Run Build Command:"/usr/bin/make" "cmTC_aeb94/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aeb94.dir/build.make CMakeFiles/cmTC_aeb94.dir/build
+make[1]: Entering directory '/home/or/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aeb94.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_aeb94.dir/CheckSymbolExists.c.o   -c /home/or/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_aeb94
+/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeb94.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_aeb94.dir/CheckSymbolExists.c.o  -o cmTC_aeb94 
+CMakeFiles/cmTC_aeb94.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_aeb94.dir/build.make:97: recipe for target 'cmTC_aeb94' failed
+make[1]: *** [cmTC_aeb94] Error 1
+make[1]: Leaving directory '/home/or/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_aeb94/fast' failed
+make: *** [cmTC_aeb94/fast] Error 2
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 
-File /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/or/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

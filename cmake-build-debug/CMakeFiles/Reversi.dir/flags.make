@@ -6,5 +6,9 @@ CXX_FLAGS =  -lpthread -g   -std=gnu++98
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest 
+=======
+CXX_INCLUDES = -I/home/or/Reversi/src/lib/google_tests/googletest/include -I/home/or/Reversi/src/lib/google_tests/googlemock/include -I/home/or/Reversi/src/lib/google_tests/googletest 
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 

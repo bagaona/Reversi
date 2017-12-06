@@ -7,12 +7,42 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeDependentOption.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeFindCodeBlocks.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckIncludeFile.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckLibraryExists.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckSymbolExists.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU-C.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU-CXX.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Compiler/GNU.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/FindPackageMessage.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/FindPythonInterp.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/FindThreads.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/GNUInstallDirs.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU-C.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU-CXX.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux-GNU.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/UnixPaths.cmake"
+  "/home/or/Desktop/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
+<<<<<<< HEAD
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+=======
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
   "../src/lib/google_tests/CMakeLists.txt"
   "../src/lib/google_tests/googlemock/CMakeLists.txt"
   "../src/lib/google_tests/googlemock/cmake/gmock.pc.in"
@@ -21,6 +51,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/lib/google_tests/googletest/cmake/gtest.pc.in"
   "../src/lib/google_tests/googletest/cmake/gtest_main.pc.in"
   "../src/lib/google_tests/googletest/cmake/internal_utils.cmake"
+<<<<<<< HEAD
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompiler.cmake.in"
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c"
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
@@ -115,6 +146,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/Linux.cmake"
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/Platform/UnixPaths.cmake"
   "/home/amir/Documents/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/ProcessorCount.cmake"
+=======
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
   )
 
 # The corresponding makefile is:

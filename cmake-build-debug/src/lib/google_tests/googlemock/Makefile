@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amir/CLionProjects/Reversi
+CMAKE_SOURCE_DIR = /home/or/Reversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amir/CLionProjects/Reversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/or/Reversi/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/amir/CLionProjects/Reversi/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/or/Desktop/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,24 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles /home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/progress.marks
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles 0
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/or/Reversi/cmake-build-debug/CMakeFiles /home/or/Reversi/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/progress.marks
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/or/Reversi/cmake-build-debug/CMakeFiles 0
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/clean
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/clean
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : clean
 
 # The main clean target
@@ -143,23 +153,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/preinstall
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/preinstall
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/preinstall
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/preinstall
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/or/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule:
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
 .PHONY : src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
+=======
+lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule:
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 
 # Convenience name for target.
 gmock_main: src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -168,6 +192,7 @@ gmock_main: src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # fast build rule for target.
 gmock_main/fast:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
@@ -175,6 +200,15 @@ gmock_main/fast:
 src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule:
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
 .PHONY : src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+# Convenience name for target.
+lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule:
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 
 # Convenience name for target.
 gmock: src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
@@ -183,7 +217,11 @@ gmock: src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/rule
 
 # fast build rule for target.
 gmock/fast:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/build
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : gmock/fast
 
 __/googletest/src/gtest-all.o: __/googletest/src/gtest-all.cc.o
@@ -192,8 +230,13 @@ __/googletest/src/gtest-all.o: __/googletest/src/gtest-all.cc.o
 
 # target to build an object file
 __/googletest/src/gtest-all.cc.o:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : __/googletest/src/gtest-all.cc.o
 
 __/googletest/src/gtest-all.i: __/googletest/src/gtest-all.cc.i
@@ -202,8 +245,13 @@ __/googletest/src/gtest-all.i: __/googletest/src/gtest-all.cc.i
 
 # target to preprocess a source file
 __/googletest/src/gtest-all.cc.i:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.i
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.i
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.i
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : __/googletest/src/gtest-all.cc.i
 
 __/googletest/src/gtest-all.s: __/googletest/src/gtest-all.cc.s
@@ -212,8 +260,13 @@ __/googletest/src/gtest-all.s: __/googletest/src/gtest-all.cc.s
 
 # target to generate assembly for a file
 __/googletest/src/gtest-all.cc.s:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.s
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.s
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.s
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : __/googletest/src/gtest-all.cc.s
 
 src/gmock-all.o: src/gmock-all.cc.o
@@ -222,8 +275,13 @@ src/gmock-all.o: src/gmock-all.cc.o
 
 # target to build an object file
 src/gmock-all.cc.o:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock-all.cc.o
 
 src/gmock-all.i: src/gmock-all.cc.i
@@ -232,8 +290,13 @@ src/gmock-all.i: src/gmock-all.cc.i
 
 # target to preprocess a source file
 src/gmock-all.cc.i:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.i
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock-all.cc.i
 
 src/gmock-all.s: src/gmock-all.cc.s
@@ -242,8 +305,13 @@ src/gmock-all.s: src/gmock-all.cc.s
 
 # target to generate assembly for a file
 src/gmock-all.cc.s:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.s
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock-all.cc.s
 
 src/gmock_main.o: src/gmock_main.cc.o
@@ -252,7 +320,11 @@ src/gmock_main.o: src/gmock_main.cc.o
 
 # target to build an object file
 src/gmock_main.cc.o:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock_main.cc.o
 
 src/gmock_main.i: src/gmock_main.cc.i
@@ -261,7 +333,11 @@ src/gmock_main.i: src/gmock_main.cc.i
 
 # target to preprocess a source file
 src/gmock_main.cc.i:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock_main.cc.i
 
 src/gmock_main.s: src/gmock_main.cc.s
@@ -270,7 +346,11 @@ src/gmock_main.s: src/gmock_main.cc.s
 
 # target to generate assembly for a file
 src/gmock_main.cc.s:
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/Makefile
 	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(MAKE) -f src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+=======
+	cd /home/or/Reversi/cmake-build-debug && $(MAKE) -f lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/Makefile
 .PHONY : src/gmock_main.cc.s
 
 # Help Target
@@ -307,6 +387,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/amir/CLionProjects/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/or/Reversi/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

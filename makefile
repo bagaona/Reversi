@@ -1,15 +1,12 @@
-# Or Paz	
-# 311250708
 
 a.out: compileAll
 	g++ *.o 
+	rm -f *.o
 
-	
-compileAll: *.h *.cpp
-	g++ -c *.cpp
+compileAll: include/*.h src/*.cpp
+	g++ -c src/*.cpp
 
 clean:
 	rm -f *.o
-
 
 

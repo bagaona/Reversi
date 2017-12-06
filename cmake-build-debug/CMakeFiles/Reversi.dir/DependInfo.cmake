@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< HEAD
   "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Board.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Board.cpp.o"
   "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Cell.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Cell.cpp.o"
   "/home/amir/CLionProjects/Reversi/src/client/srcReversi/ComputerPlayer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ComputerPlayer.cpp.o"
@@ -17,6 +18,21 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Printer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Printer.cpp.o"
   "/home/amir/CLionProjects/Reversi/src/client/srcReversi/main.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/main.cpp.o"
   "/home/amir/CLionProjects/Reversi/src/server/Server.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/server/Server.cpp.o"
+=======
+  "/home/or/Reversi/src/client/srcReversi/Board.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Board.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Cell.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Cell.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/ComputerPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ComputerPlayer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/ConsolePrinter.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ConsolePrinter.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Coordinate.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Coordinate.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/GameManager.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/GameManager.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/HumanPlayer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/HumanPlayer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Logic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Logic.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/NormalLogic.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/NormalLogic.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Player.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Player.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/Printer.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Printer.cpp.o"
+  "/home/or/Reversi/src/client/srcReversi/main.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/main.cpp.o"
+  "/home/or/Reversi/src/server/Server.cpp" "/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/server/Server.cpp.o"
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

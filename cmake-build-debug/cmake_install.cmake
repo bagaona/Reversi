@@ -1,4 +1,4 @@
-# Install script for directory: /home/amir/CLionProjects/Reversi
+# Install script for directory: /home/or/Reversi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/cmake_install.cmake")
+=======
+  include("/home/or/Reversi/cmake-build-debug/src/lib/google_tests/cmake_install.cmake")
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 
 endif()
 
@@ -46,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/amir/CLionProjects/Reversi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/or/Reversi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

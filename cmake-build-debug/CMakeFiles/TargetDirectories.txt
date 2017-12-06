@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/install/local.dir
 /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/install.dir
@@ -29,3 +30,36 @@
 /home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir
 /home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/rebuild_cache.dir
 /home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir
+=======
+/home/or/Reversi/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/install/local.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/install.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/TestGame.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/server.dir
+/home/or/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/install/strip.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/install/local.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/install.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/list_install_components.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/rebuild_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/CMakeFiles/edit_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/install/strip.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/install/local.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/install.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/list_install_components.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/rebuild_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/edit_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/gmock.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/install/strip.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/install/local.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/install.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/list_install_components.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/edit_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b

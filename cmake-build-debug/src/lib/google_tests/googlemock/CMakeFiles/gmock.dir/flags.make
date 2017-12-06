@@ -6,5 +6,9 @@ CXX_FLAGS =  -lpthread -g    -lpthread -Wall -Wshadow -Werror -DGTEST_HAS_PTHREA
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD:cmake-build-debug/src/lib/google_tests/googlemock/CMakeFiles/gmock.dir/flags.make
 CXX_INCLUDES = -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include -I/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest 
+=======
+CXX_INCLUDES = -I/home/or/Reversi/lib/google_tests/googlemock/include -I/home/or/Reversi/lib/google_tests/googlemock -I/home/or/Reversi/lib/google_tests/googletest/include -I/home/or/Reversi/lib/google_tests/googletest 
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b:cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/flags.make
 

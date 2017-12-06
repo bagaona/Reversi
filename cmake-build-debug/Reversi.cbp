@@ -8,85 +8,91 @@
 		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\lib\;CMake Files\src\lib\google_tests\;CMake Files\src\lib\google_tests\googlemock\;CMake Files\src\lib\google_tests\googlemock\cmake\;CMake Files\src\lib\google_tests\googletest\;CMake Files\src\lib\google_tests\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestGame">
-				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/TestGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option output="/home/or/Reversi/cmake-build-debug/TestGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -97,22 +103,28 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestGame"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestGame"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestGame/fast">
-				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/TestGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option output="/home/or/Reversi/cmake-build-debug/TestGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -123,10 +135,62 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestGame/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestGame/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server">
+				<Option output="/home/or/Reversi/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server/fast">
+				<Option output="/home/or/Reversi/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
@@ -182,15 +246,21 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Reversi">
-				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option output="/home/or/Reversi/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -201,22 +271,28 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Reversi/fast">
-				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug"/>
+				<Option output="/home/or/Reversi/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -227,23 +303,35 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
+<<<<<<< HEAD
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+=======
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -254,6 +342,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -263,14 +352,32 @@
 			<Target title="gmock_main/fast">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -281,6 +388,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -290,14 +398,32 @@
 			<Target title="gmock">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -308,6 +434,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -317,14 +444,32 @@
 			<Target title="gmock/fast">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googlemock"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googlemock"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -335,6 +480,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -344,12 +490,28 @@
 			<Target title="gtest_main">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -360,6 +522,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -369,12 +532,28 @@
 			<Target title="gtest_main/fast">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -385,6 +564,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -394,12 +574,28 @@
 			<Target title="gtest">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -410,6 +606,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -419,12 +616,28 @@
 			<Target title="gtest/fast">
 				<Option output="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/include"/>
 					<Add directory="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest"/>
+=======
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest/include"/>
+					<Add directory="/home/or/Reversi/src/lib/google_tests/googletest"/>
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -435,6 +648,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/amir/CLionProjects/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -443,110 +657,201 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Board.h">
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/or/Reversi/cmake-build-debug/src/lib/google_tests/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/or/Reversi/src/client/include/Board.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Cell.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/Cell.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/ComputerPlayer.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/ComputerPlayer.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/ConsolePrinter.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/ConsolePrinter.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Coordinate.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/Coordinate.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/GameManager.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/GameManager.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/HumanPlayer.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/HumanPlayer.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Logic.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/Logic.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/NormalLogic.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/NormalLogic.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Player.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/Player.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/include/Printer.h">
+=======
+		<Unit filename="/home/or/Reversi/src/client/include/Printer.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Board.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Board.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Cell.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Cell.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/ComputerPlayer.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/ComputerPlayer.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/ConsolePrinter.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/ConsolePrinter.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Coordinate.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Coordinate.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/GameManager.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/GameManager.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/HumanPlayer.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/HumanPlayer.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Logic.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Logic.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/NormalLogic.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/NormalLogic.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Player.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Player.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/client/srcReversi/Printer.cpp">
 			<Option target="TestGame"/>
 			<Option target="server"/>
@@ -563,23 +868,53 @@
 			<Option target="gmock_main"/>
 		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/src/gtest-all.cc">
+=======
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/Printer.cpp">
+			<Option target="TestGame"/>
+			<Option target="server"/>
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/client/srcReversi/main.cpp">
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/src/gmock-all.cc">
+			<Option target="gmock_main"/>
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/src/gtest-all.cc">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/server/Server.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/server/Server.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/server/Server.h">
+=======
+		<Unit filename="/home/or/Reversi/src/server/Server.h">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option target="TestGame"/>
 			<Option target="server"/>
 			<Option target="Reversi"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/server/main.cpp">
 			<Option target="server"/>
 		</Unit>
@@ -605,11 +940,39 @@
 			<Option target="TestGame"/>
 		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/tests/test_NormalLogic.cpp">
+=======
+		<Unit filename="/home/or/Reversi/src/server/main.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/BoardTest.h">
 			<Option target="TestGame"/>
 		</Unit>
-		<Unit filename="/home/amir/CLionProjects/Reversi/CMakeLists.txt">
+		<Unit filename="/home/or/Reversi/src/tests/ComputerTest.h">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/LogicTest.h">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/main_test.cpp">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/test_Board.cpp">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/test_ComputerPlayer.cpp">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/test_Coordinate.cpp">
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/tests/test_NormalLogic.cpp">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
+			<Option target="TestGame"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/lib/google_tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\lib\google_tests\"/>
 		</Unit>
@@ -689,6 +1052,87 @@
 			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
 		</Unit>
 		<Unit filename="/home/amir/CLionProjects/Reversi/src/lib/google_tests/googletest/cmake/gtest_main.pc.in">
+=======
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/or/Reversi/src/lib/google_tests/googletest/cmake/gtest_main.pc.in">
+>>>>>>> 456c8e050bc478252d3dbe28a005ef31db23c70b
 			<Option virtualFolder="CMake Files\src\lib\google_tests\googletest\cmake\"/>
 		</Unit>
 	</Project>
