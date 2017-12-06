@@ -2,12 +2,13 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Reversi" targetName="Reversi" />
-      <config projectName="Reversi" targetName="gtest" />
+      <config projectName="Reversi" targetName="gtest_main" />
       <config projectName="Reversi" targetName="gmock_main" />
+      <config projectName="Reversi" targetName="server" />
+      <config projectName="Reversi" targetName="gtest" />
+      <config projectName="Reversi" targetName="Reversi" />
       <config projectName="Reversi" targetName="gmock" />
       <config projectName="Reversi" targetName="TestGame" />
-      <config projectName="Reversi" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -16,44 +17,492 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfc893a-843f-4168-8592-97e8991e1529" name="Default" comment="Finish">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Board.h" afterPath="$PROJECT_DIR$/src/Board.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Cell.h" afterPath="$PROJECT_DIR$/src/Cell.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/ComputerPlayer.h" afterPath="$PROJECT_DIR$/src/ComputerPlayer.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/ConsolePrinter.h" afterPath="$PROJECT_DIR$/src/ConsolePrinter.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Coordinate.h" afterPath="$PROJECT_DIR$/src/Coordinate.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/GameManager.h" afterPath="$PROJECT_DIR$/src/GameManager.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/HumanPlayer.h" afterPath="$PROJECT_DIR$/src/HumanPlayer.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Logic.h" afterPath="$PROJECT_DIR$/src/Logic.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/NormalLogic.h" afterPath="$PROJECT_DIR$/src/NormalLogic.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Player.h" afterPath="$PROJECT_DIR$/src/Player.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/include/Printer.h" afterPath="$PROJECT_DIR$/src/Printer.h" />
+    <list default="true" id="cdfc893a-843f-4168-8592-97e8991e1529" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gmock.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googlemock/gtest/gtest.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/google_tests/googletest-distribution.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/libgmock_maind.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/libgmockd.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/BUILD.bazel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/WORKSPACE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/build-aux/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/cmake/gmock.pc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/cmake/gmock_main.pc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/configure.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/CheatSheet.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/CookBook.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/DesignDoc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/DevGuide.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/Documentation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/ForDummies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/FrequentlyAskedQuestions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/docs/KnownIssues.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-actions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-cardinalities.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-actions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-actions.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-function-mockers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-function-mockers.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-matchers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-matchers.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-nice-strict.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-generated-nice-strict.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-matchers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-more-actions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-more-matchers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock-spec-builders.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/gmock.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/custom/gmock-generated-actions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/custom/gmock-generated-actions.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/custom/gmock-matchers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/custom/gmock-port.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/gmock-generated-internal-utils.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/gmock-internal-utils.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/include/gmock/internal/gmock-port.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/make/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2005/gmock.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2005/gmock.vcproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2005/gmock_config.vsprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2005/gmock_main.vcproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2005/gmock_test.vcproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2010/gmock.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2010/gmock.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2010/gmock_config.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2010/gmock_main.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2010/gmock_test.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2015/gmock.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2015/gmock.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2015/gmock_config.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2015/gmock_main.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/msvc/2015/gmock_test.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/fuse_gmock_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/README.cppclean" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/ast.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/gmock_class.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/gmock_class_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/keywords.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/tokenize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/cpp/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/generator/gmock_gen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/gmock-config.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/gmock_doctor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/upload.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/scripts/upload_gmock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock-all.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock-cardinalities.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock-internal-utils.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock-matchers.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock-spec-builders.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/src/gmock_main.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/BUILD.bazel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-actions_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-cardinalities_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-generated-actions_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-generated-function-mockers_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-generated-internal-utils_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-generated-matchers_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-internal-utils_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-matchers_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-more-actions_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-nice-strict_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-port_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock-spec-builders_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_all_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_ex_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_leak_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_leak_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_link2_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_link_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_link_test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_output_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_output_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_output_test_golden.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_stress_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googlemock/test/gmock_test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/build-aux/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/cmake/gtest.pc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/cmake/gtest_main.pc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/cmake/internal_utils.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest.cbproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest.groupproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest_all.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest_link.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest_main.cbproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/codegear/gtest_unittest.cbproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/configure.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/AdvancedGuide.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/DevGuide.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/Documentation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/FAQ.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/Pkgconfig.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/Primer.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/PumpManual.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/Samples.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/docs/XcodeGuide.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-death-test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-message.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-param-test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-param-test.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-printers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-spi.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-test-part.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest-typed-test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest_pred_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/gtest_prod.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/custom/gtest-port.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/custom/gtest-printers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/custom/gtest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-death-test-internal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-filepath.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-internal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-linked_ptr.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-param-util-generated.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-param-util-generated.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-param-util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-port-arch.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-port.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-string.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-tuple.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-tuple.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-type-util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/include/gtest/internal/gtest-type-util.h.pump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/m4/acx_pthread.m4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/m4/gtest.m4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/make/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest-md.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest-md.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest-md.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_main-md.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_main-md.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_main.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_main.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_prod_test-md.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_prod_test-md.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_prod_test.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_prod_test.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_unittest-md.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_unittest-md.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_unittest.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/msvc/2010/gtest_unittest.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/prime_tables.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample1.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample1.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample10_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample1_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample2.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample2.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample2_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample3-inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample3_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample4.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample4.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample4_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample5_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample6_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample7_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample8_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/samples/sample9_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/common.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/fuse_gtest_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/gen_gtest_pred_impl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/gtest-config.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/pump.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/release_docs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/test/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/upload.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/scripts/upload_gtest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-all.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-death-test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-filepath.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-internal-inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-port.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-printers.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-test-part.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest-typed-test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/src/gtest_main.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/BUILD.bazel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-death-test_ex_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-death-test_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-filepath_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-linked_ptr_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-listener_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-message_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-options_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-param-test2_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-param-test_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-param-test_test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-port_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-printers_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-test-part_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-tuple_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-typed-test2_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-typed-test_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-typed-test_test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest-unittest-api_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_all_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_break_on_failure_unittest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_break_on_failure_unittest_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_catch_exceptions_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_catch_exceptions_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_color_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_color_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_env_var_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_env_var_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_environment_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_filter_unittest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_filter_unittest_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_help_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_help_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_list_tests_unittest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_list_tests_unittest_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_main_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_no_test_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_output_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_output_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_output_test_golden_lin.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_pred_impl_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_premature_exit_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_prod_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_repeat_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_shuffle_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_shuffle_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_sole_header_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_stress_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_throw_on_failure_ex_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_throw_on_failure_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_throw_on_failure_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_uninitialized_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_uninitialized_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_unittest.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_outfile1_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_outfile2_test_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_outfiles_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_output_unittest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_output_unittest_.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/gtest_xml_test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/production.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/test/production.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/DebugProject.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/FrameworkTarget.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/General.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/ReleaseProject.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/StaticLibraryTarget.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Config/TestTarget.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Resources/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/runtests.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/widget.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/widget.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Samples/FrameworkSample/widget_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Scripts/runtests.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/Scripts/versiongenerate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/googletest/xcode/gtest.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/google_tests/travis.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Board.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Board.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cell.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cell.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ComputerPlayer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ComputerPlayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ConsolePrinter.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ConsolePrinter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Coordinate.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Coordinate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GameManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GameManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/HumanPlayer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/HumanPlayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Logic.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Logic.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/NormalLogic.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/NormalLogic.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Player.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Player.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Printer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Printer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/BoardTest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ComputerTest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/LogicTest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/main_test.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_Board.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_ComputerPlayer.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_Coordinate.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_NormalLogic.cpp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Reversi" afterPath="$PROJECT_DIR$/cmake-build-debug/Reversi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/cmake_clean.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/depend.internal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Reversi.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/cmake_clean.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestGame.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Reversi.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Reversi.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.cpp" afterPath="$PROJECT_DIR$/src/Board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cell.cpp" afterPath="$PROJECT_DIR$/src/Cell.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComputerPlayer.cpp" afterPath="$PROJECT_DIR$/src/ComputerPlayer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConsolePrinter.cpp" afterPath="$PROJECT_DIR$/src/ConsolePrinter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Coordinate.cpp" afterPath="$PROJECT_DIR$/src/Coordinate.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameManager.cpp" afterPath="$PROJECT_DIR$/src/GameManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HumanPlayer.cpp" afterPath="$PROJECT_DIR$/src/HumanPlayer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logic.cpp" afterPath="$PROJECT_DIR$/src/Logic.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NormalLogic.cpp" afterPath="$PROJECT_DIR$/src/NormalLogic.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.cpp" afterPath="$PROJECT_DIR$/src/Player.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BoardTest.h" afterPath="$PROJECT_DIR$/tests/BoardTest.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ComputerTest.h" afterPath="$PROJECT_DIR$/tests/ComputerTest.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/LogicTest.h" afterPath="$PROJECT_DIR$/tests/LogicTest.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_Board.cpp" afterPath="$PROJECT_DIR$/tests/test_Board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_ComputerPlayer.cpp" afterPath="$PROJECT_DIR$/tests/test_ComputerPlayer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_Coordinate.cpp" afterPath="$PROJECT_DIR$/tests/test_Coordinate.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_NormalLogic.cpp" afterPath="$PROJECT_DIR$/tests/test_NormalLogic.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,50 +514,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/main_test.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_NormalLogic.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_NormalLogic.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_Coordinate.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_Coordinate.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_ComputerPlayer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_ComputerPlayer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,53 +524,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameManager.h">
+      <file leaf-file-name="GameManager.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/srcReversi/GameManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_Board.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_Board.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardTest.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/BoardTest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComputerTest.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/ComputerTest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogicTest.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/LogicTest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="-324">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -313,18 +676,20 @@
             <path>
               <item name="Reversi" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Reversi" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Reversi" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Reversi" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="google_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Reversi" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Reversi" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="srcReversi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,7 +700,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reversi-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -359,7 +724,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Reversi">
+  <component name="RunManager" selected="Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Reversi" RUN_TARGET_NAME="Reversi" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
@@ -381,14 +746,18 @@
     <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Reversi" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
       <envs />
     </configuration>
-    <list size="7">
+    <configuration name="server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Reversi" TARGET_NAME="server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Reversi" RUN_TARGET_NAME="server">
+      <envs />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.Reversi" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestGame" />
-      <item index="3" class="java.lang.String" itemvalue="Application.gmock" />
-      <item index="4" class="java.lang.String" itemvalue="Application.gmock_main" />
-      <item index="5" class="java.lang.String" itemvalue="Application.gtest" />
-      <item index="6" class="java.lang.String" itemvalue="Application.gtest_main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.server" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestGame" />
+      <item index="4" class="java.lang.String" itemvalue="Application.gmock" />
+      <item index="5" class="java.lang.String" itemvalue="Application.gmock_main" />
+      <item index="6" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="7" class="java.lang.String" itemvalue="Application.gtest_main" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -426,7 +795,8 @@
       <workItem from="1511862042004" duration="4040000" />
       <workItem from="1511873735835" duration="131000" />
       <workItem from="1511876210545" duration="4424000" />
-      <workItem from="1511884815043" duration="1864000" />
+      <workItem from="1511884815043" duration="2092000" />
+      <workItem from="1512578226371" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="h to tests and more tests">
       <created>1511815072784</created>
@@ -477,11 +847,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511819902621</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finish">
+      <created>1511886905961</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511886905961</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123823000" />
+    <option name="totallyTimeSpent" value="124187000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,12 +870,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20159362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20478088" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3763608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3763608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20062208" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7356143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -534,13 +911,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/ComputerPlayer.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -549,13 +919,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cell.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cell.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -567,9 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
           <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="60" column="47" lean-forward="false" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="111" column="24" lean-forward="true" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,9 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
           <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="31" column="70" lean-forward="false" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="68" column="12" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,9 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1764">
           <caret line="98" column="58" lean-forward="false" selection-start-line="98" selection-start-column="58" selection-end-line="98" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="5" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,9 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#1#20#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,9 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <marker date="1511877626112" expanded="true" signature="244:265" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,9 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <marker date="1511880517602" expanded="true" signature="350:475" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ComputerTest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -903,7 +1221,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_ComputerPlayer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="954">
           <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding />
         </state>
@@ -911,7 +1229,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_NormalLogic.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="180">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -921,7 +1239,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="666">
           <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding />
         </state>
@@ -929,16 +1247,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/BoardTest.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="360">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/LogicTest.h">
+    <entry file="file://$PROJECT_DIR$/tests/LogicTest.h" />
+    <entry file="file://$PROJECT_DIR$/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/srcReversi/GameManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

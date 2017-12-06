@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e7c12/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e7c12.dir/build.make CMakeFiles/cmTC_e7c12.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_587eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_587eb.dir/build.make CMakeFiles/cmTC_587eb.dir/build
 make[1]: Entering directory '/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e7c12.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_e7c12.dir/CheckSymbolExists.c.o   -c /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e7c12
-/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7c12.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e7c12.dir/CheckSymbolExists.c.o  -o cmTC_e7c12 
-CMakeFiles/cmTC_e7c12.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_587eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_587eb.dir/CheckSymbolExists.c.o   -c /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_587eb
+/home/amir/Documents/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_587eb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_587eb.dir/CheckSymbolExists.c.o  -o cmTC_587eb 
+CMakeFiles/cmTC_587eb.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_e7c12.dir/build.make:97: recipe for target 'cmTC_e7c12' failed
-make[1]: *** [cmTC_e7c12] Error 1
+CMakeFiles/cmTC_587eb.dir/build.make:97: recipe for target 'cmTC_587eb' failed
+make[1]: *** [cmTC_587eb] Error 1
 make[1]: Leaving directory '/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_e7c12/fast' failed
-make: *** [cmTC_e7c12/fast] Error 2
+Makefile:126: recipe for target 'cmTC_587eb/fast' failed
+make: *** [cmTC_587eb/fast] Error 2
 
 File /home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */

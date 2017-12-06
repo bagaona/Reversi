@@ -4,26 +4,27 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amir/CLionProjects/Reversi/src/Board.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Board.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/Cell.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Cell.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/ComputerPlayer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/ComputerPlayer.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/ConsolePrinter.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/ConsolePrinter.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/Coordinate.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Coordinate.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/GameManager.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/GameManager.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/HumanPlayer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/Logic.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Logic.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/NormalLogic.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/NormalLogic.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/Player.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Player.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/Printer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/Printer.cpp.o"
-  "/home/amir/CLionProjects/Reversi/src/main.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/main.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Board.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Board.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Cell.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Cell.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/ComputerPlayer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ComputerPlayer.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/ConsolePrinter.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/ConsolePrinter.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Coordinate.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Coordinate.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/GameManager.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/GameManager.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/HumanPlayer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/HumanPlayer.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Logic.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Logic.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/NormalLogic.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/NormalLogic.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Player.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Player.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/Printer.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/Printer.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/client/srcReversi/main.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/client/srcReversi/main.cpp.o"
+  "/home/amir/CLionProjects/Reversi/src/server/Server.cpp" "/home/amir/CLionProjects/Reversi/cmake-build-debug/CMakeFiles/Reversi.dir/src/server/Server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../lib/google_tests/googletest/include"
-  "../lib/google_tests/googlemock/include"
-  "../lib/google_tests/googletest"
+  "../src/lib/google_tests/googletest/include"
+  "../src/lib/google_tests/googlemock/include"
+  "../src/lib/google_tests/googletest"
   )
 
 # Targets to which this target links.
